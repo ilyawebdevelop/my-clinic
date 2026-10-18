@@ -1,0 +1,85 @@
+.catCard {
+  border-right: 1px solid #dce4eb;
+  border-top: 1px solid #dce4eb;
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 32px;
+  position: relative;
+  min-height: 280px;
+  transition: background-color .2s linear;
+  transition: box-shadow .2s linear;
+
+  &:hover {
+    box-shadow: 0 13px 32px 0 rgba(88, 116, 147, 0.39);   
+  }
+
+  &Title {
+    margin-bottom: 20px;
+    width: fit-content;
+
+    &:hover {
+      color: var(--brand-700);
+    }
+  }
+
+  &Image {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  &Content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &Price {
+    display: flex;
+    column-gap: 10px;
+    font-size: 24px;
+    color: var(--brand-700);
+    margin-top: 25px;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5px;
+    max-width: 230px;
+    margin-top: auto;
+
+    li {
+      word-break: break-word;
+      display: flex;
+      column-gap: 5px;
+
+      &:not(:last-child) {
+        &::after {
+          content: '·';
+        }
+      }
+
+      a {
+        font-size: 14px;
+        line-height: 157%;
+        color: var(--brand-700);
+        word-break: break-word;
+
+        &:hover {
+          color: var(--brand-900);
+        }
+      }
+    }
+  }
+}
+
+.catCardList {
+  border-left: 1px solid #dce4eb;
+  border-bottom: 1px solid #dce4eb;
+}

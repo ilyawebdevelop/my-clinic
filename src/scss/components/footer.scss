@@ -1,0 +1,141 @@
+// Footer
+.footer {
+  background-color: var(--brand-600);
+  overflow: hidden;
+
+  .container {
+    position: relative;
+
+    .footerBLogo {
+      position: absolute;
+      bottom: 0;
+      left: calc(100% - 950px);
+      margin: auto;
+      pointer-events: none;
+    }
+  }
+
+  &T {
+    padding-top: 70px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(#90a8bf, .56);
+  }
+
+  &C {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    border-bottom: 1px solid rgba(#90a8bf, .56);
+
+    .col {
+      &:nth-child(1) {
+        width: 285px;
+        flex-shrink: 0;
+      }
+
+      &:nth-child(2) {
+        width: 222px;
+        flex-shrink: 0;
+      }
+
+      &:nth-child(3) {
+        width: 165px;
+        flex-shrink: 0;
+      }
+
+      &:nth-child(4) {
+        width: 305px;   
+        flex-shrink: 0;
+      }
+    }
+  }
+
+  &B {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 30px;
+
+    .col {
+      &:nth-child(1) {
+        width: 285px;    
+        flex-shrink: 0;
+      }
+
+      &:nth-child(2) {
+        width: 222px;     
+        flex-shrink: 0;
+      }
+
+      &:nth-child(3) {
+        width: 165px; 
+        flex-shrink: 0;
+      }
+
+      &:nth-child(4) {
+        width: 305px;   
+        flex-shrink: 0;
+      }
+    }
+  }
+
+  &Contacts {
+    &Name {
+      margin-bottom: 3px;
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    &Text {
+      line-height: 113%;
+
+    }
+  }
+
+  &Logo {
+    margin-bottom: 30px;
+    display: flex;
+
+    &:hover {
+      opacity: .85;
+    }
+
+    img {
+      width: 250px;
+    }
+  }
+
+  &Nav {
+    &Title {
+      margin-bottom: 18px;
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    ul {
+      li {
+        &:not(:last-child) {
+          margin-bottom: 9px;
+        }
+
+        a {
+          font-weight: 500;
+          letter-spacing: 0.12em;
+          color: var(--neutral-white);
+
+          &:hover {
+            color: var(--brand-300);
+          }
+        }
+      }
+    }
+  }
+}

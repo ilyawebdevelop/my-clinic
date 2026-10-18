@@ -1,0 +1,108 @@
+.fw-medium {
+  font-weight: 500;
+}
+
+.fw-semibold {
+  font-weight: 600;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+.content {
+  &>p {
+    margin-bottom: 10px;
+
+    a {
+      display: inline;
+      border-bottom: 1px solid var(--main-color);
+    }
+  }
+
+  &>ul {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+
+  &>a {
+    display: inline;
+    border-bottom: 1px solid var(--main-color);
+  }
+}
+.lh-140 {
+  line-height: 140%;
+}
+.lh-175 {
+  line-height: 175%;
+}
+.text--lg {
+  font-size: 18px;
+  line-height: 28px;
+  @media(max-width: 1199px){
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.text--md {
+  font-size: 14px;
+  line-height: 22px;
+  @media(max-width: 1199px){
+    line-height: 20px;
+  }
+}
+.text--sm {
+  font-size: 12px;
+  line-height: 16px;
+}
+.fz-13 {
+  font-size: 13px;
+  line-height: 22px;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.font-family-second {
+  font-family: var(--second-family);
+}
+/* --- 1. Семантические классы (Основной выбор для текста) --- */
+.text-primary    { color: var(--text-primary) !important; }    /* Главный текст, заголовки (#27384b) */
+.text-secondary  { color: var(--text-secondary) !important; }  /* Подзаголовки, описания, даты (#697684) */
+.text-muted      { color: var(--text-muted) !important; }      /* Подсказки, второстепенные подписи (#a8acb1) */
+.text-on-action  { color: var(--text-on-action) !important; }  /* Текст внутри кнопок и цветных плашек (#fff) */
+.text-white      { color: var(--neutral-white) !important; }   /* Чистый белый текст */
+a.text-white:hover {color: var(--brand-300)!important;}
+
+/* --- 2. Акцентные классы --- */
+.text-champagne  { color: var(--accent-champagne) !important; } /* Благородный шампань (#b4a38c) */
+a.text-champagne:hover{color: #fff!important}
+.text-deep       { color: var(--accent-deep) !important; }       /* Глубокий брендовый (#738eaa) */
+.text-action     { color: var(--action-primary) !important; }    /* Основной кликабельный цвет (#587493) */
+
+/* --- 3. Брендовая палитра (Утилитарные классы) --- */
+.text-dark-950   { color: var(--dark-950) !important; }
+.text-brand-50   { color: var(--brand-050) !important; }
+.text-brand-100  { color: var(--brand-100) !important; }
+.text-brand-200  { color: var(--brand-200) !important; }
+.text-brand-300  { color: var(--brand-300) !important; }
+.text-brand-400  { color: var(--brand-400) !important; }
+.text-brand-500  { color: var(--brand-500) !important; }
+.text-brand-600  { color: var(--brand-600) !important; }
+.text-brand-700  { color: var(--brand-700) !important; }
+.text-brand-800  { color: var(--brand-800) !important; }
+.text-brand-900  { color: var(--brand-900) !important; }
+
+/* --- 4. Нейтральные серые оттенки --- */
+.text-neutral-50  { color: var(--neutral-050) !important; }
+.text-neutral-100 { color: var(--neutral-100) !important; }
+.text-neutral-200 { color: var(--neutral-200) !important; }
+.text-neutral-300 { color: var(--neutral-300) !important; }
+.text-neutral-400 { color: var(--neutral-400) !important; }
+.text-neutral-600 { color: var(--neutral-600) !important; }
+.text-neutral-800 { color: var(--neutral-800) !important; }
+
+.text-cursive {
+  font-style: italic;
+}

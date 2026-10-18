@@ -1,0 +1,58 @@
+// Font-weights
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+$extrabold: 800;
+$black: 900;
+
+// Containers
+:root {
+  --content-width: 1820px;
+  --content-fluid-width: 1700px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --container-fluid-width: calc(var(--content-fluid-width) + (var(--container-offset) * 2));
+  --font-family: "Involve", sans-serif;
+  --second-family: "Forum", sans-serif;
+  // --third-family: "Manrope", sans-serif;
+  // --font3: "Mulish", sans-serif;
+  --main-color: #27384b;
+  --dark-950: #1d2d42;
+  --brand-100: #ebf0f4;
+  --brand-200: #dce4eb;
+  --brand-300: #c7d3df;
+  --brand-400: #adbed0;
+  --brand-500: #90a8bf;
+  --brand-600: #738eaa;
+  --brand-700: #587493;
+  --brand-800: #3d5877;
+  --brand-900: #29415f;
+  --brand-050: #f5f7f9;
+  --accent-champagne: #b4a38c;
+  --neutral-100: #f7f5f2;
+  --neutral-200: #e8e5e1;
+  --neutral-300: #d8d7d5;
+  --neutral-400: #a8acb1;
+  --neutral-600: #697684;
+  --neutral-800: #27384b;
+  --neutral-white: #fff;
+  --neutral-050: #f5f7f9;
+  --surface-page: var(--brand-050);
+  --surface-card: var(--neutral-white);
+  --surface-soft: var(--brand-100);
+  --text-primary: var(--neutral-800);
+  --text-secondary: var(--neutral-600);
+  --text-muted: var(--neutral-400);
+  --text-on-action: var(--neutral-white);
+  --border-default: var(--brand-200);
+  --border-strong: var(--brand-400);
+  --border-muted: var(--neutral-200);
+  --action-primary: var(--brand-700);
+  --action-hover: var(--brand-800);
+  --action-pressed: var(--brand-900);
+  --action-disabled: var(--brand-200);
+  --action-secondary: var(--brand-100);
+  --accent-deep: var(--brand-600);
+}

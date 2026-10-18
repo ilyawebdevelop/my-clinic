@@ -1,0 +1,93 @@
+// Header
+.header {
+  &--absolute {
+    position: absolute;
+    top: 55px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+
+    .logo--black {
+      display: none;
+    }
+  }
+
+  &W {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    justify-content: space-between;
+  }
+
+  &Nav {
+    ul {
+      display: flex;
+      column-gap: 30px;
+
+      li {
+        a {
+          letter-spacing: -0.01em;
+          color: #fff;
+
+          &:hover {
+            color: var(--brand-300);
+          }
+        }
+
+        &.menu-item-has-children {
+          position: relative;
+          &>a {
+            padding-right: 16px;
+            background-image: url('@img/icons/menu-arrow.svg');
+            background-repeat: no-repeat;
+            background-size: 10px;
+            background-position: right center;
+            transition: background .2s linear;
+          }
+
+          &:hover {
+            &>a {
+              background-image: url('@img/icons/menu-arrow-up.svg');
+            }
+            .sub-menu {
+              display: block;
+              -webkit-animation: shows 0.2s;
+              animation: shows 0.2s;
+            }
+          }      
+        }
+      }
+
+      .sub-menu {
+        display: none;
+        position: absolute;
+        top: calc(100%);
+        background-color: #fff;
+        padding: 25px;
+        width: 200px;
+
+        a {
+          color: var(--main-color);
+        }
+      }
+    }
+  }
+
+  &Contacts {
+    display: flex;
+    align-items: center;
+    column-gap: 32px;
+  }
+
+  &Logo {
+    &:hover {
+      opacity: .85;
+    }
+
+    img {
+      width: 180px;
+    }
+  }
+}

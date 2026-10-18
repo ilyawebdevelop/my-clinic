@@ -1,0 +1,158 @@
+.intro {
+  margin: 22px 25px 0;
+  background: linear-gradient(269.76deg, #4c6887 13.77%, #6986a7 27.42%, #6986a7 50.88%, #4c6887 72.75%);
+  border-radius: 4px;
+  padding-bottom: 0;
+  position: relative;
+
+  .h1 {
+    margin-bottom: 54px;
+  }
+
+  &--home {
+    padding-top: 100px;
+
+    .h1 {
+      max-width: 675px;
+    }
+
+    .introL {
+      max-width: 610px;
+    }
+
+    .introImage {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        /* Растягиваем строго по размерам фото */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        /* Идентичная форма арки */
+        border-radius: 400px 400px 0 0;
+
+        /* 1. Делаем тонкую базовую обводку */
+        border: 1px solid #adbed0;
+        border-bottom: none;
+
+        /* 2. МАГИЯ: Внутренняя тень со смещением */
+        /* Синтаксис: inset [смещение по X] [смещение по Y] [размытие] [цвет] */
+        box-shadow:
+          inset -7px -1px 6px rgba($color: #adbed0, $alpha: .4),
+          /* Делает правый край толще и ярче */
+          inset 2px 4px 28px rgba($color: #adbed0, $alpha: 0);
+        /* Добавляет мягкую темную глубину сверху-слева */
+
+        -webkit-mask-image: linear-gradient(135deg, transparent 5%, #fff 25%);
+        mask-image: linear-gradient(135deg, transparent 5%, #fff 25%);
+
+        pointer-events: none;
+        z-index: 2;
+      }
+
+      img {
+        width: 625px;
+        height: 790px;
+        object-fit: cover;
+        border-radius: 400px 400px 0 0;
+      }
+    }
+
+    .introLogoR {
+      width: 120px;
+      position: absolute;
+      right: -141px;
+    }
+
+    .spin-button-wrapper {
+      position: absolute;
+      top: 68px;
+      right: 104px;
+    }
+
+    .intro-stock {
+      border: 0.50px solid #adbed0;
+      border-radius: 8px;
+      position: absolute;
+      z-index: 2;
+      right: -10px;
+      bottom: 30px;
+    }
+  }
+
+  &Grid {
+    display: flex;
+    align-items: flex-end;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 20px;
+    position: relative;
+  }
+}
+
+.intro-home-abstr-l {
+  position: absolute;
+  left: 0;
+  top: 90px;
+  width: 120px;
+}
+
+.intro-home-abstr-r {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.intro-stock {
+  width: 340px;
+  height: 235px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 24px 16px 16px 24px;
+  &:hover {
+    .round-btn {
+      background-color: #f5f7f9;
+    }
+  }
+}
+
+.intro-stock-date {
+  border-radius: 32px;
+  padding: 4px 4px 4px 12px;
+  background: #f5f7f9;
+  width: fit-content;
+  font-size: 12px;
+  padding: 2px 4px 2px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 8px;
+
+  span:nth-child(2) {
+    background: #587493;
+    border-radius: 12px;
+    color: #fff;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+.intro-stock-logo {
+  width: 130px;
+  max-height: 45px;
+  object-fit: contain;
+  object-position: left;
+}
+
+.intro-stock-price {
+  font-size: 32px;
+  line-height: 100%;
+}

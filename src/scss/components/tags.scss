@@ -1,0 +1,52 @@
+.tags {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  border-bottom: 1px solid #c7d3df;
+
+  ul {
+    li {
+      a {
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+/* Обертка бегущей строки */
+.marquee-wrapper {
+  overflow: hidden;
+  /* Прячет всё, что выходит за пределы экрана */
+  width: 100%;
+  display: flex;
+  column-gap: 16px;
+}
+
+/* Контент бегущей строки */
+.marquee-content {
+  flex-shrink: 0;
+  min-width: 100%;
+
+  /* Запуск анимации: имя, время круга, линейно, бесконечно */
+  animation: marqueeAnimation 30s linear infinite;
+
+  /* Включаем аппаратное ускорение видеокарты для плавной анимации без микро-фризов */
+  will-change: transform;
+}
+
+/* 🛑 Остановка анимации при наведении курсора (полезный UX-паттерн для кликабельных тегов) */
+.marquee-wrapper:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+/* ==========================================================================
+   АНИМАЦИЯ БЕГУЩЕЙ СТРОКИ
+   ========================================================================== */
+/* Анимация бесконечного бесшовного цикла */
+@keyframes marqueeAnimation {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(calc(-100% - 16px), 0, 0);
+  }
+}

@@ -1,0 +1,88 @@
+.gal {
+  .sliderNav {
+    display: flex;
+    column-gap: 32px;
+    justify-content: flex-end;
+    margin-bottom: 24px;
+  }
+
+  &Slider {
+    .swiper-slide {
+      max-width: 100%;
+      width: fit-content;
+      transition: opacity .2s linear;
+      &:hover {
+        opacity: .85;
+      }
+
+      img {
+        height: 592px;
+        width: auto;
+      }
+    }
+  }
+
+  .wp-tabs__nav {
+    padding-top: 35px;
+    padding-bottom: 35px;
+
+  }
+
+  .wp-tabs__nav-wrap {
+    background-color: #587493;
+
+    .wp-tabs__btn {
+      color: #fff;
+      padding-right: 0;
+      padding-left: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+      font-size: 21px;
+      line-height: 133%;
+      font-weight: 400;
+      display: flex;
+      column-gap: 16px;
+
+      &:hover {
+        div {
+          border-color: var(--brand-300);
+        }
+      }
+
+      &:not(:last-child) {
+        border-right: 1px solid #90a8bf;
+      }
+
+      span {
+        color: var(--brand-500);
+      }
+
+      div {
+        border-bottom: 1px solid transparent;
+        transition: border-color .2s linear;
+      }
+
+      &::after {
+        opacity: 0;
+        display: none;
+      }
+
+      &:not(:first-child) {
+        padding-left: 80px;
+      }
+
+      &:not(:last-child) {
+        padding-right: 80px;
+      }
+
+      &.active {
+        background: transparent;
+        color: var(--brand-300);
+
+        div {
+          border-color: var(--brand-300);
+        }
+      }
+    }
+  }
+}

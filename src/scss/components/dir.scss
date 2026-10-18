@@ -1,0 +1,131 @@
+.dir {
+  &Descr {
+    padding-top: 27px;
+    padding-left: 43px;
+    background: url('@img/icons/quote.svg') no-repeat left top / 134px;
+    font-size: 20px;
+    line-height: 165%;
+    padding-bottom: 56px;
+    border-bottom: 1px solid #dce4eb;
+    margin-bottom: 32px;
+  }
+
+  &Name {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 70%;
+    color: var(--action-primary);
+    margin-bottom: 20px;
+  }
+
+  &Work {
+    &List {
+      margin-bottom: 12px;
+
+      ul {
+        display: flex;
+        column-gap: 9px;
+        flex-wrap: wrap;
+
+        li {
+          color: var(--text-secondary);
+          font-size: 14px;
+          line-height: 143%;
+          display: flex;
+          align-items: center;
+          column-gap: 9px;
+
+          &:not(:last-child) {
+            &::after {
+              content: '';
+              display: block;
+              width: 4px;
+              height: 4px;
+              background-color: var(--text-secondary);
+              border-radius: 50%;
+              position: relative;
+              top: 1px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &Logo {
+    margin-bottom: 45px;
+    width: 242px;
+  }
+
+  &Video {
+    padding: 15px 15px 23px;
+    border-radius: 256px 0 0 0;
+    background-color: var(--action-primary);
+
+    &Img {
+      width: 100%;
+      height: 750px;
+      object-fit: cover;
+      border-radius: 240px 0 0 0;
+      margin-bottom: 23px;
+
+      &W {
+        position: relative;
+
+        &:hover {
+          .video-play {
+            background-color: rgba(220, 228, 235, 0.73);
+          }
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background: rgba(88, 116, 147, 0.34);
+          border-radius: 240px 0 0 0;
+          left: 0;
+          top: 0;
+        }
+      }
+    }
+
+    &Footer {
+      font-size: 16px;
+      line-height: 200%;
+      text-transform: uppercase;
+      color: #fff;
+      display: flex;
+      column-gap: 9px;
+
+      span {
+        display: flex;
+        align-items: center;
+        column-gap: 9px;
+
+        &:not(:last-child) {
+          &::after {
+            content: '';
+            display: block;
+            width: 4px;
+            height: 4px;
+            background-color: #fff;
+            border-radius: 50%;
+            column-gap: 9px;
+          }
+        }
+      }
+    }
+
+    .video-play {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+  }
+}

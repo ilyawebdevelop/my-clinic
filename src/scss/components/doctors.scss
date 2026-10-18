@@ -1,0 +1,328 @@
+/* ==========================================
+   1. БАЗОВОЕ СОСТОЯНИЕ (Для скрытых/боковых врачей)
+   ========================================== */
+.doctorsSlider {
+  padding-left: 10px;
+  overflow: visible;
+  // margin-left: -25px;
+  min-height: 780px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    /* Встает ровно по левой границе слайдера */
+    width: 200vw;
+    /* Огромная ширина, перекрывающая всё левое пространство до края экрана */
+    background-color: #fff;
+    /* Цвет фона вашего сайта (замените на ваш точный цвет) */
+    z-index: 10;
+    /* Перекрывает уходящие влево слайды */
+    pointer-events: none;
+    /* Пропускает клики сквозь себя */
+  }
+}
+
+.doctorsSlider .doctor-card {
+  width: 275px;
+  /* Изначальная узкая ширина */
+  display: flex;
+  column-gap: 8px;
+  flex-direction: column;
+  position: relative;
+  height: auto;
+  flex-shrink: 0;
+  // transition: all .5s cubic-bezier(0.55, 1, 0.5, 1);
+  // transition: opacity 0.6s ease-in-out;
+  /* Плавное растворение */
+  /* Плавная анимация */
+  opacity: 0.3;
+  pointer-events: auto;
+}
+
+.doctorsSlider .swiper-slide-visible {
+
+  opacity: 1 !important;
+  pointer-events: auto;
+}
+
+.doctorsSlider .swiper-slide-active {
+  opacity: 1 !important;
+  pointer-events: auto;
+}
+
+
+
+/* Скрываем элементы активного слайда по умолчанию */
+.doctorsSlider .doctor-card__active-details,
+.doctorsSlider .doctor-card__cta {
+  opacity: 0;
+  visibility: hidden;
+  max-height: 0;
+  /* Чтобы не занимали место в разметке узкого слайда */
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.doctorsSlider .doctor-card__name {
+  font-size: 24px;
+  line-height: 125%;
+  margin-bottom: 15px;
+
+  a {
+    width: fit-content;
+    display: block;
+
+    &:hover {
+      color: var(--brand-500);
+    }
+  }
+
+}
+
+.doctor-card__status {
+  color: var(--brand-700);
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.doctor-card__number {
+  color: var(--accent-champagne);
+  margin-bottom: 80px;
+  display: flex;
+  align-items: center;
+  column-gap: 14px;
+
+  .sep {
+    width: 38px;
+    height: 1px;
+    background: var(--accent-champagne);
+  }
+}
+
+/* Вертикальный текст — виден у боковых */
+.doctorsSlider .vertical-badge {
+  position: absolute;
+  left: -28px;
+  top: 170px;
+  transform: rotate(180deg);
+  writing-mode: vertical-lr;
+  font-size: 12px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: var(--action-primary);
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+
+  &::after {
+    content: '';
+    height: 52px;
+    width: 1px;
+    background-color: var(--brand-700);
+  }
+}
+
+.doctorsSlider .doctor-card__photo {
+  width: 100%;
+  // height: 380px;
+  transition: all 0.5s ease;
+  position: relative;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 30px;
+
+  &:hover {
+    opacity: .85;
+  }
+
+  .bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 106px 0 0 0;
+
+    background: #738eaa;
+    z-index: 1;
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 11px;
+    top: 11px;
+    border: 1px solid #c7d3df;
+    z-index: 0;
+    border-radius: 150px 0 0 0;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 8px;
+    bottom: 0;
+    background: #ebf0f4;
+  }
+}
+
+.doctorsSlider .doctor-card__photo img {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+  position: relative;
+  z-index: 2;
+  object-position: bottom;
+}
+
+.doctor-card__specialty {
+  margin-bottom: 16px;
+  color: var(--brand-700);
+}
+
+.doctorsSlider .doctor-card__experience {
+  padding-top: 16px;
+  position: relative;
+  margin-top: auto;
+  display: flex;
+  column-gap: 16px;
+  align-items: center;
+
+  .sep {
+    width: 32px;
+    height: 1px;
+    background-color: var(--brand-400);
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 38px;
+    height: 1px;
+    background-color: var(--brand-100);
+  }
+}
+
+/* ==========================================
+   2. МАГИЯ: СОСТОЯНИЕ АКТИВНОГО СЛАЙДА (Левый большой)
+   ========================================== */
+.doctorsSlider .swiper-slide-active.doctor-card {
+  width: fit-content;
+  flex-direction: row;
+  /* Слайд становится шире, расталкивая соседа */
+  padding-top: 80px;
+  column-gap: 50px;
+  padding-left: 25px;
+}
+
+.doctorsSlider .swiper-slide-active.doctor-card .doctor-card__name {
+  font-size: 38px;
+  line-height: 111%;
+}
+
+.doctorsSlider .swiper-slide-active .doctor-card__photo {
+  width: fit-content;
+  margin-bottom: 15px;
+
+  &::before {
+
+    left: 16px;
+    top: 16px;
+
+  }
+}
+
+.doctorsSlider .swiper-slide-active .doctor-card__experience,
+.doctorsSlider .swiper-slide-active .doctor-card__specialty {
+  font-size: 18px;
+}
+
+.doctorsSlider .swiper-slide-active .doctor-card__specialty {
+  margin-bottom: 30px;
+}
+
+.doctorsSlider .swiper-slide-active .doctor-card__experience {
+  padding-top: 30px;
+}
+
+/* Увеличиваем фото у активного */
+.doctorsSlider .swiper-slide-active .doctor-card__photo img {
+  height: 630px;
+  width: 399px;
+}
+
+/* Скрываем вертикальную надпись, она больше не нужна */
+.doctorsSlider .swiper-slide-active .vertical-badge {
+  left: -10px;
+  font-size: 14px;
+  top: unset;
+  bottom: 14px;
+
+  &::after {
+    height: 115px;
+  }
+}
+
+/* ПЛАВНО ПОКАЗЫВАЕМ КНОПКУ И ДОП.ИНФО */
+.doctorsSlider .swiper-slide-active .doctor-card__active-details,
+.doctorsSlider .swiper-slide-active .doctor-card__cta {
+  opacity: 1;
+  visibility: visible;
+  max-height: unset;
+  /* Даем раскрыться контенту */
+  margin-top: 30px;
+}
+
+/* Дополнительно: можно перестроить текстовый блок активного слайда через grid, 
+если имя и кнопка должны встать в шахматном или ином порядке */
+.doctorsSlider .swiper-slide-active .doctor-card__info {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: fit-content;
+  margin-top: auto;
+  width: 300px;
+}
+
+.doctorsSliderNav {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  column-gap: 30px;
+  z-index: 2;
+
+  .navArrow {
+    position: unset;
+  }
+}
+
+/* Смещаем обертку, чтобы центрированный первый слайд встал к левому краю */
+.doctorsSlider .swiper-wrapper {
+  justify-content: flex-start;
+  /* Базовое выравнивание */
+}
+
+/* Запрещаем браузеру ломать размеры картинок во время быстрой анимации */
+.doctorsSlider .swiper-slide {
+  flex-shrink: 0 !important;
+  transition-timing-function: ease-out;
+  /* Делает доводку слайда плавной */
+}
+
+.doctorsSlider .swiper-slide-active+.swiper-slide+.swiper-slide+.swiper-slide {
+  opacity: 0.3 !important;
+  pointer-events: auto;
+}

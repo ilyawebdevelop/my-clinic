@@ -1,0 +1,117 @@
+.about {
+  &List {
+    counter-reset: aboutListCounter;
+  }
+  .h2 {
+    margin-bottom: 50px;
+  }
+
+  &Item {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    padding-left: 70px;
+    border-left: 1px solid var(--brand-300);
+    border-bottom: 1px solid var(--brand-300);
+    counter-increment: aboutListCounter;
+    position: relative;
+
+    &::after {
+      content: "0" counter(aboutListCounter);
+      font-family: var(--second-family);
+      font-size: 158px;
+      line-height: 150px;
+      color: var(--brand-100);
+      position: absolute;
+      right: 105px;
+      top: 50%;
+      transform: translateY(-50%);
+      letter-spacing: 0.04em;
+    }
+
+    &Title {
+      font-family: var(--second-family);
+      font-size: 72px;
+      line-height: 70px;
+      max-width: 360px;
+
+    }
+
+    &Subtitle {
+      font-family: var(--second-family);
+      font-size: 24px;
+      line-height: 24px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      max-width: 315px;
+    }
+
+    &Descr {
+      max-width: 315px;
+    }
+
+    &--last {
+      background-color: var(--brand-600);
+      padding-top: 40px;
+      padding-bottom: 40px;
+
+      &::after {
+        color: var(--brand-500);
+        top: 50px;
+        transform: none;
+      }
+
+      .aboutItemTitle {
+        font-size: 32px;
+        line-height: normal;
+        text-transform: uppercase;
+      }
+    }
+
+    &List {
+      counter-reset: aboutItemListCounter;
+
+      li {
+        counter-increment: aboutItemListCounter;
+        display: flex;
+        align-items: center;
+        column-gap: 15px;
+
+        &:not(:last-child) {
+          margin-bottom: 10px;
+        }
+
+        &::before {
+          content: "0" counter(aboutItemListCounter);
+          font-family: var(--second-family);
+          font-size: 36px;
+          line-height: normal;
+          color: var(--brand-500);
+        }
+      }
+    }
+  }
+  &Img {
+    min-height: 540px;
+    object-fit: cover;
+  }
+}
+
+.about-main-content {
+  max-width: 860px;
+  margin-left: auto;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  position: relative;
+  .sect-name {
+    top: 64px;
+  }
+}
+
+.about-main-image {
+  background-color: var(--brand-200);
+  img {
+    width: calc(100% - 12px);
+    margin-left: auto;
+    border-radius: 158px 0 0 0;
+  }
+}

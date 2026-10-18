@@ -1,0 +1,120 @@
+.tabs {
+  &__nav {
+    display: flex;
+    column-gap: 16px;
+    padding: 4px;
+    background-color: var(--background);
+    width: fit-content;
+    border-radius: 15px;
+
+    &-item {}
+
+    &-btn {
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 500;
+      border-radius: 14px;
+      padding-left: 16px;
+      padding-right: 16px;
+
+      &--active {
+        background-color: var(--primary);
+        color: #fff;
+      }
+    }
+  }
+
+  &__panel {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+}
+
+.wp-tabs__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  flex-wrap: wrap;
+  width: fit-content;
+
+
+}
+
+.wp-tabs__btn {
+  color: var(--text-secondary);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 183%;
+  font-weight: 500;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 25px;
+  padding-right: 25px;
+  transition: background-color .2s linear, color .2s linear;
+  position: relative;
+
+  &:hover {
+    &:after {
+      background-color: var(--action-primary);
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: var(--border-default);
+    transition: background-color .2s linear;
+  }
+}
+
+.wp-tabs__btn.active {
+  background: linear-gradient(180deg, #f5f7f9 0%, #ebf0f4 100%);
+  color: var(--action-primary);
+
+  &:after {
+    background-color: var(--action-primary);
+  }
+}
+
+.wp-tabs__btn:hover {}
+
+.wp-tabs__panel {
+  display: none;
+  animation: fadeIn 0.25s ease;
+}
+
+.wp-tabs__panel.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

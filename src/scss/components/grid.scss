@@ -1,0 +1,1040 @@
+/* Главная сетка (Аналог .row) */
+.grid-12 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 24px;
+  /* Отступы между колонками */
+  row-gap: 24px;
+  /* Отступы между рядами */
+  box-sizing: border-box;
+
+  @media(max-width: 991px) {
+    column-gap: 8px;
+    row-gap: 8px;
+  }
+}
+
+/* По умолчанию (на смартфонах) любая колонка занимает все 12 долей */
+.grid-12>* {
+  grid-column: span 12;
+}
+
+/* ==========================================================================
+   МЕДИА-ЗАПРОСЫ (BREAKPOINTS) И КЛАССЫ КОЛОНОК
+   ========================================================================== */
+
+/* 📱 Смартфоны (горизонтальные) — от 576px (sm) */
+@media (min-width: 576px) {
+  .col-sm-1 {
+    grid-column: span 1;
+  }
+
+  .col-sm-2 {
+    grid-column: span 2;
+  }
+
+  .col-sm-3 {
+    grid-column: span 3;
+  }
+
+  .col-sm-4 {
+    grid-column: span 4;
+  }
+
+  .col-sm-5 {
+    grid-column: span 5;
+  }
+
+  .col-sm-6 {
+    grid-column: span 6;
+  }
+
+  .col-sm-7 {
+    grid-column: span 7;
+  }
+
+  .col-sm-8 {
+    grid-column: span 8;
+  }
+
+  .col-sm-9 {
+    grid-column: span 9;
+  }
+
+  .col-sm-10 {
+    grid-column: span 10;
+  }
+
+  .col-sm-11 {
+    grid-column: span 11;
+  }
+
+  .col-sm-12 {
+    grid-column: span 12;
+  }
+}
+
+/* 📟 Планшеты — от 768px (md) */
+@media (min-width: 768px) {
+  .col-md-1 {
+    grid-column: span 1;
+  }
+
+  .col-md-2 {
+    grid-column: span 2;
+  }
+
+  .col-md-3 {
+    grid-column: span 3;
+  }
+
+  /* 4 колонки в ряд */
+  .col-md-4 {
+    grid-column: span 4;
+  }
+
+  /* 3 колонки в ряд */
+  .col-md-5 {
+    grid-column: span 5;
+  }
+
+  .col-md-6 {
+    grid-column: span 6;
+  }
+
+  /* 2 колонки в ряд */
+  .col-sm-7 {
+    grid-column: span 7;
+  }
+
+  .col-md-8 {
+    grid-column: span 8;
+  }
+
+  .col-md-9 {
+    grid-column: span 9;
+  }
+
+  .col-md-10 {
+    grid-column: span 10;
+  }
+
+  .col-md-11 {
+    grid-column: span 11;
+  }
+
+  .col-md-12 {
+    grid-column: span 12;
+  }
+}
+
+/* 💻 Ноутбуки и небольшие мониторы — от 992px (lg) */
+@media (min-width: 992px) {
+  .col-lg-1 {
+    grid-column: span 1;
+  }
+
+  .col-lg-2 {
+    grid-column: span 2;
+  }
+
+  .col-lg-3 {
+    grid-column: span 3;
+  }
+
+  .col-lg-4 {
+    grid-column: span 4;
+  }
+
+  .col-lg-5 {
+    grid-column: span 5;
+  }
+
+  .col-lg-6 {
+    grid-column: span 6;
+  }
+
+  .col-lg-7 {
+    grid-column: span 7;
+  }
+
+  .col-lg-8 {
+    grid-column: span 8;
+  }
+
+  .col-lg-9 {
+    grid-column: span 9;
+  }
+
+  .col-lg-10 {
+    grid-column: span 10;
+  }
+
+  .col-lg-11 {
+    grid-column: span 11;
+  }
+
+  .col-lg-12 {
+    grid-column: span 12;
+  }
+}
+
+/* 🖥️ Большие экраны (Десктопы) — от 1200px (xl) */
+@media (min-width: 1200px) {
+  .col-xl-1 {
+    grid-column: span 1;
+  }
+
+  .col-xl-2 {
+    grid-column: span 2;
+  }
+
+  .col-xl-3 {
+    grid-column: span 3;
+  }
+
+  .col-xl-4 {
+    grid-column: span 4;
+  }
+
+  .col-xl-5 {
+    grid-column: span 5;
+  }
+
+  .col-xl-6 {
+    grid-column: span 6;
+  }
+
+  .col-xl-7 {
+    grid-column: span 7;
+  }
+
+  .col-xl-8 {
+    grid-column: span 8;
+  }
+
+  .col-xl-9 {
+    grid-column: span 9;
+  }
+
+  .col-xl-10 {
+    grid-column: span 10;
+  }
+
+  .col-xl-11 {
+    grid-column: span 11;
+  }
+
+  .col-xl-12 {
+    grid-column: span 12;
+  }
+}
+
+/* ==========================================================================
+   ПОЛЕЗНЫЕ СЛУЖЕБНЫЕ КЛАССЫ (СМЕЩЕНИЯ И ВЫРАВНИВАНИЕ)
+   ========================================================================== */
+
+/* Смещения (Аналог offset в Bootstrap). Сдвигают элемент вправо на N колонок */
+@media (min-width: 768px) {
+  .offset-md-1 {
+    grid-column-start: 2;
+  }
+
+  .offset-md-2 {
+    grid-column-start: 3;
+  }
+
+  .offset-md-3 {
+    grid-column-start: 4;
+  }
+
+  .offset-md-4 {
+    grid-column-start: 5;
+  }
+
+  .offset-md-6 {
+    grid-column-start: 7;
+  }
+}
+
+@media (min-width: 992px) {
+  .offset-lg-1 {
+    grid-column-start: 2;
+  }
+
+  .offset-lg-2 {
+    grid-column-start: 3;
+  }
+
+  .offset-lg-3 {
+    grid-column-start: 4;
+  }
+
+  .offset-lg-4 {
+    grid-column-start: 5;
+  }
+}
+
+/* Изменение порядка элементов (Аналог order). Полезно для переброски сайдбара на мобильных */
+.order-first {
+  order: -1;
+}
+
+.order-last {
+  order: 13;
+}
+
+@media (min-width: 768px) {
+  .order-md-first {
+    order: -1;
+  }
+
+  .order-md-last {
+    order: 13;
+  }
+}
+
+/* ==========================================================================
+   КЛАССЫ ВЫРАВНИВАНИЯ (ALIGNMENT UTILITIES)
+   ========================================================================== */
+
+/* --- 1. Выравнивание ТЕКСТА (по умолчанию) --- */
+.text-left {
+  text-align: left !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+/* 📱 Текст от 576px */
+@media (min-width: 576px) {
+  .text-sm-left {
+    text-align: left !important;
+  }
+
+  .text-sm-center {
+    text-align: center !important;
+  }
+
+  .text-sm-right {
+    text-align: right !important;
+  }
+}
+
+/* 📟 Текст от 768px */
+@media (min-width: 768px) {
+  .text-md-left {
+    text-align: left !important;
+  }
+
+  .text-md-center {
+    text-align: center !important;
+  }
+
+  .text-md-right {
+    text-align: right !important;
+  }
+}
+
+/* 💻 Текст от 992px */
+@media (min-width: 992px) {
+  .text-lg-left {
+    text-align: left !important;
+  }
+
+  .text-lg-center {
+    text-align: center !important;
+  }
+
+  .text-lg-right {
+    text-align: right !important;
+  }
+}
+
+
+/* --- 2. Выравнивание элементов по ГОРИЗОНТАЛИ (для .grid-12 или .d-flex) --- */
+/* Управляет распределением колонок/элементов по главной оси */
+.justify-start {
+  justify-content: start !important;
+}
+
+.justify-center {
+  justify-content: center !important;
+}
+
+.justify-end {
+  justify-content: end !important;
+}
+
+.justify-between {
+  justify-content: space-between !important;
+}
+
+/* 📟 Горизонт от 768px */
+@media (min-width: 768px) {
+  .justify-md-start {
+    justify-content: start !important;
+  }
+
+  .justify-md-center {
+    justify-content: center !important;
+  }
+
+  .justify-md-end {
+    justify-content: end !important;
+  }
+
+  .justify-md-between {
+    justify-content: space-between !important;
+  }
+}
+
+/* 💻 Горизонт от 992px */
+@media (min-width: 992px) {
+  .justify-lg-start {
+    justify-content: start !important;
+  }
+
+  .justify-lg-center {
+    justify-content: center !important;
+  }
+
+  .justify-lg-end {
+    justify-content: end !important;
+  }
+
+  .justify-lg-between {
+    justify-content: space-between !important;
+  }
+}
+
+
+/* --- 3. Выравнивание элементов по ВЕРТИКАЛИ (для .grid-12 или .d-flex) --- */
+/* Помогает выровнять элементы разной высоты по одной линии */
+.align-start {
+  align-items: start !important;
+}
+
+.align-center {
+  align-items: center !important;
+}
+
+.align-end {
+  align-items: end !important;
+}
+
+/* 📟 Вертикаль от 768px */
+@media (min-width: 768px) {
+  .align-md-start {
+    align-items: start !important;
+  }
+
+  .align-md-center {
+    align-items: center !important;
+  }
+
+  .align-md-end {
+    align-items: end !important;
+  }
+}
+
+/* 💻 Вертикаль от 992px */
+@media (min-width: 992px) {
+  .align-lg-start {
+    align-items: start !important;
+  }
+
+  .align-lg-center {
+    align-items: center !important;
+  }
+
+  .align-lg-end {
+    align-items: end !important;
+  }
+}
+
+/* ==========================================================================
+   КЛАССЫ ВИДИМОСТИ (DISPLAY UTILITIES)
+   ========================================================================== */
+
+/* По умолчанию (на всех экранах) */
+.d-none {
+  display: none !important;
+}
+
+.d-block {
+  display: block !important;
+}
+
+.d-grid {
+  display: grid !important;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+/* 📱 Смартфоны (горизонтальные) — от 576px */
+@media (min-width: 576px) {
+  .d-sm-none {
+    display: none !important;
+  }
+
+  .d-sm-block {
+    display: block !important;
+  }
+
+  .d-sm-grid {
+    display: grid !important;
+  }
+
+  .d-sm-flex {
+    display: flex !important;
+  }
+}
+
+/* 📟 Планшеты — от 768px */
+@media (min-width: 768px) {
+  .d-md-none {
+    display: none !important;
+  }
+
+  .d-md-block {
+    display: block !important;
+  }
+
+  .d-md-grid {
+    display: grid !important;
+  }
+
+  .d-md-flex {
+    display: flex !important;
+  }
+}
+
+/* 💻 Ноутбуки — от 992px */
+@media (min-width: 992px) {
+  .d-lg-none {
+    display: none !important;
+  }
+
+  .d-lg-block {
+    display: block !important;
+  }
+
+  .d-lg-grid {
+    display: grid !important;
+  }
+
+  .d-lg-flex {
+    display: flex !important;
+  }
+}
+
+/* 🖥️ Десктопы — от 1200px */
+@media (min-width: 1200px) {
+  .d-xl-none {
+    display: none !important;
+  }
+
+  .d-xl-block {
+    display: block !important;
+  }
+
+  .d-xl-grid {
+    display: grid !important;
+  }
+
+  .d-xl-flex {
+    display: flex !important;
+  }
+}
+
+/* ==========================================================================
+   КЛАССЫ ВНЕШНИХ ОТСТУПОВ (MARGIN UTILITIES)
+   Шаг отступов: 1 = 8px, 2 = 16px, 3 = 24px, 4 = 32px, 5 = 48px, 6 = 80px
+   ========================================================================== */
+
+/* --- 1. Базовые отступы (для мобильных по умолчанию) --- */
+.m-0 {
+  margin: 0 !important;
+}
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+/* Отступы во все стороны (Margin) */
+.m-1 {
+  margin: 8px !important;
+}
+.mb-13 {
+  margin-bottom: 13px;
+}
+
+.m-2 {
+  margin: 16px !important;
+}
+
+.m-3 {
+  margin: 24px !important;
+}
+
+.m-4 {
+  margin: 32px !important;
+}
+
+.m-5 {
+  margin: 48px !important;
+}
+.mb-70 {
+  margin-bottom: 70px;
+}
+.mb-80 {
+  margin-bottom: 80px;
+}
+
+/* Отступы СВЕРХУ (Margin Top) — для разделения блоков */
+.mt-1 {
+  margin-top: 8px !important;
+}
+
+.mt-2 {
+  margin-top: 16px !important;
+}
+
+.mt-3 {
+  margin-top: 24px !important;
+}
+
+.mt-4 {
+  margin-top: 32px !important;
+}
+
+.mt-5 {
+  margin-top: 48px !important;
+}
+
+.mt-6 {
+  margin-top: 80px !important;
+}
+
+/* Крупный отступ для секций */
+
+/* Отступы СНИЗУ (Margin Bottom) — для заголовков и текстов */
+.mb-1 {
+  margin-bottom: 8px !important;
+}
+
+.mb-2 {
+  margin-bottom: 16px !important;
+}
+
+.mb-3 {
+  margin-bottom: 24px !important;
+}
+
+.mb-4 {
+  margin-bottom: 32px !important;
+}
+
+.mb-5 {
+  margin-bottom: 48px !important;
+}
+
+.mb-6 {
+  margin-bottom: 80px !important;
+}
+.mb-70 {
+  margin-bottom: 70px;
+}
+
+/* Потоковые отступы по ВЕРТИКАЛИ (Сверху и Снизу одновременно) */
+.my-1 {
+  margin-top: 8px !important;
+  margin-bottom: 8px !important;
+}
+
+.my-2 {
+  margin-top: 16px !important;
+  margin-bottom: 16px !important;
+}
+
+.my-3 {
+  margin-top: 24px !important;
+  margin-bottom: 24px !important;
+}
+
+.my-4 {
+  margin-top: 32px !important;
+  margin-bottom: 32px !important;
+}
+
+.my-5 {
+  margin-top: 48px !important;
+  margin-bottom: 48px !important;
+  margin-hidden: 48px !important;
+}
+
+.my-6 {
+  margin-top: 80px !important;
+  margin-bottom: 80px !important;
+}
+
+/* Отступы по ГОРИЗОНТАЛИ (Слева и Справа) */
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.ml-auto {
+  margin-left: auto;
+}
+
+/* Центрирование */
+
+
+/* ==========================================================================
+   АДАПТИВНЫЕ ОТСТУПЫ ДЛЯ БОЛЬШИХ ЭКРАНОВ (Breakpoints)
+   ========================================================================== */
+
+/* 📟 Планшеты и ноутбуки — от 768px (md) */
+@media (min-width: 768px) {
+  .mt-md-0 {
+    margin-top: 0 !important;
+  }
+
+  .mb-md-0 {
+    margin-bottom: 0 !important;
+  }
+
+  .mt-md-3 {
+    margin-top: 24px !important;
+  }
+
+  .mt-md-4 {
+    margin-top: 32px !important;
+  }
+
+  .mt-md-5 {
+    margin-top: 48px !important;
+  }
+
+  .mt-md-6 {
+    margin-top: 80px !important;
+  }
+
+  .mb-md-3 {
+    margin-bottom: 24px !important;
+  }
+
+  .mb-md-4 {
+    margin-bottom: 32px !important;
+  }
+
+  .mb-md-5 {
+    margin-bottom: 48px !important;
+  }
+
+  .mb-md-6 {
+    margin-bottom: 80px !important;
+  }
+
+  .my-md-5 {
+    margin-top: 48px !important;
+    margin-bottom: 48px !important;
+  }
+
+  .my-md-6 {
+    margin-top: 80px !important;
+    margin-bottom: 80px !important;
+  }
+}
+
+/* 💻 Десктопы — от 1024px (lg) */
+@media (min-width: 1024px) {
+  .mt-lg-5 {
+    margin-top: 48px !important;
+  }
+
+  .mt-lg-6 {
+    margin-top: 80px !important;
+  }
+
+  .mt-lg-7 {
+    margin-top: 120px !important;
+  }
+
+  /* Экстра-отступ для ПК версии */
+
+  .mb-lg-5 {
+    margin-bottom: 48px !important;
+  }
+
+  .mb-lg-6 {
+    margin-bottom: 80px !important;
+  }
+
+  .mb-lg-7 {
+    margin-bottom: 120px !important;
+  }
+
+  .my-lg-6 {
+    margin-top: 80px !important;
+    margin-bottom: 80px !important;
+  }
+
+  .my-lg-7 {
+    margin-top: 120px !important;
+    margin-bottom: 120px !important;
+  }
+}
+
+/* ==========================================================================
+   КЛАССЫ НАСТРОЙКИ FLEXBOX (FLEX DIRECTION & WRAP)
+   ========================================================================== */
+
+/* --- 1. Направление осей (Flex Direction) --- */
+.flex-row {
+  flex-direction: row !important;
+}
+
+/* В линейку (по умолчанию) */
+.flex-column {
+  flex-direction: column !important;
+}
+
+/* В столбик */
+.flex-row-reverse {
+  flex-direction: row-reverse !important;
+}
+
+/* В линейку задом наперед */
+.flex-column-reverse {
+  flex-direction: column-reverse !important;
+}
+
+/* В столбик задом наперед */
+
+/* 📟 Направление от 768px (md) */
+@media (min-width: 768px) {
+  .flex-md-row {
+    flex-direction: row !important;
+  }
+
+  .flex-md-column {
+    flex-direction: column !important;
+  }
+
+  .flex-md-row-reverse {
+    flex-direction: row-reverse !important;
+  }
+
+  .flex-md-column-reverse {
+    flex-direction: column-reverse !important;
+  }
+}
+
+/* 💻 Направление от 992px (lg) */
+@media (min-width: 992px) {
+  .flex-lg-row {
+    flex-direction: row !important;
+  }
+
+  .flex-lg-column {
+    flex-direction: column !important;
+  }
+
+  .flex-lg-row-reverse {
+    flex-direction: row-reverse !important;
+  }
+
+  .flex-lg-column-reverse {
+    flex-direction: column-reverse !important;
+  }
+}
+
+
+/* --- 2. Перенос элементов (Flex Wrap) --- */
+.flex-nowrap {
+  flex-wrap: nowrap !important;
+}
+
+/* Всё в одну линию, сжимать элементы */
+.flex-wrap {
+  flex-wrap: wrap !important;
+}
+
+/* Разрешить перенос на новую строку */
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse !important;
+}
+
+/* Перенос на новую строку вверх */
+
+@media (min-width: 768px) {
+  .flex-md-nowrap {
+    flex-wrap: nowrap !important;
+  }
+
+  .flex-md-wrap {
+    flex-wrap: wrap !important;
+  }
+}
+
+
+/* --- 3. Поведение элементов (Flex Grow & Shrink) --- */
+/* Навешиваются на дочерние элементы внутри flex-контейнера */
+.flex-grow-1 {
+  flex-grow: 1 !important;
+}
+
+/* Заставить элемент занять всё свободное место */
+.flex-grow-0 {
+  flex-grow: 0 !important;
+}
+
+/* Запретить элементу растягиваться */
+.flex-shrink-1 {
+  flex-shrink: 1 !important;
+}
+
+/* Разрешить элементу сжиматься при нехватке места */
+.flex-shrink-0 {
+  flex-shrink: 0 !important;
+}
+
+/* Запретить сжатие (полезно для иконок, чтобы не сплющивались) */
+
+/* ==========================================================================
+   КЛАССЫ УПРАВЛЕНИЯ ШИРИНОЙ (WIDTH UTILITIES)
+   ========================================================================== */
+
+/* По умолчанию (на всех экранах) */
+.w-fit {
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+}
+
+/* Сжимает элемент строго по весу контента */
+.w-100 {
+  width: 100% !important;
+}
+
+/* Растягивает на всю ширину родителя */
+.w-auto {
+  width: auto !important;
+}
+
+/* Сбрасывает ширину на автоматическую */
+
+/* 📱 Смартфоны — от 576px (sm) */
+@media (min-width: 576px) {
+  .w-sm-fit {
+    width: fit-content !important;
+  }
+
+  .w-sm-100 {
+    width: 100% !important;
+  }
+
+  .w-sm-auto {
+    width: auto !important;
+  }
+}
+
+/* 📟 Планшеты — от 768px (md) */
+@media (min-width: 768px) {
+  .w-md-fit {
+    width: fit-content !important;
+  }
+
+  .w-md-100 {
+    width: 100% !important;
+  }
+
+  .w-md-auto {
+    width: auto !important;
+  }
+}
+
+/* 💻 Ноутбуки — от 992px (lg) */
+@media (min-width: 992px) {
+  .w-lg-fit {
+    width: fit-content !important;
+  }
+
+  .w-lg-100 {
+    width: 100% !important;
+  }
+
+  .w-lg-auto {
+    width: auto !important;
+  }
+}
+
+/* ==========================================================================
+   КЛАССЫ ДЛЯ РАССТОЯНИЙ (GAP UTILITIES)
+   Шаг: 1 = 8px, 2 = 12px, 3 = 16px, 4 = 24px, 5 = 32px, 6 = 48px
+   ========================================================================== */
+
+/* --- 1. Базовые расстояния (по умолчанию для мобильных) --- */
+.gap-0 { gap: 0 !important; }
+
+/* Универсальный gap (и по горизонтали, и по вертикали) */
+.gap-1 { gap: 8px !important; }
+.gap-2 { gap: 12px !important; }
+.gap-3 { gap: 16px !important; }
+.gap-4 { gap: 24px !important; }
+.gap-5 { gap: 32px !important; }
+.gap-6 { gap: 48px !important; }
+
+/* Отдельно по ГОРИЗОНТАЛИ (между колонками) */
+.gap-x-1 { column-gap: 8px !important; }
+.gap-x-2 { column-gap: 12px !important; }
+.gap-x-3 { column-gap: 16px !important; }
+.gap-x-4 { column-gap: 24px !important; }
+.gap-x-5 { column-gap: 32px !important; }
+
+/* Отдельно по ВЕРТИКАЛИ (между рядами, когда элементы переносятся) */
+.gap-y-1 { row-gap: 8px !important; }
+.gap-y-2 { row-gap: 12px !important; }
+.gap-y-3 { row-gap: 16px !important; }
+.gap-y-4 { row-gap: 24px !important; }
+.gap-y-5 { row-gap: 32px !important; }
+
+
+/* ==========================================================================
+   АДАПТИВНЫЙ GAP ДЛЯ БОЛЬШИХ ЭКРАНОВ (Breakpoints)
+   ========================================================================== */
+
+/* 📟 Планшеты и ноутбуки — от 768px (md) */
+@media (min-width: 768px) {
+  .gap-md-3 { gap: 16px !important; }
+  .gap-md-4 { gap: 24px !important; }
+  .gap-md-5 { gap: 32px !important; }
+  .gap-md-6 { gap: 48px !important; }
+  
+  .gap-x-md-4 { column-gap: 24px !important; }
+  .gap-x-md-5 { column-gap: 32px !important; }
+}
+
+/* 💻 Десктопы — от 1024px (lg) */
+@media (min-width: 1024px) {
+  .gap-lg-4 { gap: 24px !important; }
+  .gap-lg-5 { gap: 32px !important; }
+  .gap-lg-6 { gap: 48px !important; }
+  .gap-lg-7 { gap: 64px !important; } /* Большое расстояние для секций на ПК */
+  
+  .gap-x-lg-5 { column-gap: 32px !important; }
+  .gap-x-lg-6 { column-gap: 48px !important; }
+}

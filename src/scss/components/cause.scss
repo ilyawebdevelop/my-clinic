@@ -1,0 +1,135 @@
+.cause {
+  position: relative;
+  &Descr {
+    max-width: 525px;
+  }
+
+  &List {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 колонки */
+    grid-template-rows: repeat(3, auto);
+    /* Ровно 3 строки */
+    grid-auto-flow: column;
+    /* Сначала заполняем первую колонку вниз */
+
+    gap: 40px 35px;
+    /* Отступы: 50px по вертикали, 20px по горизонтали */
+    counter-reset: cause-counter;
+    /* Инициализируем счетчик */
+  }
+
+  &Item {
+    counter-increment: cause-counter;
+    /* Увеличиваем счетчик на 1 */
+    display: flex;
+    align-items: center;
+    /* Выравниваем текст по центру цифры по вертикали */
+    gap: 20px;
+
+    /* Расстояние между сгенерированной цифрой и текстом */
+    &::before {
+      content: counter(cause-counter, decimal-leading-zero);
+      font-size: 73px;
+      line-height: 73px;
+      color: #90A8BF;
+      font-family: var(--second-family);
+      letter-spacing: -0.02em;
+    }
+  }
+
+  &Links {
+
+    a {
+      display: flex;
+      column-gap: 8px;
+      color: var(--brand-800);
+
+      &:hover {
+        color: var(--brand-700);
+      }
+
+      &:not(:last-child) {
+        &::after {
+          content: '/';
+        }
+      }
+    }
+  }
+
+  &Dir {
+    display: flex;
+    column-gap: 60px;
+    align-items: center;
+    margin-left: 80px;
+    &Content {
+      margin-top: 50px;
+    }
+
+    .sep {
+      margin-top: 80px;
+      margin-bottom: 60px;
+      width: 240px;
+      height: 1px;
+      background-color: var(--brand-400);
+    }
+
+    &Image {
+      width: 425px;
+      height: 780px;
+      flex-shrink: 0;
+      position: relative;
+      border-radius: 150px 0 0 0;
+
+      .bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        border-radius: 150px 0 0 0;
+        background: #738eaa;
+        z-index: 1;
+      }
+
+      &::before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        left: 19px;
+        top: 19px;
+        border: 1px solid #c7d3df;
+        z-index: 0;
+        border-radius: 150px 0 0 0;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        right: 10px;
+        bottom: 0;
+        background: #ebf0f4;
+        border-radius: 140px 0 0 0;
+      }
+
+      img {
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        right: -45px;
+        min-width: 650px;
+        height: 100%;
+        object-fit: contain;
+        z-index: 2;
+      }
+    }
+  }
+}
+.causeAbstr{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
