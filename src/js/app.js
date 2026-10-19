@@ -145,5 +145,57 @@ document.querySelectorAll('.galSlider').forEach(n => {
       nextEl: n.closest('.swiperW')?.querySelector('.navArrowNext'),
       prevEl: n.closest('.swiperW')?.querySelector('.navArrowPrev'),
     },
+    scrollbar: {
+      el: n.closest('.swiperW')?.querySelector('.swiper-scrollbar'),
+      draggable: true, // Полосу можно будет перетаскивать мышкой
+    },
+  });
+});
+
+// Инициализация слайдера reviewsSlider
+document.querySelectorAll('.reviewsSlider').forEach(n => {
+  const mySwiperReviews = new Swiper(n, {
+    slidesPerView: 2,
+    spaceBetween: 24,
+    speed: 600,
+    autoplay: false,
+    scrollbar: {
+      el: n.closest('.swiperW')?.querySelector('.slider-pagination-wrapper .swiper-scrollbar'),
+      draggable: true, // Полосу можно будет перетаскивать мышкой
+    },
+    navigation: {
+      nextEl: n.closest('.swiperW')?.querySelector('.navArrowNext'),
+      prevEl: n.closest('.swiperW')?.querySelector('.navArrowPrev'),
+    },
+    pagination: {
+      el: n.closest('.swiperW')?.querySelector('.slider-pagination-wrapper .swiper-pagination'),
+      clickable: true,
+      type: 'bullets',
+      renderBullet: function (index, className) {
+        return `<span class="${className}"></span>`;
+      },
+    },
+  });
+});
+
+let jsShowMore = document.querySelectorAll('.js-show-more');
+
+jsShowMore.forEach(el => {
+  el.addEventListener('click', () => {
+    let linkText = el.textContent;
+    let contentHidden = el.closest('.cardText').querySelector('.content');
+    console.log(contentHidden);
+    if (linkText == "Читать весь отзыв" || linkText == "Свернуть") {
+      if (linkText == "Читать весь отзыв") {
+        el.textContent = "Свернуть";
+        contentHidden.classList.remove("content--hidden");
+        contentHidden.classList.add("content--visible");
+      } else {
+        el.textContent = "Читать весь отзыв";
+        contentHidden.classList.remove("content--visible");
+        contentHidden.classList.add("content--hidden");
+      }
+    }
+
   });
 });

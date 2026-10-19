@@ -357,9 +357,11 @@ h4,
     opacity: .4;
     pointer-events: none;
   }
+
   svg {
     stroke-width: .5px;
   }
+
   &.vertical {
     svg {
       transform: rotate(90deg);
@@ -400,7 +402,7 @@ h4,
     }
 
     svg {
-      stroke: #29415f;    
+      stroke: #29415f;
     }
   }
 
@@ -417,4 +419,44 @@ h4,
 
 .bg-white {
   background-color: #fff;
+}
+
+.nav-wrapper {
+  position: relative;
+  bottom: 0;
+
+  .swiper-scrollbar {
+    width: 100%;
+  }
+}
+
+.swiperW {
+  .swiper-scrollbar {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin-top: 60px;
+    background-color: #dce4eb;
+    height: 1px;
+
+    &-drag {
+      background: #adbed0;
+    }
+  }
+}
+
+.swiper-pagination-punkt {
+  position: absolute;
+  width: 100% !important;
+  left: 0 !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  display: flex;
+  /* Равномерно распределяет точки от начала до конца линии */
+  justify-content: space-between;
+  pointer-events: none;
+  /* Пропускаем клики сквозь контейнер к скроллбару */
+}
+.slider-pagination-wrapper {
+  position: relative;
 }
