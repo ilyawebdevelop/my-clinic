@@ -32,77 +32,315 @@
     border-bottom: 1px solid var(--main-color);
   }
 }
+
+.line-trough {
+  text-decoration: line-through;
+}
+
+.lh-19 {
+  line-height: 19px !important;
+}
+.lh-110 {
+  line-height: 110%;
+}
+.lh-125 {
+  line-height: 125%!important;
+}
+
+.lh-130 {
+  line-height: 130%;
+}
+
 .lh-140 {
   line-height: 140%;
 }
+
+.lh-150 {
+  line-height: 150%;
+}
+
+.lh-160 {
+  line-height: 160% !important;
+}
+
 .lh-175 {
   line-height: 175%;
 }
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
 .text--lg {
   font-size: 18px;
   line-height: 28px;
-  @media(max-width: 1199px){
+
+  @media(max-width: 1199px) {
     font-size: 16px;
     line-height: 24px;
   }
 }
+
 .text--md {
   font-size: 14px;
   line-height: 22px;
-  @media(max-width: 1199px){
+
+  @media(max-width: 1199px) {
     line-height: 20px;
   }
+
+  &.lh-125 {
+    line-height: 125%;
+  }
 }
+
 .text--sm {
   font-size: 12px;
   line-height: 16px;
 }
+
+.fz-10 {
+  font-size: 10px;
+  line-height: normal;
+}
+
 .fz-13 {
   font-size: 13px;
   line-height: 22px;
 }
-.text-uppercase {
-  text-transform: uppercase;
+
+.fz-16>* {
+  font-size: 16px !important;
 }
+
+.lh-24>* {
+  line-height: 24px !important;
+}
+
+.fz-20 {
+  font-size: 20px;
+}
+
+.fz-22 {
+  font-size: 22px;
+  line-height: normal;
+}
+
+.fz-24 {
+  font-size: 24px;
+  line-height: normal;
+}
+
+.fz-32 {
+  font-size: 32px;
+}
+
+.fz-52 {
+  font-size: 52px;
+  line-height: normal;
+}
+
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+
 .font-family-second {
   font-family: var(--second-family);
 }
+
+.font-family-third {
+  font-family: var(--third-family);
+}
+
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.underline-dotted {
+  text-decoration-style: dotted;
+}
+
 /* --- 1. Семантические классы (Основной выбор для текста) --- */
-.text-primary    { color: var(--text-primary) !important; }    /* Главный текст, заголовки (#27384b) */
-.text-secondary  { color: var(--text-secondary) !important; }  /* Подзаголовки, описания, даты (#697684) */
-.text-muted      { color: var(--text-muted) !important; }      /* Подсказки, второстепенные подписи (#a8acb1) */
-.text-on-action  { color: var(--text-on-action) !important; }  /* Текст внутри кнопок и цветных плашек (#fff) */
-.text-white      { color: var(--neutral-white) !important; }   /* Чистый белый текст */
-a.text-white:hover {color: var(--brand-300)!important;}
+.text-primary {
+  color: var(--text-primary) !important;
+}
+
+/* Главный текст, заголовки (#27384b) */
+.text-secondary {
+  color: var(--text-secondary) !important;
+}
+
+/* Подзаголовки, описания, даты (#697684) */
+.text-muted {
+  color: var(--text-muted) !important;
+}
+
+/* Подсказки, второстепенные подписи (#a8acb1) */
+.text-on-action {
+  color: var(--text-on-action) !important;
+}
+
+/* Текст внутри кнопок и цветных плашек (#fff) */
+.text-white {
+  color: var(--neutral-white) !important;
+}
+
+/* Чистый белый текст */
+a.text-white:hover {
+  color: var(--brand-300) !important;
+}
 
 /* --- 2. Акцентные классы --- */
-.text-champagne  { color: var(--accent-champagne) !important; } /* Благородный шампань (#b4a38c) */
-a.text-champagne:hover{color: #fff!important}
-.text-deep       { color: var(--accent-deep) !important; }       /* Глубокий брендовый (#738eaa) */
-.text-action     { color: var(--action-primary) !important; }    /* Основной кликабельный цвет (#587493) */
+.text-champagne {
+  color: var(--accent-champagne) !important;
+}
+
+/* Благородный шампань (#b4a38c) */
+a.text-champagne:hover {
+  color: #fff !important
+}
+
+.text-deep {
+  color: var(--accent-deep) !important;
+}
+
+/* Глубокий брендовый (#738eaa) */
+.text-action {
+  color: var(--action-primary) !important;
+}
+
+/* Основной кликабельный цвет (#587493) */
+a.hover-blue:hover {
+  color: var(--main-color) !important;
+}
+
+.hover-brand-600 {
+  transition: color .2s linear;
+
+  &:hover {
+    color: var(--brand-600);
+  }
+}
+
+
 
 /* --- 3. Брендовая палитра (Утилитарные классы) --- */
-.text-dark-950   { color: var(--dark-950) !important; }
-.text-brand-50   { color: var(--brand-050) !important; }
-.text-brand-100  { color: var(--brand-100) !important; }
-.text-brand-200  { color: var(--brand-200) !important; }
-.text-brand-300  { color: var(--brand-300) !important; }
-.text-brand-400  { color: var(--brand-400) !important; }
-.text-brand-500  { color: var(--brand-500) !important; }
-.text-brand-600  { color: var(--brand-600) !important; }
-.text-brand-700  { color: var(--brand-700) !important; }
-.text-brand-800  { color: var(--brand-800) !important; }
-.text-brand-900  { color: var(--brand-900) !important; }
+.text-dark-950 {
+  color: var(--dark-950) !important;
+}
+
+.text-brand-50 {
+  color: var(--brand-050) !important;
+}
+
+.text-brand-100 {
+  color: var(--brand-100) !important;
+}
+
+.text-brand-200 {
+  color: var(--brand-200) !important;
+}
+
+.text-brand-300 {
+  color: var(--brand-300) !important;
+}
+
+.text-brand-400 {
+  color: var(--brand-400) !important;
+}
+
+.text-brand-500 {
+  color: var(--brand-500) !important;
+}
+
+.text-brand-600 {
+  color: var(--brand-600) !important;
+}
+
+.text-brand-700 {
+  color: var(--brand-700) !important;
+
+  svg {
+    fill: var(--brand-700);
+  }
+}
+
+.text-brand-800 {
+  color: var(--brand-800) !important;
+}
+
+.text-brand-900 {
+  color: var(--brand-900) !important;
+}
 
 /* --- 4. Нейтральные серые оттенки --- */
-.text-neutral-50  { color: var(--neutral-050) !important; }
-.text-neutral-100 { color: var(--neutral-100) !important; }
-.text-neutral-200 { color: var(--neutral-200) !important; }
-.text-neutral-300 { color: var(--neutral-300) !important; }
-.text-neutral-400 { color: var(--neutral-400) !important; }
-.text-neutral-600 { color: var(--neutral-600) !important; }
-.text-neutral-800 { color: var(--neutral-800) !important; }
+.text-neutral-50 {
+  color: var(--neutral-050) !important;
+}
+
+.text-neutral-100 {
+  color: var(--neutral-100) !important;
+}
+
+.text-neutral-200 {
+  color: var(--neutral-200) !important;
+}
+
+.text-neutral-300 {
+  color: var(--neutral-300) !important;
+}
+
+.text-neutral-400 {
+  color: var(--neutral-400) !important;
+}
+
+.text-neutral-600 {
+  color: var(--neutral-600) !important;
+}
+
+.text-neutral-800 {
+  color: var(--neutral-800) !important;
+}
+
+a.text-brand-700 {
+  &:hover {
+    color: var(--brand-900) !important;
+
+    svg {
+      fill: var(--brand-900);
+    }
+  }
+}
 
 .text-cursive {
   font-style: italic;
+}
+
+.hover-champagne {
+  &:hover {
+    color: var(--accent-champagne);
+  }
+}
+
+.ls-4 {
+  letter-spacing: 0.04em;
+}
+
+.ls-08 {
+  letter-spacing: 0.08em;
+
+}
+
+.ls-12 {
+  letter-spacing: 0.12em;
+
+}
+
+.ls-15 {
+  letter-spacing: 0.15em;
+}
+
+.text-no-uppercase {
+  text-transform: unset;
 }

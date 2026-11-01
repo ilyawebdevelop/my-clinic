@@ -1,0 +1,55 @@
+.vacAdvs {
+  ul {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    row-gap: 22px;
+
+    li {
+      grid-column: 6 span;
+      display: flex;
+      align-items: center;
+      column-gap: 20px;
+    }
+  }
+
+  &Icon {
+    border: 1px solid #dce4eb;
+    border-radius: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8px;
+    min-height: 64px;
+    min-width: 34px;
+    position: relative;
+
+    span {
+      border-bottom: 0.50px solid #adbed0;
+      padding: 3px 0 0 0;
+      font-family: var(--second-family);
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 16px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #adbed0;
+    }
+
+    img {
+      position: absolute;
+      left: 7px;
+      bottom: -5px;
+      min-width: 40px;
+    }
+  }
+
+  &Name {
+    max-width: 195px;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+    text-transform: uppercase;
+    color: #27384b;
+  }
+}

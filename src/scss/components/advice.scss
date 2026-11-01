@@ -1,0 +1,18 @@
+.advice {
+  &Img {
+    padding-left: 16px;
+    padding-top: 16px;
+    background-color: var(--action-primary);
+    border-radius: 160px 0 0 0;
+
+    img {
+      border-radius: 158px 0 0 0;
+      width: 100%;
+      height: 630px;
+      object-fit: cover;
+    }
+  }
+  &Content {
+    padding-left: 60px;
+  }
+}

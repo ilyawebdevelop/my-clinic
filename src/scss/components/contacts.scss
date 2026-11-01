@@ -1,0 +1,148 @@
+.contacts {
+  &Descr {
+    max-width: 350px;
+    margin-bottom: 38px;
+    margin-top: 38px;
+  }
+
+  .contacts-sep {
+    width: 370px;
+    height: 1px;
+    background-color: var(--border-default);
+  }
+
+  .socials {
+    margin-top: 50px;
+
+    ul {
+      display: flex;
+      column-gap: 20px;
+
+      li {
+        a {
+          display: flex;
+          align-items: center;
+          column-gap: 20px;
+          font-size: 16px;
+          text-transform: uppercase;
+          color: #587493;
+
+          &:hover {
+            color: var(--brand-500);
+          }
+        }
+
+        &:not(:last-child) {
+          a {
+
+            &::after {
+              content: '';
+              width: 4px;
+              height: 4px;
+              display: block;
+              background-color: var(--action-primary);
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .mapInfo {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    // border-right: 1px solid #dce4eb;
+
+    ul {
+      display: flex;
+      column-gap: 100px;
+      flex-wrap: wrap;
+      row-gap: 15px;
+
+      li {
+        column-gap: 9px;
+        display: flex;
+        align-items: center;
+        column-gap: 9px;
+        position: relative;
+        text-transform: uppercase;
+
+        &:not(:last-child) {
+          &::after {
+            content: '';
+            width: 1px;
+            height: 28px;
+            background-color: var(--border-default);
+            position: absolute;
+            right: -50px;
+          }
+        }
+
+        .sep {
+          width: 4px;
+          height: 4px;
+          background-color: #29415f;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+
+.contactsMapW {
+  position: relative;
+}
+
+.contactsMapCont {
+  height: 620px;
+  position: relative;
+}
+
+.contacts__map {
+  height: 100%;
+  width: 100%;
+  position: relative;
+
+  border-radius: 0 180px 0 0;
+  overflow: hidden;
+  position: absolute;
+  width: 1300px;
+  right: 0;
+
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(113, 168, 226, 0.07);
+    z-index: 1;
+    pointer-events: none;
+  }
+}
+
+.contactsLogo {
+  position: absolute;
+  top: 110px;
+  left: 70px;
+  width: 280px;
+}
+
+/* 1. Обесцвечиваем строго саму подложку карты (все canvas-элементы Яндекса) */
+.map ymaps[class*="canvas"] {
+  filter: grayscale(1) opacity(0.85) !important;
+}
+
+/* 2. Если на карте используются векторные плитки (слой SVG), обесцвечиваем и их */
+.map ymaps[class*="vector"] {
+  filter: grayscale(1) opacity(0.85) !important;
+}
+
+/* 3. Принудительно защищаем слой с метками и кнопками управления от любых фильтров */
+.map ymaps[class*="pane"],
+.map ymaps[class*="controls"] {
+  filter: none !important;
+}

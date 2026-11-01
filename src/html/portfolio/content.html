@@ -1,0 +1,347 @@
+<section class="sect border-b-gray">
+  <div class="container">
+    <div class="filters-panel filter portfolioFilter">
+      <div class="filter-body d-flex">
+        <!-- Селект 1: Направления (Только текст) -->
+        <div class="custom-select type-text" id="directionSelect">
+          <div class="select-trigger">
+            <div class="trigger-content">
+              <span class="trigger-value">НАПРАВЛЕНИЯ</span>
+            </div>
+            <div class="trigger-arrow">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#arrow-down"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="select-dropdown">
+            <div class="select-option is-selected" data-value="all" data-name="Все направления">
+              <span class="option-name">Все направления</span>
+              <div class="option-checkmark">✓</div>
+            </div>
+            <div class="select-option" data-value="protez" data-name="Протезирование">
+              <span class="option-name">Протезирование</span>
+              <div class="option-checkmark">✓</div>
+            </div>
+            <div class="select-option" data-value="implant" data-name="Имплантация">
+              <span class="option-name">Имплантация</span>
+              <div class="option-checkmark">✓</div>
+            </div>
+            <div class="select-option" data-value="terapiya" data-name="Терапия">
+              <span class="option-name">Терапия</span>
+              <div class="option-checkmark">✓</div>
+            </div>
+            <div class="select-option" data-value="ortho" data-name="Ортодонтия">
+              <span class="option-name">Ортодонтия</span>
+              <div class="option-checkmark">✓</div>
+            </div>
+          </div>
+        </div>
+        <!-- Селект 2: Специалисты (С аватарками) -->
+        <div class="custom-select type-media" id="doctorSelect">
+          <div class="select-trigger">
+            <!-- Сюда JS будет динамически вставлять аватарку при выборе -->
+            <div class="trigger-media-preview" id="triggerDocAvatar" style="display:none;"></div>
+            <div class="trigger-content">
+              <span class="trigger-value">СПЕЦИАЛИСТЫ</span>
+            </div>
+            <div class="trigger-arrow">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#arrow-down"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="select-dropdown">
+            <div class="select-option is-selected" data-value="all" data-name="Все специалисты">
+              <div class="option-info">
+                <div class="option-name">Все специалисты</div>
+              </div>
+              <div class="option-checkmark">✓</div>
+            </div>
+
+            <div class="select-option" data-value="vardanyan" data-name="Варданян В.А."
+              data-avatar="@img/admin/doctors/doctor-1.png">
+              <img src="@img/admin/doctors/doctor-1.png" alt="image" class="option-avatar">
+              <div class="option-info">
+                <div class="option-name">Варданян Варужан Артурович</div>
+                <div class="option-title">Врач стоматолог-ортопед</div>
+              </div>
+              <div class="option-checkmark">✓</div>
+            </div>
+
+            <div class="select-option" data-value="ismailova" data-name="Исмаилова Е.С."
+              data-avatar="@img/admin/doctors/doctor-1.png">
+              <img src="@img/admin/doctors/doctor-1.png" alt="image" class="option-avatar">
+              <div class="option-info">
+                <div class="option-name">Исмаилова Екатерина Сергеевна</div>
+                <div class="option-title">Врач стоматолог-ортодонт</div>
+              </div>
+              <div class="option-checkmark">✓</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Кнопка сброса -->
+        <button id="resetFiltersBtn" class="reset-btn">
+          <span class="reset-icon">⟳</span> Сбросить фильтр
+        </button>
+      </div>
+      <!-- ТЕГИ И СЧЕТЧИК -->
+      <div class="results-meta">
+        <span class="results-count" id="resultsCount">Найдено 0 работ</span>
+        <div class="tags-container" id="tagsContainer"></div>
+      </div>
+    </div>
+    <div class="works-container" id="worksContainer">
+
+      <!-- Карточка 1: Имплантация от Варданяна и Исмаиловой -->
+      <!-- Через пробел в data-doctor можно указать нескольких врачей, если они работали вместе -->
+      <div class="work-card" data-direction="implant" data-doctor="vardanyan ismailova">
+
+        <div class="work-card-grid">
+          <div class="work-image-wrap">
+            <div class="swiper-slide resultSlide">
+              <div class="resultSlideBefore active">
+                <img src="@img/admin/result/image-1.jpg" alt="image">
+                <span>До</span>
+              </div>
+              <div class="resultSlideAfter">
+                <img src="@img/admin/result/image-2.jpg" alt="image">
+                <span>После</span>
+              </div>
+              <div class="resultSlideAction">
+                <button class="resultSlideBtn resultSlideBeforeBtn active">
+                  <img src="@img/admin/result/image-2.jpg" alt="image">
+                </button>
+                <button class="resultSlideBtn resultSlideAfterBtn">
+                  <img src="@img/admin/result/image-1.jpg" alt="image">
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="work-content">
+            <div class="work-content-left">
+              <div class="text-uppercase text-champagne font-family-second mb-1">Имплантация</div>
+              <h3 class="mb-3 text-action">Полное восстановление улыбки</h3>
+              <div class="text-uppercase text-champagne font-family-second mb-1">Проведенная работа</div>
+              <div class="content pb-4">
+                <p>
+                  В результате лечения удалось восстановить функцию зубов и эстетику улыбки.
+                </p>
+                <p>
+                  Пациент обратился из-за отсутствия нескольких зубов и дискомфорта при жевании.
+                </p>
+              </div>
+              <div class="resultStat">
+
+                <div class="resultStatItem">
+                  <div class="resultStatItemCount text-action">
+                    4
+                  </div>
+                  <div class="d-flex flex-column">
+                    <div class="text-action">
+                      месяца
+                    </div>
+                    <div class="text-primary text--sm">заняло лечение</div>
+                  </div>
+                </div>
+
+                <div class="resultStatItem">
+                  <div class="resultStatItemCount text-action">
+                    7
+                  </div>
+                  <div class="d-flex flex-column">
+                    <div class="text-action">
+                      посещений
+                    </div>
+                    <div class="text-primary text--sm">потребовалось</div>
+                  </div>
+                </div>
+
+                <div class="resultStatItem">
+                  <div class="resultStatItemCount text-action">
+                    2
+                  </div>
+                  <div class="d-flex flex-column">
+                    <div class="text-action">
+                      специалиста
+                    </div>
+                    <div class="text-primary text--sm">работали над улыбкой</div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="work-content-right">
+              <div class="text-uppercase text-champagne font-family-second mb-1">Кто проводил лечение</div>
+              <div class="resultDoctorList mb-30">
+
+                <div class="resultDoctorItem">
+                  <a href="#" class="resultDoctorItemImg">
+                    <img src="@img/admin/doctors/doctor-1.png" alt="image">
+                  </a>
+                  <div class="d-flex flex-column">
+                    <a href="#" class="resultDoctorItemTitle lh-140">Варданян Варужан Артурович</a>
+                    <span class="text-secondary text--md">Врач стоматолог-ортопед</span>
+                  </div>
+                </div>
+
+                <div class="resultDoctorItem">
+                  <a href="#" class="resultDoctorItemImg">
+                    <img src="@img/admin/doctors/doctor-2.png" alt="image">
+                  </a>
+                  <div class="d-flex flex-column">
+                    <a href="#" class="resultDoctorItemTitle lh-140">Исмаилова Екатерина Сергеевна</a>
+                    <span class="text-secondary text--md">Врач стоматолог-ортодонт</span>
+                  </div>
+                </div>
+
+              </div>
+              <div class="d-flex gap-lg-4">
+
+                <a href="#" class="button button--brand-700 h-74 pr-16 pl-42 fz-16">
+                  хочу такую улыбку
+                  <div class="icon">
+                    <svg>
+                      <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+                    </svg>
+                  </div>
+                </a>
+
+
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="work-card" data-direction="protez" data-doctor="ismailova">
+
+        <div class="work-card-grid">
+          <div class="work-image-wrap">
+            <div class="swiper-slide resultSlide">
+              <div class="resultSlideBefore active">
+                <img src="@img/admin/result/image-2.jpg" alt="image">
+                <span>До</span>
+              </div>
+              <div class="resultSlideAfter">
+                <img src="@img/admin/result/image-1.jpg" alt="image">
+                <span>После</span>
+              </div>
+              <div class="resultSlideAction">
+                <button class="resultSlideBtn resultSlideBeforeBtn active">
+                  <img src="@img/admin/result/image-2.jpg" alt="image">
+                </button>
+                <button class="resultSlideBtn resultSlideAfterBtn">
+                  <img src="@img/admin/result/image-1.jpg" alt="image">
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="work-content">
+            <div class="work-content-left">
+              <div class="text-uppercase text-champagne font-family-second mb-1">Виниры</div>
+              <h3 class="mb-3 text-action">Естественная красота улыбки</h3>
+              <div class="text-uppercase text-champagne font-family-second mb-1">Проведенная работа</div>
+              <div class="content pb-4">
+                <p>
+                  Преобразили улыбку с помощью 6 керамическихвиниров E-MAX
+                </p>
+                <p>
+                  В результате лечения удалось восстановить функциюзубов и эстетику улыбки.
+                </p>
+
+              </div>
+              <div class="resultStat">
+
+                <div class="resultStatItem">
+                  <div class="resultStatItemCount text-action">
+                    9
+                  </div>
+                  <div class="d-flex flex-column">
+                    <div class="text-action">
+                      месяцев
+                    </div>
+                    <div class="text-primary text--sm">заняло лечение</div>
+                  </div>
+                </div>
+
+                <div class="resultStatItem">
+                  <div class="resultStatItemCount text-action">
+                    5
+                  </div>
+                  <div class="d-flex flex-column">
+                    <div class="text-action">
+                      посещений
+                    </div>
+                    <div class="text-primary text--sm">потребовалось</div>
+                  </div>
+                </div>
+
+                <div class="resultStatItem">
+                  <div class="resultStatItemCount text-action">
+                    1
+                  </div>
+                  <div class="d-flex flex-column">
+                    <div class="text-action">
+                      специалист
+                    </div>
+                    <div class="text-primary text--sm">работал над улыбкой</div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="work-content-right">
+              <div class="text-uppercase text-champagne font-family-second mb-1">Кто проводил лечение</div>
+              <div class="resultDoctorList mb-30">
+
+                <div class="resultDoctorItem">
+                  <a href="#" class="resultDoctorItemImg">
+                    <img src="@img/admin/doctors/doctor-2.png" alt="image">
+                  </a>
+                  <div class="d-flex flex-column">
+                    <a href="#" class="resultDoctorItemTitle lh-140">Исмаилова Екатерина Сергеевна</a>
+                    <span class="text-secondary text--md">Врач стоматолог-ортодонт</span>
+                  </div>
+                </div>
+
+              </div>
+              <div class="d-flex gap-lg-4">
+
+                <a href="#" class="button button--brand-700 h-74 pr-16 pl-42 fz-16">
+                  хочу такую улыбку
+                  <div class="icon">
+                    <svg>
+                      <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+                    </svg>
+                  </div>
+                </a>
+
+
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+
+    <!-- <button class="button button--border-strong h-74 pr-16 pl-42 fz-16 w-100 justify-between">
+      Показать ещё работы
+      <div class="icon">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+        </svg>
+      </div>
+    </button> -->
+  </div>
+</section>

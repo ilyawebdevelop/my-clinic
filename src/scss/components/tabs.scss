@@ -46,7 +46,36 @@
   flex-wrap: wrap;
   width: fit-content;
 
+  &.gap-80 {
+    gap: 80px;
+  }
 
+  &.wp-tabs__nav-normal {
+
+    .wp-tabs__btn {
+      background: transparent;
+      padding-bottom: 15px;
+      padding-top: 0;
+      padding-left: 0;
+      padding-right: 0;
+      font-size: 16px;
+      color: var(--text-secondary);
+      font-weight: 400;
+      &::after {
+        background-color: transparent;
+      }
+      &:hover {
+        &:after {
+          background-color: var(--action-primary);
+        }
+      }
+      &.active {
+        &::after {
+          background-color: var(--action-primary);
+        }
+      }
+    }
+  }
 }
 
 .wp-tabs__btn {
@@ -71,6 +100,10 @@
   transition: background-color .2s linear, color .2s linear;
   position: relative;
 
+  &.fz-16 {
+    font-size: 16px;
+  }
+
   &:hover {
     &:after {
       background-color: var(--action-primary);
@@ -86,6 +119,12 @@
     left: 0;
     background-color: var(--border-default);
     transition: background-color .2s linear;
+  }
+
+  &.border-b-after-strong {
+    &::after {
+      background-color: var(--border-strong);
+    }
   }
 }
 

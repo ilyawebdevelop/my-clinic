@@ -1,0 +1,72 @@
+.findHead {
+
+  padding-bottom: 45px;
+}
+
+.findItem {
+  display: flex;
+  border-top: 1px solid #dce4eb;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.findItemExp {
+  font-size: 12px;
+  line-height: 133%;
+  letter-spacing: 0.12em;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-decoration-style: dotted;
+  text-transform: uppercase;
+  color: #587493;
+  margin-bottom: 20px;
+}
+
+.findItemContentW {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.findItemContent {
+  padding-right: 65px;
+  margin-right: 65px;
+  border-right: 1px solid #dce4eb;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.findItemImg {
+  height: 110px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0 40px 0 0;
+}
+
+.findItemCol {
+  flex: 0 0 50%;
+}
+
+.findItemCol:nth-child(1) {
+  padding-right: 80px;
+  margin-right: 80px;
+  border-right: 1px solid #dce4eb;
+}
+
+.findItemTitle {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: var(--neutral-800);
+  margin-bottom: 20px;
+}
+
+.findItemText {
+  font-size: 18px;
+  line-height: 133%;
+  color: #697684;
+}

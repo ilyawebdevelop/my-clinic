@@ -6,8 +6,137 @@
   padding-left: 32px;
   padding-right: 32px;
   width: 100%;
+  height: 72px;
 
   &::placeholder {
     color: #27384b;
+  }
+
+  &.bg-brand-050 {
+    background-color: var(--brand-050);
+  }
+}
+
+.formText {
+  width: 100%;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border: 1px solid #adbed0;
+  width: 100%;
+  border-radius: 4px;
+
+  &::placeholder {
+    color: #27384b;
+  }
+}
+
+.agreement {
+  font-size: 12px;
+  line-height: 117%;
+
+  input {
+    &:checked {
+      &+label {
+        .rect {
+        background-color: #738eaa;
+        }
+      }
+    }
+  }
+
+  label {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    cursor: pointer;
+  }
+
+  .rect {
+    border-radius: 50%;   
+    background-color: rgba($color: #738eaa, $alpha: .2);
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+    background-image: url('@img/icons/check-white.svg');
+    background-position: left 6px center;
+    background-size: 9px;
+  }
+
+  a {
+    &:hover {
+      color: var(--brand-600);
+    }
+  }
+}
+
+.fileWrap {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #DCE4EB;
+
+  label {
+    cursor: pointer;
+
+    svg {
+      width: 29px;
+      height: 33px;
+      fill: #00548A;
+    }
+  }
+}
+
+.nalogBlock {
+  position: relative;
+
+  &Count {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 128px;
+    line-height: 55%;
+    color: #90a8bf;
+    opacity: 0.1;
+    position: absolute;
+    right: 65px;
+    top: 40px;
+    pointer-events: none;
+  }
+}
+
+.radio-btn {
+  input {
+    &:checked {
+      &+label {
+        .rect {
+          background-color: #738eaa;
+          background-image: url('@img/icons/check-white.svg');
+        }
+      }
+    }
+  }
+
+  label {
+    cursor: pointer;
+
+    span {
+      transition: color .2s linear;
+    }
+
+    &:hover {
+      color: var(--brand-500);
+    }
+  }
+
+  .rect {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    background-color: rgba($color: #738eaa, $alpha: .2);
+    border-radius: 50%;
+    background-position: left 7px center;
+    background-repeat: no-repeat;
+    background-size: 13px;
+    background-image: url('@img/icons/check-white.svg');
   }
 }

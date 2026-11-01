@@ -1,0 +1,163 @@
+.stocksHead {}
+
+.stockHeadLogo {
+  width: 640px;
+  flex-shrink: 0;
+  position: relative;
+  top: -30px;
+}
+
+.stocksCard {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &Btn {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #adbed0;
+    font-size: 10px;
+    text-transform: uppercase;
+    align-items: center;
+
+    &:hover {
+      svg {
+        transform: translateX(-5px);
+      }
+    }
+
+    svg {
+      width: 18px;
+      height: 11px;
+      transition: transform .2s linear;
+      fill: var(--brand-600);
+    }
+  }
+
+  &Row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &Title {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -15px;
+      height: 100%;
+      width: 1px;
+      background-color: var(--brand-500);
+    }
+  }
+
+  &--main {
+    border-radius: 120px 0 0 0;
+
+    .stocksCardBtn {
+      color: #fff;
+
+      border-bottom: 1px solid #fff;
+
+
+      svg {
+        fill: #fff;
+      }
+    }
+  }
+
+  &Tag {
+    font-family: var(--font3);
+    padding: 4px 4px 4px 12px;
+    border-radius: 32px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+
+    &--light {
+      background: #f5f7f9;
+
+      span {
+        &:nth-child(1) {
+          color: #27384b;
+        }
+
+        &:nth-child(2) {
+          background: #587493;
+          color: #fff;
+        }
+      }
+    }
+
+    span {
+      font-size: 12px;
+      line-height: normal;
+
+      &:nth-child(1) {}
+
+      &:nth-child(2) {
+        border-radius: 12px;
+        padding: 5px 8px;
+        display: flex;
+      }
+    }
+  }
+
+  &Content {
+    flex: 1;
+
+    &.max-w-380 {
+      max-width: 380px;
+    }
+  }
+}
+
+.stocksCardPrice {
+  font-size: 44px;
+  line-height: 82%;
+  display: block;
+  font-family: var(--second-family);
+
+  &+img {
+    width: 25px;
+  }
+}
+
+.stocksCardImg {
+  width: 100%;
+  object-fit: cover;
+
+  &W {
+    position: relative;
+
+    .stocksCardTag {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+    }
+  }
+
+  &.h-240 {
+    height: 240px;
+  }
+  &.h-420 {
+    height: 420px;
+  }
+  &.w-335 {
+    width: 335px;
+  }
+}
+
+.stocksCardPriceOld {
+  font-family: var(--second-family);
+
+  &+img {
+    width: 11px;
+  }
+}

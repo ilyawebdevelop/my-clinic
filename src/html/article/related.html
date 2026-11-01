@@ -1,0 +1,60 @@
+<section class="related sect swiperW overflow-hidden border-b-gray">
+  <div class="container">
+
+    <div class="mb-4">
+      <div class="grid-12">
+        <div class="col-lg-7">
+          <h2 class="h2 h2--lg">
+            Другие статьи
+          </h2>
+        </div>
+        <div class="col-lg-5">
+          <div class="sliderNav d-flex align-center justify-end gap-4">
+            <button type="button" class="navArrow w-76 navArrow--brand-100 navArrowPrev">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#arrow-prev"></use>
+              </svg>
+            </button>
+            <button type="button" class="navArrow w-76 navArrow--brand-100 navArrowNext">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#arrow-next"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper articlesSlider">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide articlesSlide">
+          @@include('../articles/slide-1.html',{})
+        </div>
+        <div class="swiper-slide articlesSlide">
+          @@include('../articles/slide-2.html',{})
+        </div>
+        <div class="swiper-slide articlesSlide">
+          @@include('../articles/slide-3.html',{})
+        </div>
+        <div class="swiper-slide articlesSlide">
+          @@include('../articles/slide-1.html',{})
+        </div>
+        <div class="swiper-slide articlesSlide">
+          @@include('../articles/slide-2.html',{})
+        </div>
+        <div class="swiper-slide articlesSlide">
+          @@include('../articles/slide-3.html',{})
+        </div>
+
+      </div>
+
+      <div class="slider-pagination-wrapper">
+        <div class="swiper-scrollbar"></div>
+        <!-- <div class="swiper-pagination swiper-pagination-punkt"></div> -->
+      </div>
+
+    </div>
+
+  </div>
+</section>

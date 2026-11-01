@@ -1,0 +1,119 @@
+.how {
+  &Slide {
+    &Title {
+      margin-bottom: 20px;
+      color: var(--action-primary);
+      text-transform: uppercase;
+    }
+
+    &Img {
+      width: 100%;
+      height: 700px;
+      object-fit: contain;
+    }
+
+    &Content {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 300px;
+      padding-left: 20px;
+      border-left: 1px solid var(--brand-700);
+      padding-top: 4px;
+      padding-bottom: 15px;
+    }
+  }
+}
+
+.howThumbSlideContent {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0px;
+}
+
+.howThumbSlideCount {
+  padding-right: 20px;
+  border-right: 1px solid rgba($color: #738EAA, $alpha: .5);
+  font-family: var(--second-family);
+  font-size: 64px;
+  line-height: 76%;
+  text-transform: uppercase;
+  color: #adbed0;
+  transition: color .2s linear;
+}
+
+.howThumbSlide {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  cursor: pointer;
+
+  &:hover {
+    .howThumbSlideCount {
+      color: var(--brand-700);
+    }
+
+    .howThumbSlideTitle {
+      color: var(--brand-900);
+    }
+  }
+
+  &.swiper-slide-thumb-active {
+    .howThumbSlideChanged {
+      display: flex;
+    }
+
+    .howThumbSlideTitle {
+      color: var(--main-color);
+    }
+
+    .howThumbSlideCount {
+      color: var(--brand-700);
+      font-size: 96px;
+      border-color: transparent;
+      padding-right: 0;
+    }
+  }
+}
+
+.howThumbSlideChanged {
+  color: var(--action-primary);
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  column-gap: 8px;
+  display: flex;
+  align-items: center;
+  display: none;
+
+  &::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--brand-700);
+    display: block;
+  }
+}
+
+.howThumbSlideTitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #697684;
+  max-width: 205px;
+  transition: color .2s linear;
+}
+
+.service-how-pagination {
+  position: relative;
+  width: fit-content;
+  bottom: 0;
+  font-family: var(--second-family);
+  font-size: 24px;
+  line-height: 275%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #587493;
+}

@@ -63,12 +63,19 @@
     border-radius: 256px 0 0 0;
     background-color: var(--action-primary);
 
+    &.pb-40 {
+      padding-bottom: 40px;
+    }
+
     &Img {
       width: 100%;
       height: 750px;
       object-fit: cover;
       border-radius: 240px 0 0 0;
       margin-bottom: 23px;
+      &.h-650 {
+        height: 650px;
+      }
 
       &W {
         position: relative;
@@ -100,6 +107,13 @@
       display: flex;
       column-gap: 9px;
 
+      &--absolute {
+        position: absolute;
+        bottom: 3px;
+        right: 0;
+        right: 12px;
+      }
+
       span {
         display: flex;
         align-items: center;
@@ -128,4 +142,24 @@
       margin: auto;
     }
   }
+}
+
+.dirVideoVork {
+  li {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    &:not(:last-child) {
+      &::after {
+        content: '';
+        display: block;
+        width: 4px;
+        height: 4px;
+        background-color: #fff;
+        border-radius: 50%;
+        column-gap: 9px;
+      }
+    }
+  }
+
 }

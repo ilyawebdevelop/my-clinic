@@ -1,0 +1,40 @@
+.consult {
+  background: linear-gradient(90deg, var(--brand-050) 50%, var(--brand-600) 50%);
+  overflow: hidden;
+}
+
+.consultImageW {
+  margin-left: 75px;
+  padding-left: 10px;
+  background-color: var(--brand-500);
+  margin-right: 40px;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: calc(100%);
+    height: 100%;
+    border: 1px solid #adbed0;
+    border-radius: 160px 0 0 0;
+    left: 9px;
+    top: 12px;
+  }
+
+  img:nth-child(1) {
+    width: 100%;
+    height: 630px;
+    object-fit: cover;
+    border-radius: 160px 0 0 0;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.consultImageAbstr {
+  position: absolute;
+  right: -120px;
+  top: 45px;
+  width: 275px;
+  height: 622px;
+}

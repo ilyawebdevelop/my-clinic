@@ -1,0 +1,111 @@
+.term {
+  &L {
+    padding-top: 0;
+    padding-left: 9px;
+    border: 1px solid #dce4eb;
+    min-height: 100%;
+  }
+
+  &List {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &Img {
+    width: 100%;
+    height: 352px;
+    object-fit: cover;
+    border-radius: 80px 0 0 0;
+    min-height: 100%;
+  }
+
+  &Price {
+    letter-spacing: -0.04em;
+    font-size: 62px;
+    line-height: 62px;
+    letter-spacing: 0.18em;
+    color: #587493;
+
+    &Name {
+      font-size: 20px;
+      line-height: 210%;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #384a6f;
+      opacity: .5;
+      position: relative;
+      right: 10px;
+    }
+
+    &W {
+      padding-top: 45px;
+      padding-left: 45px;
+      padding-bottom: 42px;
+      max-width: 470px;
+      margin-right: auto;
+      width: fit-content;
+    }
+  }
+}
+
+.termItem {
+  display: flex;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border-default);
+  flex: 1;
+  transition: background-color .2s linear;
+  &.active {
+    background-color: var(--brand-700);
+    .termItemCount{
+      color: #9cb6cf;
+      border-color: rgba($color: #9cb6cf, $alpha: .5);
+    }
+    .termItemText{
+      color: #FCFDFF;
+    }
+    .termItemTitle {
+      color: #fcfdff;
+    }
+  }
+
+  &:not(:first-child) {
+    padding-top: 24px;
+  }
+
+  &Count {
+    padding-right: 22px;
+    padding-left: 22px;
+    font-family: var(--second-family);
+    font-size: 102px;
+    line-height: 67%;
+    text-transform: uppercase;
+    color: #adbed0;
+    border-right: 1px solid rgba($color: #587493, $alpha: .5);
+    min-width: 155px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color .2s linear;
+  }
+
+  &Content {
+    padding-left: 22px;
+  }
+
+  &Text {
+    font-size: 18px;
+    line-height: 150%;
+    transition: color .2s linear;
+  }
+
+  &Title {
+    font-family: var(--second-family);
+    font-size: 40px;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #27384b;
+    margin-bottom: 10px;
+    transition: color .2s linear;
+  }
+}

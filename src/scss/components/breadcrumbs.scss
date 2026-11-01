@@ -1,6 +1,9 @@
 .aioseo-breadcrumbs {
-  font-size: 16px;
-  color: rgba(0, 0, 0, 0.6);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  text-transform: uppercase;
+  color: var(--brand-600);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9,14 +12,49 @@
   column-gap: 12px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+
+  span {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    text-decoration-style: dotted;
+  }
+
+  .sep {
+    text-decoration: none;
+    text-decoration-style: unset;
+    text-decoration-color: transparent;
+  }
 }
 
 .aioseo-breadcrumbs a {
-  -webkit-transition: color 0.2s linear;
-  -o-transition: color 0.2s linear;
-  transition: color 0.2s linear;
+  color: var(--brand-400);
+
 }
 
 .aioseo-breadcrumbs a:hover {
   color: #000;
+}
+.breadcrumbs-intro {
+  a {
+    color: var(--text-primary);
+    &:hover {
+      color: var(--brand-600);
+    }
+  }
+}
+.intro--reviews {
+  .aioseo-breadcrumbs {
+    color: var(--brand-400);
+    a:hover {
+      color: var(--brand-600);
+    }
+  }
+}
+.intro--about {
+  .aioseo-breadcrumbs {
+    
+    a:hover {
+      color: var(--brand-600);
+    }
+  }
 }

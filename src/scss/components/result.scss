@@ -1,8 +1,6 @@
 .result {
   background: linear-gradient(90deg, #c7d3df 50%, #f5f7f9 50%);
 
-  &Inner {}
-
   &Left {
     padding-right: 50px;
 
@@ -31,6 +29,7 @@
   height: fit-content;
   cursor: pointer;
   transition: opacity .2s linear;
+
   &:hover {
     opacity: .85;
   }
@@ -164,6 +163,7 @@
 
 .resultThumbSlider {
   height: 329px;
+
   .swiper-wrapper {
     align-items: center;
   }
@@ -254,4 +254,76 @@
     border: 4px solid var(--border-strong);
   }
 
+}
+
+/* ==========================================================================
+   5. КАРТОЧКИ КЕЙСОВ (Пример базовой сетки)
+   ========================================================================== */
+.work-card {
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--border-default);
+  transition: opacity 0.2s ease;
+
+  .resultSlideBefore img,
+  .resultSlideAfter img {
+    height: 375px;
+  }
+
+  .resultStat {
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid var(--border-default);
+  }
+
+  .work-content {
+    display: flex;
+    column-gap: 30px;
+  }
+
+  .resultSlide {
+    height: fit-content;
+  }
+
+  .resultSlideBtn {
+    width: 70px;
+    height: 70px;
+  }
+
+  .resultStatItem:not(:last-child) {
+    padding-right: 16px;
+  }
+  .resultStatItem:not(:first-child) {
+    padding-left: 16px;
+  }
+
+  .work-content-right {
+    display: flex;
+    flex-direction: column;
+    background: #ebf0f4;
+    padding: 32px 24px;
+    width: 360px;
+    flex-shrink: 0;
+  }
+
+  .resultDoctorList {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+}
+
+.work-card.is-hidden {
+  display: none;
+}
+
+.work-card-grid {
+  display: flex;
+  column-gap: 24px;
+}
+
+.work-image-wrap {
+  .resultSlide {
+    width: 455px;
+  }
 }

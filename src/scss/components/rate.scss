@@ -1,0 +1,228 @@
+.rate {
+  .h2 {
+    max-width: 1050px;
+    margin-bottom: 65px;
+  }
+
+  &Content {
+    &Wrap {
+      display: flex;
+      column-gap: 16px;
+    }
+
+    &Inner {
+      display: flex;
+      width: calc(100% - 395px);
+      background-color: #fff;
+      padding-top: 70px;
+      padding-bottom: 70px;
+      position: relative;
+
+      &::before {
+        top: 0;
+        content: '';
+        position: absolute;
+        width: 100vw;
+        right: 100%;
+        height: 100%;
+        background-color: #fff;
+        pointer-events: none;
+      }
+    }
+
+    &Image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 160px 0 0 0;
+
+      &Wrap {
+        background-color: var(--brand-300);
+        width: 395px;
+        height: 550px;
+        flex-shrink: 0;
+        padding-left: 12px;
+      }
+    }
+  }
+}
+
+.rateNum {
+  padding-right: 50px;
+  position: relative;
+  margin-right: 55px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(173, 190, 208, 0) 0%, #adbed0 50%, rgba(173, 190, 208, 0) 100%);
+  }
+}
+
+.rateNumTitle {
+  font-family: var(--second-family);
+  font-size: 230px;
+  line-height: 70%;
+  text-transform: uppercase;
+  color: #587493;
+  margin-bottom: 42px;
+}
+
+.rateNumStars {
+  display: flex;
+  column-gap: 12px;
+  margin-bottom: 50px;
+
+  svg {
+    fill: var(--brand-500);
+    width: 42px;
+    height: 42px;
+  }
+}
+
+.rateNumAv {
+  font-size: 24px;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #27384b;
+  margin-bottom: 20px;
+}
+
+.rateNumDescr {
+  font-size: 16px;
+  line-height: 138%;
+  color: #27384b;
+  max-width: 220px;
+}
+
+.rateList {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.rateItem {
+  grid-column: 6 span;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &:nth-child(1) {
+    padding-right: 52px;
+    padding-bottom: 50px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      background: linear-gradient(180deg, rgba(173, 190, 208, 0) 0%, #adbed0 100%);
+      width: 1px;
+      height: 100%;
+    }
+  }
+
+  &:nth-child(2) {
+    padding-left: 52px;
+    padding-bottom: 50px;
+    position: relative;
+  }
+
+  &:nth-child(3) {
+    padding-right: 52px;
+    padding-top: 50px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      background: linear-gradient(180deg, #adbed0 0%, rgba(173, 190, 208, 0) 100%);
+      width: 1px;
+      height: 100%;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: linear-gradient(270deg, #adbed0 0%, rgba(173, 190, 208, 0) 100%);
+
+      width: 100%;
+      height: 1px;
+    }
+
+  }
+
+  &:nth-child(4) {
+    padding-left: 52px;
+    padding-top: 50px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: linear-gradient(270deg, rgba(173, 190, 208, 0) 0%, #adbed0 100%);
+      width: 100%;
+      height: 1px;
+    }
+
+    &::after {
+      position: absolute;
+      left: -11px;
+      top: -10px;
+      content: '';
+      width: 21px;
+      height: 21px;
+      background: url('@img/icons/rate-un.svg') no-repeat center center / contain;
+    }
+  }
+}
+
+.rateItemLogo {
+  max-height: 343px;
+  max-width: 240px;
+  margin-bottom: 30px;
+  display: flex;
+
+  &:hover {
+    opacity: .85;
+  }
+}
+
+.rateItemLinkW {
+  display: flex;
+  column-gap: 40px;
+  align-items: flex-end;
+}
+
+.rateItemCount {
+  font-family: var(--second-family);
+  font-size: 64px;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #587493;
+}
+
+.rateItemLink {
+  font-size: 14px;
+  line-height: normal;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-decoration-style: dotted;
+  color: #27384b;
+  position: relative;
+  bottom: 15px;
+}
+
+.rateContentSect {
+  overflow: hidden;
+}

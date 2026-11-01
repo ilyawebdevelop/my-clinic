@@ -25,25 +25,30 @@
   }
 }
 
-.doctorsSlider .doctor-card {
-  width: 275px;
-  /* Изначальная узкая ширина */
+.doctor-card {
   display: flex;
   column-gap: 8px;
   flex-direction: column;
   position: relative;
   height: auto;
   flex-shrink: 0;
-  // transition: all .5s cubic-bezier(0.55, 1, 0.5, 1);
-  // transition: opacity 0.6s ease-in-out;
-  /* Плавное растворение */
-  /* Плавная анимация */
+
+  &.pl-20 {
+    padding-left: 20px;
+
+    .vertical-badge {
+      left: -3px;
+    }
+  }
+}
+
+.doctorsSlider .doctor-card {
+  width: 275px;
   opacity: 0.3;
   pointer-events: auto;
 }
 
 .doctorsSlider .swiper-slide-visible {
-
   opacity: 1 !important;
   pointer-events: auto;
 }
@@ -54,6 +59,9 @@
 }
 
 
+.doctor-card {
+  position: relative;
+}
 
 /* Скрываем элементы активного слайда по умолчанию */
 .doctorsSlider .doctor-card__active-details,
@@ -66,10 +74,10 @@
   transition: all 0.4s ease;
 }
 
-.doctorsSlider .doctor-card__name {
+.doctor-card__name {
   font-size: 24px;
   line-height: 125%;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 
   a {
     width: fit-content;
@@ -104,7 +112,7 @@
 }
 
 /* Вертикальный текст — виден у боковых */
-.doctorsSlider .vertical-badge {
+.vertical-badge {
   position: absolute;
   left: -28px;
   top: 170px;
@@ -128,7 +136,7 @@
   }
 }
 
-.doctorsSlider .doctor-card__photo {
+.doctor-card__photo {
   width: 100%;
   // height: 380px;
   transition: all 0.5s ease;
@@ -149,7 +157,6 @@
     left: 0;
     top: 0;
     border-radius: 106px 0 0 0;
-
     background: #738eaa;
     z-index: 1;
   }
@@ -177,7 +184,7 @@
   }
 }
 
-.doctorsSlider .doctor-card__photo img {
+.doctor-card__photo img {
   width: 100%;
   height: 400px;
   object-fit: contain;
@@ -187,13 +194,11 @@
 }
 
 .doctor-card__specialty {
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   color: var(--brand-700);
 }
 
-.doctorsSlider .doctor-card__experience {
-  padding-top: 16px;
-  position: relative;
+.doctor-card__experience {
   margin-top: auto;
   display: flex;
   column-gap: 16px;
@@ -204,6 +209,11 @@
     height: 1px;
     background-color: var(--brand-400);
   }
+}
+
+.doctorsSlider .doctor-card__experience {
+  padding-top: 16px;
+  position: relative;
 
   &::before {
     content: '';
@@ -325,4 +335,150 @@
 .doctorsSlider .swiper-slide-active+.swiper-slide+.swiper-slide+.swiper-slide {
   opacity: 0.3 !important;
   pointer-events: auto;
+}
+
+.serv-doctor {
+  .sliderNav {
+    margin-bottom: 10px;
+  }
+
+  .wp-tabs__nav {
+    margin-bottom: 37px;
+  }
+
+  .doctor-card {
+    flex-direction: row;
+    padding-left: 30px;
+    column-gap: 50px;
+    align-items: flex-end;
+  }
+
+  .doctor-card__info {
+    width: 100%;
+    max-width: 350px;
+    padding-bottom: 30px;
+  }
+
+  .doctor-card-descr {
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid var(--brand-100);
+  }
+
+  .doctor-card__specialty {
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid var(--brand-100);
+  }
+
+  .doctor-card__name {
+    font-size: 38px;
+    line-height: 111%;
+  }
+
+  .doctor-card__photo {
+    flex-shrink: 0;
+    width: 455px;
+
+    img {
+      height: 550px;
+    }
+
+    .bg {
+      background-color: var(--brand-700);
+      border-radius: 150px 0 0 0;
+
+    }
+  }
+
+  .vertical-badge {
+    left: 0;
+    top: unset;
+    bottom: 28px;
+    column-gap: 36px;
+    letter-spacing: 0.12em;
+
+
+    &::after {
+      height: 100px;
+    }
+  }
+
+  .wp-tabs__btn {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    padding-right: 13px;
+    padding-left: 13px;
+    color: var(--text-secondary);
+    display: flex;
+
+    span {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .count {
+      font-size: 0.7em;
+      line-height: 2em;
+      /* Уменьшаем размер в 2 раза относительно заголовка */
+      vertical-align: super;
+      /* Выравниваем по верху */
+      margin-left: 3px;
+      /* Небольшой отступ от слова */
+    }
+
+    &.active {
+      background: linear-gradient(180deg, rgba(245, 247, 249, 0) 0%, rgba(235, 240, 244, 0.38) 100%);
+      color: var(--action-primary);
+    }
+  }
+}
+.serv-doctor-thumb-slider {
+  max-height: 562px;
+}
+.serv-doctor-thumb-slide {
+  display: flex;
+  column-gap: 28px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  padding-left: 25px;
+  padding-right: 20px;
+  border-bottom: 1px solid var(--brand-100);
+  cursor: pointer;
+
+  &.swiper-slide-thumb-active {
+    background-color: var(--brand-700);
+
+    .serv-doctor-thumb-slide-title,
+    .serv-doctor-thumb-slide-work {
+      color: #fff;
+    }
+  }
+
+  &:first-child {
+    border-radius: 30px 0 0 0;
+  }
+}
+
+.serv-doctor-thumb-slide-count {
+  font-family: var(--second-family);
+  font-size: 48px;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #adbed0;
+}
+
+.serv-doctor-thumb-slide-title {
+  font-family: var(--second-family);
+  font-size: 24px;
+  line-height: 117%;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+}
+
+.serv-doctor-thumb-slide-work {
+  font-size: 14px;
+  line-height: 130%;
+  color: #587493;
 }

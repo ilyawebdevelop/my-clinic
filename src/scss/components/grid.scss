@@ -307,7 +307,8 @@
   text-align: center !important;
 }
 
-.text-right {
+.text-right,
+.text-end {
   text-align: right !important;
 }
 
@@ -565,6 +566,14 @@
   margin: 0 !important;
 }
 
+.mt-auto {
+  margin-top: auto;
+}
+
+.mb-auto {
+  margin-bottom: auto;
+}
+
 .mt-0 {
   margin-top: 0 !important;
 }
@@ -577,6 +586,7 @@
 .m-1 {
   margin: 8px !important;
 }
+
 .mb-13 {
   margin-bottom: 13px;
 }
@@ -592,15 +602,19 @@
 .m-4 {
   margin: 32px !important;
 }
+
 .mt-40 {
-  margin-top: 40px!important;
+  margin-top: 40px !important;
 }
+
 .m-5 {
   margin: 48px !important;
 }
+
 .mb-70 {
   margin-bottom: 70px;
 }
+
 .mb-80 {
   margin-bottom: 80px;
 }
@@ -614,6 +628,10 @@
   margin-top: 16px !important;
 }
 
+.mt-20 {
+  margin-top: 20px !important;
+}
+
 .mt-3 {
   margin-top: 24px !important;
 }
@@ -622,10 +640,16 @@
   margin-top: 32px !important;
 }
 
+.mt-40 {
+  margin-top: 40px;
+}
+
 .mt-5 {
   margin-top: 48px !important;
 }
-
+.mt-65 {
+  margin-top: 65px;
+}
 .mt-6 {
   margin-top: 80px !important;
 }
@@ -645,8 +669,16 @@
   margin-bottom: 24px !important;
 }
 
+.mb-30 {
+  margin-bottom: 30px !important;
+}
+
 .mb-4 {
   margin-bottom: 32px !important;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
 }
 
 .mb-5 {
@@ -656,6 +688,7 @@
 .mb-6 {
   margin-bottom: 80px !important;
 }
+
 .mb-70 {
   margin-bottom: 70px;
 }
@@ -697,6 +730,7 @@
   margin-left: auto !important;
   margin-right: auto !important;
 }
+
 .ml-auto {
   margin-left: auto;
 }
@@ -823,7 +857,9 @@
 .flex-column-reverse {
   flex-direction: column-reverse !important;
 }
-
+.flex-1 {
+  flex: 1;
+}
 /* В столбик задом наперед */
 
 /* 📟 Направление от 768px (md) */
@@ -931,7 +967,9 @@
 .w-100 {
   width: 100% !important;
 }
-
+.h-100 {
+  height: 100%;
+}
 /* Растягивает на всю ширину родителя */
 .w-auto {
   width: auto !important;
@@ -990,29 +1028,80 @@
    ========================================================================== */
 
 /* --- 1. Базовые расстояния (по умолчанию для мобильных) --- */
-.gap-0 { gap: 0 !important; }
+.gap-0 {
+  gap: 0 !important;
+}
+
+.gap-3px {
+  gap: 3px;
+}
 
 /* Универсальный gap (и по горизонтали, и по вертикали) */
-.gap-1 { gap: 8px !important; }
-.gap-2 { gap: 12px !important; }
-.gap-3 { gap: 16px !important; }
-.gap-4 { gap: 24px !important; }
-.gap-5 { gap: 32px !important; }
-.gap-6 { gap: 48px !important; }
+.gap-1 {
+  gap: 8px !important;
+}
+
+.gap-2 {
+  gap: 12px !important;
+}
+
+.gap-3 {
+  gap: 16px !important;
+}
+
+.gap-4 {
+  gap: 24px !important;
+}
+
+.gap-5 {
+  gap: 32px !important;
+}
+
+.gap-6 {
+  gap: 48px !important;
+}
 
 /* Отдельно по ГОРИЗОНТАЛИ (между колонками) */
-.gap-x-1 { column-gap: 8px !important; }
-.gap-x-2 { column-gap: 12px !important; }
-.gap-x-3 { column-gap: 16px !important; }
-.gap-x-4 { column-gap: 24px !important; }
-.gap-x-5 { column-gap: 32px !important; }
+.gap-x-1 {
+  column-gap: 8px !important;
+}
+
+.gap-x-2 {
+  column-gap: 12px !important;
+}
+
+.gap-x-3 {
+  column-gap: 16px !important;
+}
+
+.gap-x-4 {
+  column-gap: 24px !important;
+}
+
+.gap-x-5 {
+  column-gap: 32px !important;
+}
 
 /* Отдельно по ВЕРТИКАЛИ (между рядами, когда элементы переносятся) */
-.gap-y-1 { row-gap: 8px !important; }
-.gap-y-2 { row-gap: 12px !important; }
-.gap-y-3 { row-gap: 16px !important; }
-.gap-y-4 { row-gap: 24px !important; }
-.gap-y-5 { row-gap: 32px !important; }
+.gap-y-1 {
+  row-gap: 8px !important;
+}
+
+.gap-y-2 {
+  row-gap: 12px !important;
+}
+
+.gap-y-3 {
+  row-gap: 16px !important;
+}
+
+.gap-y-4 {
+  row-gap: 24px !important;
+}
+
+.gap-y-5 {
+  row-gap: 32px !important;
+}
 
 
 /* ==========================================================================
@@ -1021,22 +1110,139 @@
 
 /* 📟 Планшеты и ноутбуки — от 768px (md) */
 @media (min-width: 768px) {
-  .gap-md-3 { gap: 16px !important; }
-  .gap-md-4 { gap: 24px !important; }
-  .gap-md-5 { gap: 32px !important; }
-  .gap-md-6 { gap: 48px !important; }
-  
-  .gap-x-md-4 { column-gap: 24px !important; }
-  .gap-x-md-5 { column-gap: 32px !important; }
+  .gap-md-3 {
+    gap: 16px !important;
+  }
+
+  .gap-md-4 {
+    gap: 24px !important;
+  }
+
+  .gap-md-5 {
+    gap: 32px !important;
+  }
+
+  .gap-md-6 {
+    gap: 48px !important;
+  }
+
+  .gap-x-md-4 {
+    column-gap: 24px !important;
+  }
+
+  .gap-x-md-5 {
+    column-gap: 32px !important;
+  }
 }
 
 /* 💻 Десктопы — от 1024px (lg) */
 @media (min-width: 1024px) {
-  .gap-lg-4 { gap: 24px !important; }
-  .gap-lg-5 { gap: 32px !important; }
-  .gap-lg-6 { gap: 48px !important; }
-  .gap-lg-7 { gap: 64px !important; } /* Большое расстояние для секций на ПК */
-  
-  .gap-x-lg-5 { column-gap: 32px !important; }
-  .gap-x-lg-6 { column-gap: 48px !important; }
+  .gap-lg-4 {
+    gap: 24px !important;
+  }
+
+  .gap-lg-5 {
+    gap: 32px !important;
+  }
+
+  .gap-lg-6 {
+    gap: 48px !important;
+  }
+
+  .gap-lg-7 {
+    gap: 64px !important;
+  }
+
+  /* Большое расстояние для секций на ПК */
+
+  .gap-x-lg-5 {
+    column-gap: 32px !important;
+  }
+
+  .gap-x-lg-6 {
+    column-gap: 48px !important;
+  }
+}
+
+.pt-4 {
+  padding-top: 24px;
+}
+
+.pt-40 {
+  padding-top: 40px;
+}
+
+.pt-50 {
+  padding-top: 50px;
+}
+
+.py-30 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.py-4 {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.py-40 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.py-50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.p-50 {
+  padding: 50px;
+}
+
+.p-30 {
+  padding: 30px;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.p-20-35 {
+  padding: 20px 35px;
+}
+
+.rounded-1 {
+  border-radius: 4px;
+}
+
+.rounded-0-50-0 {
+  border-radius: 0 50px 0 0;
+}
+.rounded-0-60-0 {
+  border-radius: 0px 60px 0 0;
+}
+.pr-30 {
+  padding-top: 30px;
+}
+.pr-50 {
+  padding-right: 50px;
+}
+.pl-40 {
+  padding-left: 40px;
+}
+.pl-50 {
+  padding-left: 50px;
+}
+.pb-2 {
+  padding-bottom: 8px;
+}
+
+.pb-3 {
+  padding-bottom: 16px;
+}
+
+.pb-4 {
+  padding-bottom: 24px;
+}
+.pb-5 {
+  padding-bottom: 48px;
 }

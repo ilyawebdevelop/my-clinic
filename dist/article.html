@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Forum&family=Manrope:wght@200..800&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css">
+
+	<title>Статья</title>
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<!-- Header -->
+<header class="header header-standart" id="header">
+  <div class="container">
+
+    <div class="headerW">
+      <a href="#" class="headerLogo logo--white">
+        <img src="img/admin/logo/logo.svg" alt="logo">
+      </a>
+      <a href="#" class="headerLogo logo--black">
+        <img src="img/admin/logo/logo-black.svg" alt="logo">
+      </a>
+      <button class="headerMenuBtn">
+        <svg class="headerMenuBtn__border" viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="46" />
+        </svg>
+        <svg>
+          <use xlink:href="img/icons/icons.svg#burger"></use>
+        </svg>
+      </button>
+      <nav class="headerNav">
+        <ul>
+          <li class="menu-item-has-children">
+            <a href="#">Услуги</a>
+            <ul class="sub-menu">
+              <li>
+                <a href="#">Усоуга 1</a>
+              </li>
+              <li>
+                <a href="#">Усоуга Усоуга 2</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Врачи</a>
+          </li>
+          <li>
+            <a href="#">Цены</a>
+          </li>
+          <li>
+            <a href="#">О клинике</a>
+          </li>
+          <li>
+            <a href="#">Акции</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="headerContacts">
+        <div class="d-flex flex-column align-end">
+          <div class="text--md">г. Краснодар, ул. 40 лет победы 178к1</div>
+          <div class="text-champagne text--md">Ежедневно с 09.00 до 20.00</div>
+        </div>
+        <div class="d-flex flex-column">
+          <a class="text--md" href="tel:+79615205405">+7 (961) 520-54-05</a>
+          <a class="text-champagne hover-blue text--md" href="#" data-fancybox data-src="#modalOrder">Перезвоните
+            мне</a>
+        </div>
+        <button class="button-bvi">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#eye"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+</header>
+<div class="headerMenu">
+  <div class="container">
+    <div class="d-flex flex-column h-100">
+      <div class="headerMenuGrid">
+        <nav class="headerMenuNav">
+
+          <div class="headerMenuNavTitle">
+            <span class="text-nowrap">Основное</span>
+          </div>
+          <ul>
+            <li>
+              <a href="#">Врачи</a>
+            </li>
+            <li>
+              <a href="#">Цены</a>
+            </li>
+            <li>
+              <a href="#">О клинике</a>
+            </li>
+            <li>
+              <a href="#">Акции</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="headerMenuContent">
+          <div class="headerMenuNavTitle">
+            <span class="text-nowrap">Направления стоматологии</span>
+          </div>
+          <div class="headerMenuTabs wp-tabs">
+
+            <div class="headerMenuTabsNav wp-tabs__nav">
+              <button class="wp-tabs__btn active" data-index="1">
+                <div>Лечение зубов</div>
+                <a class="arrow-btn" href="#">
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+                  </svg>
+                </a>
+              </button>
+              <button class="wp-tabs__btn" data-index="2">
+                <div>Имплантация</div>
+                <a class="arrow-btn" href="#">
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+                  </svg>
+                </a>
+              </button>
+              <button class="wp-tabs__btn" data-index="3">
+                <div>Протезирование</div>
+                <a class="arrow-btn" href="#">
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+                  </svg>
+                </a>
+              </button>
+              <button class="wp-tabs__btn" data-index="4">
+                <div>Исправление прикуса</div>
+                <a class="arrow-btn" href="#">
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+                  </svg>
+                </a>
+              </button>
+              <button class="wp-tabs__btn" data-index="5">
+                <div>Эстетика улыбки</div>
+                <a class="arrow-btn" href="#">
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+                  </svg>
+                </a>
+              </button>
+              <button class="wp-tabs__btn" data-index="6">
+                <div>Детская стоматология </div>
+                <a class="arrow-btn" href="#">
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+                  </svg>
+                </a>
+              </button>
+            </div>
+
+            <div class="headerMenuTabsBody">
+              <div class="wp-tabs__panel active" data-index="1">
+                <div class="headerMenuTabsLinks">
+                  <ul>
+                    <li>
+                      <a href="#">Виниры</a>
+                    </li>
+                    <li>
+                      <a href="#">Отбеливание</a>
+                    </li>
+                    <li>
+                      <a href="#">Реставрация</a>
+                    </li>
+                    <li>
+                      <a href="#">Профессиональная гигиена</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="wp-tabs__panel" data-index="2">
+                <div class="headerMenuTabsLinks">
+                  <ul>
+                    <li>
+                      <a href="#">Отбеливание</a>
+                    </li>
+                    <li>
+                      <a href="#">Реставрация</a>
+                    </li>
+                    <li>
+                      <a href="#">Профессиональная гигиена</a>
+                    </li>
+                    <li>
+                      <a href="#">Виниры</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="wp-tabs__panel" data-index="3">
+                <div class="headerMenuTabsLinks">
+                  <ul>
+                    <li>
+                      <a href="#">Отбеливание</a>
+                    </li>
+                    <li>
+                      <a href="#">Реставрация</a>
+                    </li>
+                    <li>
+                      <a href="#">Профессиональная гигиена</a>
+                    </li>
+                    <li>
+                      <a href="#">Виниры</a>
+                    </li>
+                    <li>
+                      <a href="#">Отбеливание</a>
+                    </li>
+                    <li>
+                      <a href="#">Реставрация</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="wp-tabs__panel" data-index="4">
+
+
+              </div>
+              <div class="wp-tabs__panel" data-index="5">
+
+
+              </div>
+              <div class="wp-tabs__panel" data-index="6">
+
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <img src="img/admin/menu/menu-face.png" alt="image" class="headerMenuImage">
+      </div>
+      <div class="headerMenuFooter">
+        <div class="d-flex gap-3 align-center justify-between">
+
+          <div class="d-flex gap-1 align-center">
+            <img class="headerMenuLogo" src="img/admin/logo/menu-logo.svg" alt="logo">
+            <span class="headerMenuLogoText text-brand-600">стоматология, которой даверяют</span>
+          </div>
+          <button class="main-btn button button--brand-700 border-hover-bottom pl-16" data-fancybox
+            data-src="#modalOrder">
+            <div class="icon">
+              <svg style="fill: var(--brand-200);">
+                <use xlink:href="img/icons/icons.svg#star"></use>
+              </svg>
+            </div>
+            <span>записаться на консультацию</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+		<main class="main">
+			<section class="article-intro sect pt-0 pb-0 border-b-gray">
+  <div class="container position-relative">
+
+    <div class="mb-40">
+      <ul class="aioseo-breadcrumbs">
+  <li>
+    <a href="#">
+      Главная
+    </a>
+  </li>
+  <li>
+    <span class="sep">
+      /
+    </span>
+  </li>
+  <li>
+    <span>
+      Врачи
+    </span>
+  </li>
+</ul>
+    </div>
+
+    <div class="sect-name">
+      <span>Статья</span>
+      <span class="sep"></span>
+
+    </div>
+
+    <div class="article-intro-wrap">
+      <div class="article-intro-left">
+        <h1 class="h1 fz-62">
+          Зуб мудрости обязательно нужно удалять?
+        </h1>
+        <div class="article-intro-descr">
+          Сам по&nbsp;себе зуб мудрости&nbsp;&mdash; не&nbsp;показание к&nbsp;удалению.
+        </div>
+        <div class="text--lg mb-5">
+          Решение принимается индивидуально - после осмотра стоматолога и необходимой диагностики
+        </div>
+        <button class="button button--brand-700 pl-42 pr-16 fz-15">
+          <span>Записаться на прием</span>
+          <div class="icon">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+            </svg>
+          </div>
+        </button>
+      </div>
+      <div class="article-intro-center">
+        <div class="introImageBlock pb-0">
+          <div class="intro-doctors-image-wrap h-580" style="background-color: var(--brand-700);">
+            <img src="img/admin/article/intro.jpg" alt="image" class="intro-doctors-image">
+          </div>
+        </div>
+      </div>
+      <div class="article-intro-right d-flex flex-column">
+        <div class="article-intro-descr text-uppercase text-brand-600 mb-4">
+          Правда или миф?
+        </div>
+        <span>11 / 08 / 2026</span>
+        <div class="d-flex flex-column mt-auto article-intro-person">
+          <div class="article-intro-person-image">
+            <img src="img/admin/person/image-1.jpg" alt="image">
+          </div>
+          <div class="h3 fz-42 text-no-uppercase mb-1">
+            Исмаилов Исраил Хасбуллаевич
+          </div>
+          <div class="article-intro-person-cat d-flex flex-wrap gap-3px lh-125 text-secondary">
+            <span>Главный врач</span>
+            <span>врач стоматолог - ортопед</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+			<section class="sect">
+  <div class="container">
+    <div class="grid-12">
+      <div class="col-lg-9">
+        <div class="article-content">
+          <div id="block_1">
+            <h2 class="h2 fz-46 mb-3">
+              Когда зуб мудрости можно сохранить?
+            </h2>
+            <div class="content mb-5 text--lg">
+              <p>
+                Если зуб полностью прорезался, занимает правильное положение и не создаёт проблем для соседних зубов,
+                его необязательно удалять.
+              </p>
+              Сохранение зуба возможно, если:
+              <ul>
+                <li>он не вызывает боли и воспаления;</li>
+                <li>
+                  вокруг него нет патологических изменений;
+                </li>
+                <li>
+                  зуб правильно расположен и участвует в жевании;
+                </li>
+                <li>
+                  его можно полноценно очищать от налёта;
+                </li>
+                <li>
+                  соседние зубы не повреждаются из-за его положения.
+                </li>
+              </ul>
+              <p>
+                В такой ситуации достаточно регулярно наблюдать за состоянием зуба во время профилактических осмотров.
+              </p>
+            </div>
+            <div class="content-image">
+              <img src="img/admin/content/image-1.jpg" alt="image">
+            </div>
+          </div>
+          <div class="pt-50 pb-5 border-b-default" id="block_2">
+            <h2 class="h2 fz-46 mb-3">
+              В каких случаях рекомендуют удаление?
+            </h2>
+            <div class="mb-5 text--lg content mb-5">
+              <p>
+                Иногда расположение или состояние зуба мудрости может стать причиной осложнений. Например, если зуб
+                прорезался не полностью, растёт под неправильным углом или оказывает давление на соседний зуб.
+              </p>
+            </div>
+
+            <div class="rateList mb-5">
+
+              <div class="rateItem justify-start">
+                <h3 class="fz-24 mb-1">
+                  Повторяющееся воспаление
+                </h3>
+                <p class="text-secondary lh-175">
+                  Если зуб мудрости прорезался не полностью, вокруг него могут регулярно скапливаться бактерии и
+                  остатки
+                  пищи. Это способно приводить к повторному воспалению, отёку и дискомфорту. При частых эпизодах
+                  воспаления врач может рекомендовать удаление зуба.
+                </p>
+              </div>
+
+              <div class="rateItem justify-start">
+                <h3 class="fz-24 mb-1">
+                  Неправильное положение зуба
+                </h3>
+                <p class="text-secondary lh-175">
+                  Зуб мудрости может расти под углом, упираться в соседний зуб или оставаться частично скрытымпод
+                  десной.
+                  Такое положение может затруднятьгигиену и создавать риск повреждения соседних тканей.
+                </p>
+              </div>
+
+              <div class="rateItem justify-start">
+                <h3 class="fz-24 mb-1">
+                  Разрушение зуба
+                </h3>
+                <p class="text-secondary lh-175">
+                  Из-за расположения в самом конце зубного ряда качественно очистить зуб мудрости бывает сложно. В
+                  результате на нём может развиться кариес. Если зуб значительно разрушен и его невозможно надёжно
+                  восстановить, стоматолог может рекомендовать удаление.
+                </p>
+              </div>
+
+              <div class="rateItem justify-start">
+                <h3 class="fz-24 mb-1">
+                  Риск повреждения соседнего зуба
+                </h3>
+                <p class="text-secondary lh-175">
+                  Неправильно расположенная «восьмёрка» может оказывать давление на соседний зуб или создавать условия
+                  для скопления налёта между зубами. Это повышает риск развития кариеса и других проблем, поэтому в
+                  некоторых случаях удаление помогает сохранить здоровье соседнего зуба.
+                </p>
+              </div>
+
+            </div>
+
+            <div class="bg--brand-200 p-20-35 rounded-0-50-0">
+              <div class="grid-12 gap-0">
+                <div class="col-lg-6 border-r-strong pr-50 d-flex align-center">
+                  <div class="lh-150">
+                    При этом окончательное решение врач принимает после оценки конкретной клинической ситуации.
+                  </div>
+                </div>
+                <div class="col-lg-6 pl-50">
+                  <div class="d-flex justify-end align-center gap-5">
+                    <div class="lh-150">Как проходит диагностика</div>
+                    <a href="#" class="round-btn w-72 border-strong mt-auto mb-auto">
+                      <svg>
+                        <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="pt-50" id="block_3">
+            <h2 class="h2 fz-46 mb-3">
+              Нужно ли удалять зуб мудрости, если он не болит?
+            </h2>
+            <div class="mb-5 text--lg content mb-5">
+              <p>
+                Не обязательно. Отсутствие боли не означает, что зуб обязательно здоров, но и само по себе отсутствие
+                симптомов не является причиной для удаления. Некоторые изменения могут протекать без выраженных
+                ощущений. Поэтому стоматолог может рекомендовать диагностику, чтобы оценить положение зуба, состояние
+                его корней, окружающих тканей и соседних зубов.
+              </p>
+            </div>
+            <div class="bg-white p-50 border-l-brand-800 rounded-0-60-0">
+              <div class="d-flex gap-6">
+                <div class="d-flex flex-column">
+                  <h3 class="fz-42 text-no-uppercase mb-3">
+                    Не стоит удалять зуб мудрости только потому, что это зуб мудрости.
+                  </h3>
+                  <div class="content">
+                    <p>
+                      И наоборот, отсутствие боли не означает, что его состояние можно полностью игнорировать.
+                    </p>
+                    <p>
+                      Оптимальная тактика определяется индивидуально после осмотра и диагностики. Если вас беспокоит зуб
+                      мудрости или вы давно не проходили обследование, начните с консультации стоматолога
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex flex-column content-baner-image-wrap">
+                  <img class="content-baner-image mb-2" src="img/admin/content/image-2.jpg" alt="image">
+                  <h3 class="fz-18 text-no-uppercase mb-1 text-center">
+                    Исмаилов Исраил Хасбуллаевич
+                  </h3>
+                  <div
+                    class="article-intro-person-cat d-flex flex-wrap gap-3px lh-125 text-secondary justify-center text--md">
+                    <span>Главный врач</span>
+                    <span>врач стоматолог - ортопед</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pt-50" id="block_4">
+            <h2 class="h2 fz-46 mb-3">
+              Заключение
+            </h2>
+            <div class="mb-5 text--lg content mb-5">
+              <p>
+                Зуб мудрости не обязательно удалять во всех случаях. Если он здоров, правильно расположен и не создаёт
+                проблем, врач может рекомендовать наблюдение.
+              </p>
+              <p>
+                Если же зуб вызывает воспаление, повреждает соседние ткани или его невозможно полноценно лечить и
+                очищать, удаление может быть наиболее рациональным решением.
+              </p>
+              <p>
+                Поэтому главный принцип — не удалять «на всякий случай», а принимать решение на основании состояния
+                конкретного зуба и результатов диагностики.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="article-sidebar-wrap">
+          <div class="article-sidebar mb-4">
+            <div class="article-sidebar-name text--lg text-secondary text-uppercase ls-12">
+              В этой статье
+            </div>
+            <ul>
+              <li>
+                <a href="#block_1" rel="m_PageScroll2id">Когда зуб можно сохранить?</a>
+              </li>
+              <li>
+                <a href="#block_2" rel="m_PageScroll2id">В каких случаях рекомендуют удаление?</a>
+              </li>
+              <li>
+                <a href="#block_3" rel="m_PageScroll2id">Нужно ли удалять зуб мудрости, если он не болит?</a>
+              </li>
+              <li>
+                <a href="#block_4" rel="m_PageScroll2id">Заключение</a>
+              </li>
+            </ul>
+          </div>
+          <div class="bg-white p-30">
+            <h3 class="fz-32 mb-2 text-no-uppercase">
+              Есть вопросы?
+            </h3>
+            <div class="text--lg mb-2">
+              Врач оценит положение зуба и предложит подходящую тактику.
+            </div>
+            <button class="button button--brand-700 pl-24 pr-16 fz-15 gap-1">
+              <span>Записаться на прием</span>
+              <div class="icon">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<section class="sect overflow-hidden border-t-brand-200 border-b-brand-200 py-30">
+  <div class="container">
+    <div class="swiper article-tags-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide article-tags-slide">
+          <a href="#">Советы стоматолога</a>
+        </div>
+        <div class="swiper-slide article-tags-slide">
+          <a href="#">Исправление прикуса</a>
+        </div>
+        <div class="swiper-slide article-tags-slide">
+          <a href="#">Лечение зубов</a>
+        </div>
+        <div class="swiper-slide article-tags-slide">
+          <a href="#">Имплантация</a>
+        </div>
+        <div class="swiper-slide article-tags-slide">
+          <a href="#">Правда или миф?</a>
+        </div>
+        <div class="swiper-slide article-tags-slide">
+          <a href="#">Профилактика</a>
+        </div>
+        <div class="swiper-slide article-tags-slide">
+          <a href="#">Гигиена полости рта</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+			<section class="related sect swiperW overflow-hidden border-b-gray">
+  <div class="container">
+
+    <div class="mb-4">
+      <div class="grid-12">
+        <div class="col-lg-7">
+          <h2 class="h2 h2--lg">
+            Другие статьи
+          </h2>
+        </div>
+        <div class="col-lg-5">
+          <div class="sliderNav d-flex align-center justify-end gap-4">
+            <button type="button" class="navArrow w-76 navArrow--brand-100 navArrowPrev">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#arrow-prev"></use>
+              </svg>
+            </button>
+            <button type="button" class="navArrow w-76 navArrow--brand-100 navArrowNext">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#arrow-next"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper articlesSlider">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide articlesSlide">
+          <a href="#" class="articlesSlideImg">
+  <img src="img/admin/article/slide-1.jpg" alt="image">
+</a>
+<div class="d-flex gap-3 articlesSlideDateW mb-2">
+  <span class="text--lg">11/08/2026</span>
+  <div class="rect"></div>
+  <div class="text-secondary">
+    Советы стамотолога
+  </div>
+</div>
+<a href="#" class="h3 fz-32 articlesSlideTitle text-no-uppercase mb-3 d-block">
+  Как уменьшить тревогу при походе к стоматологу
+</a>
+<a href="#" class="stocksCardBtn mt-auto">
+  Подробнее
+  <svg>
+    <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+  </svg>
+</a>
+        </div>
+        <div class="swiper-slide articlesSlide">
+          <a href="#" class="articlesSlideImg">
+  <img src="img/admin/article/slide-2.jpg" alt="image">
+</a>
+<div class="d-flex gap-3 articlesSlideDateW mb-2">
+  <span class="text--lg">11/08/2026</span>
+  <div class="rect"></div>
+  <div class="text-secondary">
+    Советы стамотолога
+  </div>
+</div>
+<a href="#" class="h3 fz-32 articlesSlideTitle text-no-uppercase mb-3 d-block">
+  Как уменьшить тревогу при походе к стоматологу Как уменьшить тревогу при походе к стоматологу
+</a>
+<a href="#" class="stocksCardBtn mt-auto">
+  Подробнее
+  <svg>
+    <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+  </svg>
+</a>
+        </div>
+        <div class="swiper-slide articlesSlide">
+          <a href="#" class="articlesSlideImg">
+  <img src="img/admin/article/slide-3.jpg" alt="image">
+</a>
+<div class="d-flex gap-3 articlesSlideDateW mb-2">
+  <span class="text--lg">11/08/2026</span>
+  <div class="rect"></div>
+  <div class="text-secondary">
+    Советы стамотолога
+  </div>
+</div>
+<a href="#" class="h3 fz-32 articlesSlideTitle text-no-uppercase mb-3 d-block">
+  Как уменьшить тревогу при походе к стоматологу
+</a>
+<a href="#" class="stocksCardBtn mt-auto">
+  Подробнее
+  <svg>
+    <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+  </svg>
+</a>
+        </div>
+        <div class="swiper-slide articlesSlide">
+          <a href="#" class="articlesSlideImg">
+  <img src="img/admin/article/slide-1.jpg" alt="image">
+</a>
+<div class="d-flex gap-3 articlesSlideDateW mb-2">
+  <span class="text--lg">11/08/2026</span>
+  <div class="rect"></div>
+  <div class="text-secondary">
+    Советы стамотолога
+  </div>
+</div>
+<a href="#" class="h3 fz-32 articlesSlideTitle text-no-uppercase mb-3 d-block">
+  Как уменьшить тревогу при походе к стоматологу
+</a>
+<a href="#" class="stocksCardBtn mt-auto">
+  Подробнее
+  <svg>
+    <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+  </svg>
+</a>
+        </div>
+        <div class="swiper-slide articlesSlide">
+          <a href="#" class="articlesSlideImg">
+  <img src="img/admin/article/slide-2.jpg" alt="image">
+</a>
+<div class="d-flex gap-3 articlesSlideDateW mb-2">
+  <span class="text--lg">11/08/2026</span>
+  <div class="rect"></div>
+  <div class="text-secondary">
+    Советы стамотолога
+  </div>
+</div>
+<a href="#" class="h3 fz-32 articlesSlideTitle text-no-uppercase mb-3 d-block">
+  Как уменьшить тревогу при походе к стоматологу Как уменьшить тревогу при походе к стоматологу
+</a>
+<a href="#" class="stocksCardBtn mt-auto">
+  Подробнее
+  <svg>
+    <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+  </svg>
+</a>
+        </div>
+        <div class="swiper-slide articlesSlide">
+          <a href="#" class="articlesSlideImg">
+  <img src="img/admin/article/slide-3.jpg" alt="image">
+</a>
+<div class="d-flex gap-3 articlesSlideDateW mb-2">
+  <span class="text--lg">11/08/2026</span>
+  <div class="rect"></div>
+  <div class="text-secondary">
+    Советы стамотолога
+  </div>
+</div>
+<a href="#" class="h3 fz-32 articlesSlideTitle text-no-uppercase mb-3 d-block">
+  Как уменьшить тревогу при походе к стоматологу
+</a>
+<a href="#" class="stocksCardBtn mt-auto">
+  Подробнее
+  <svg>
+    <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+  </svg>
+</a>
+        </div>
+
+      </div>
+
+      <div class="slider-pagination-wrapper">
+        <div class="swiper-scrollbar"></div>
+        <!-- <div class="swiper-pagination swiper-pagination-punkt"></div> -->
+      </div>
+
+    </div>
+
+  </div>
+</section>
+			<section class="consult sect border-b-gray">
+  <div class="container position-relative">
+
+    <div class="sect-name">
+      <span>консультация</span>
+      <span class="sep"></span>
+      <span class="sect-name-count">12</span>
+    </div>
+
+    <div class="grid-12 align-center">
+      <div class="col-lg-5">
+
+        <div class="sectHead">
+          <h2 class="h2 h2--lg">
+            Начните <span style="display: block;">с консультации</span>
+          </h2>
+        </div>
+
+        <div class="sectDescr mb-5">
+          Расскажите, что вас беспокоит. Администратор свяжется с вами, уточнит детали и предложит удобное время для
+          визита.
+        </div>
+
+        <div class="consultForm">
+          <div class="grid-12">
+            <div class="col-lg-6">
+              <div class="inputW">
+                <input type="text" class="formInput" placeholder="Ваше имя">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="inputW">
+                <input type="tel" class="formInput" placeholder="Номер телефона">
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="d-flex gap-4">
+                <div class="inputW w-100">
+                  <textarea name="consultText" id="consultText" class="formText" style="height: 115px;"
+                    placeholder="Что Вас беспокоит:"></textarea>
+                </div>
+                <button class="round-btn w-104 bg-brand-700">
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#submit-icon"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="agreement">
+                <input type="checkbox" id="consultAgree" hidden>
+                <label for="consultAgree">
+                  <div class="rect"></div>
+                  <div class="agreementText">
+                    Отправляя данную форму, вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-1">
+
+      </div>
+      <div class="col-lg-6">
+        <div class="consultImageW">
+          <img src="img/admin/consult/image-1.jpg" alt="image">
+          <img class="consultImageAbstr" src="img/consult/abstract.svg" alt="abstract">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+			<section class="contacts sect pb-0">
+  <div class="container">
+
+    <div class="sectHead">
+      <h2 class="h2 h2--lg">
+        Как нас <span>найти</span>
+      </h2>
+    </div>
+
+    <div class="grid-12">
+      <div class="col-lg-7 contactsLeft">
+        <div class="contactsMapW">
+
+          <div class="contactsMapCont">
+            <div class="map contacts__map" data-center="[44.054931074607396,42.909915999999974]" data-zoom="16"
+              id="map">
+            </div>
+          </div>
+
+          <img src="img/logo/logo-cont.svg" alt="logo" class="contactsLogo">
+
+          <div class="mapInfo">
+            <ul>
+              <li>
+                Парковка у входа
+              </li>
+              <li>
+                <span>остановка</span>
+                <div class="sep"></div>
+                <span>3 минуты</span>
+              </li>
+              <li>
+                <span>Ежедневно </span>
+                <div class="sep"></div>
+                <span>09:00 - 20:00</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-lg-1"></div>
+      <div class="col-lg-4">
+        <div class="mb-5">
+          <div class="font-family-third text-uppercase text-champagne mb-1 ls-12">
+            Приезжайте к нам
+          </div>
+          <div class="fz-24 text-uppercase lh-140">
+            г. Краснодар,<br> ул. 40 лет победы, 178к1.
+          </div>
+        </div>
+        <div class="mb-5">
+          <div class="font-family-third text-uppercase text-champagne mb-1 ls-12">
+            Позвоните нам
+          </div>
+          <a href="tel:+7 (961) 520-54-05" class="hover-champagne d-flex h3 mb-0 text-uppercase">
+            +7 (961) 520-54-05
+          </a>
+          <a href="tel:+7 (961) 520-54-05" class="hover-champagne d-flex h3 text-uppercase">
+            +7 (961) 525-54-45
+          </a>
+        </div>
+        <div class="mb-5">
+          <div class="font-family-third text-uppercase text-champagne mb-1 ls-12">
+            Написать нам
+          </div>
+          <a href="mailto:myclinicstomatologia@gmail.com" class="hover-champagne d-flex fz-20">
+            myclinicstomatologia@gmail.com
+          </a>
+
+        </div>
+
+        <div class="sep contacts-sep"></div>
+
+        <div class="contactsDescr">
+          Ответим на вопросы, подскажем маршрут и подберем удобное время визита
+        </div>
+
+        <a href="#" class="button button--brand-700 h-74 pr-16 pl-42 fz-15" target="_blank">
+          построить маршрут
+          <div class="icon">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+            </svg>
+          </div>
+        </a>
+
+        <div class="socials">
+          <ul>
+            <li>
+              <a href="#" target="_blank" rel="nofollow">
+                Max
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="nofollow">
+                telegram
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="nofollow">
+                whatsapp
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+		</main>
+		<!-- Footer -->
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="footerT">
+      <div class="grid-12">
+        <div class="col-lg-9">
+          <h2 class="h2 h2--lg title--white">
+            Красивая улыбка начинается
+            <span>с&nbsp;первой консультации</span>
+          </h2>
+        </div>
+        <div class="col-lg-3">
+          <a href="#" class="button button--brand-900 h-74 pr-16 pl-42 fz-16 mb-3" data-fancybox data-src="#modalOrder">
+            Нужна консультация
+            <div class="icon">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+              </svg>
+            </div>
+          </a>
+          <span class="fz-13 text-white">Ответим и поможем выбрать удобное время</span>
+        </div>
+      </div>
+    </div>
+    <div class="footerC">
+      <div class="col">
+        <a href="#" class="footerLogo">
+          <img src="img/admin/logo/logo.svg" alt="logo">
+        </a>
+        <div class="text--md text-white">
+          Современная стоматология с вниманием к вашему комфорту, здоровью и естественной красоте улыбки.
+        </div>
+      </div>
+      <div class="col">
+        <nav class="footerNav">
+          <div class="footerNavTitle text-brand-300">Услуги</div>
+          <ul>
+            <li>
+              <a href="#">Лечение зубов</a>
+            </li>
+            <li>
+              <a href="#">Имплантация</a>
+            </li>
+            <li>
+              <a href="#">Виниры</a>
+            </li>
+            <li>
+              <a href="#">Ортодонтия</a>
+            </li>
+            <li>
+              <a href="#">Детская стоматология</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col">
+        <nav class="footerNav">
+          <div class="footerNavTitle text-brand-300">О клинике</div>
+          <ul>
+            <li>
+              <a href="#">О нас</a>
+            </li>
+            <li>
+              <a href="#">Врачи</a>
+            </li>
+            <li>
+              <a href="#">Отзывы</a>
+            </li>
+            <li>
+              <a href="#">Акции</a>
+            </li>
+            <li>
+              <a href="#">Лицензии</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col">
+        <div class="footerContacts">
+          <div class="footerContactsName text-brand-300">
+            Приезжайте к нам
+          </div>
+          <span class="text-white mb-3 d-block footerContactsText">г. Краснодар,<br> ул. 40 лет победы, 178к1.</span>
+          <div class="footerContactsName text-brand-300">
+            Как мы работаем
+          </div>
+          <span class="text-white mb-3 d-block footerContactsText">Ежедневно: с 09:00 до 20:00</span>
+          <div class="footerContactsName text-brand-300">
+            Позвоните нам
+          </div>
+          <a href="tel:+79615205405" class="text-white d-block">+7 (961) 520-54-05</a>
+          <a href="tel:+79615255445" class="text-white d-block">+7 (961) 525-54-45</a>
+        </div>
+      </div>
+    </div>
+    <div class="footerB">
+      <div class="col">
+        <div class="text--sm text-white">
+          © 2026 My Clinic. Все права защищены
+        </div>
+      </div>
+      <div class="col">
+        <a href="#" class="text--sm text-white">Политика конфиденциальности</a>
+      </div>
+      <div class="col">
+        <a href="#" class="text--sm text-white">Версия для слабовидящих</a>
+      </div>
+      <div class="col">
+        <a href="#" class="develop text-white d-flex align-center gap-3 text--sm">
+          <span>Разработка и продвижение</span>
+          <img src="img/logo/develop.svg" alt="logo">
+        </a>
+      </div>
+      <img class="footerBLogo" src="img/footer/bg.svg" alt="logo">
+    </div>
+  </div>
+</footer>
+
+<button class="fix-order-btn">
+  <div class="icon">
+    <svg>
+      <use xlink:href="img/icons/icons.svg#calendar"></use>
+    </svg>
+  </div>
+  <span>записаться на прием</span>
+  <div class="border-line"></div>
+  <div class="fix-order-btn-bg"></div>
+</button>
+
+<script src="https://api-maps.yandex.ru/2.1/?apikey=d9a25d85-7d2c-4cef-9199-b938afb5e90b&lang=ru_RU&_v=20250128200343"
+  type="text/javascript"></script>
+		<!-- modal -->
+<!-- order -->
+<div class="modal" id="modalOrder">
+
+  <div class="modalHead">
+    <h2 class="h2">Оставьте заявку</h2>
+    <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24" tabindex="-1">
+        <path d="M20 20L4 4m16 0L4 20"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div class="modalContent">
+    <p class="modalDescr">
+      Оставьте заявку на бесплатную консультацию и наши специалисты ответят на все Ваши вопросы
+    </p>
+    <div class="modalForm">
+      <div class="inputW">
+        <input type="text" class="formInput" placeholder="Как вас зовут?">
+      </div>
+      <div class="inputW">
+        <input type="tel" class="formInput" placeholder="+7 (___) ___-__-__" inputmode="text">
+      </div>
+      <button class="button button--blue formBtn">
+        Отправить заявку
+      </button>
+      <div class="agreement">
+        <p>
+          Нажимая кнопку выше, вы даёте согласие на обработку своих персональных данных.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- quiz -->
+<div class="modal" id="modalQuiz">
+
+  <div class="modalHead">
+    <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24" tabindex="-1">
+        <path d="M20 20L4 4m16 0L4 20"></path>
+      </svg>
+    </button>
+
+    <h2 class="h2 fz-40 mb-3">
+      <span>Рассчитайте стоимость</span> лечения «под ключ»
+    </h2>
+
+  </div>
+
+  <div class="modalContent">
+    <div class="grid-12">
+      <div class="col-lg-6">
+        <div class="fz-20 text-uppercase text-action mb-5 modalQuiz-subtitle">
+          Заявка принята
+        </div>
+        <div class="h2 fz-40 text-no-uppercase text-brand-700 mb-4">
+          Спасибо за ответы!
+        </div>
+        <div class="fz-20 text-secondary lh-140 mb-4">
+          Ваш предварительный план сохранен. Администратор клини свяжется с вами в ближайшее время.
+        </div>
+        <a href="#" class="button button--brand-700 pr-16">
+          <span class="text-btn d-block ml-auto fz-15">посмотреть услуги</span>
+          <div class="icon ml-auto">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+            </svg>
+          </div>
+        </a>
+        <div class="modalQuizGift d-flex align-center gap-3">
+          <img src="img/admin/quiz/gift.jpg" alt="image" class="quiz__gift-image">
+          <div class="d-flex flex-column">
+            <div class="fz-18 text-uppercase font-family-second">
+              Ваш подарок ждет вас
+            </div>
+            <div class="text-neutral-600 text--md">
+              Консультация хирурга-имплантолога / Индивидуальный план лечения / КТ
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <img src="img/admin/quiz/image-1.jpg" alt="image" class="modalQuizImg">
+
+
+      </div>
+    </div>
+  </div>
+</div>
+	</div>
+
+	<script src="js/app.min.js"></script>
+
+</body>
+
+</html>

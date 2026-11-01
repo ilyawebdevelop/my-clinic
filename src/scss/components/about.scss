@@ -2,6 +2,7 @@
   &List {
     counter-reset: aboutListCounter;
   }
+
   .h2 {
     margin-bottom: 50px;
   }
@@ -90,6 +91,7 @@
       }
     }
   }
+
   &Img {
     min-height: 540px;
     object-fit: cover;
@@ -102,6 +104,7 @@
   padding-top: 60px;
   padding-bottom: 20px;
   position: relative;
+
   .sect-name {
     top: 64px;
   }
@@ -109,9 +112,54 @@
 
 .about-main-image {
   background-color: var(--brand-200);
+
   img {
     width: calc(100% - 12px);
     margin-left: auto;
     border-radius: 158px 0 0 0;
   }
+}
+
+.introAboutDescrSecBord {
+  border-bottom: 1px solid rgba($color: #90a8bf, $alpha: .32);
+}
+.comfortList{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.comfortItem {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+  &:not(:last-child){
+    margin-bottom: 60px;
+  }
+}
+.comfortItemDescr {
+  line-height: 150%;
+}
+.comfortItemIcon {
+  width: 41px;
+  border: 1px solid #dce4eb;
+  border-radius: 200px;
+  flex-shrink: 0;
+  height: fit-content;
+  min-height: 120px;
+  position: relative;
+  img {
+    position: absolute;
+    left: -10px;
+    top: 15px;
+    min-width: 55px;
+  }
+}
+.comfortItemContent {
+  h4 {
+    margin-bottom: 10px;
+  }
+}
+.comfort .rateItem h3 {
+  position: relative;
+  bottom: 14px;
 }

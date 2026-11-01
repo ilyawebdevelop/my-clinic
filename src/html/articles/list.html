@@ -1,0 +1,74 @@
+<section class="sect pt-40 border-b-gray">
+  <div class="container">
+    <h1 class="h1 mb-4">
+      Статьи
+    </h1>
+
+    <div class="wp-tabs">
+      <div class="wp-tabs__nav wp-tabs__nav-normal mb-5 gap-80 border-b-strong w-100">
+        <button class="wp-tabs__btn active" data-index="1">Все статьи</button>
+        <button class="wp-tabs__btn" data-index="2">Советы стоматолога</button>
+        <button class="wp-tabs__btn" data-index="3">Лечение зубов</button>
+        <button class="wp-tabs__btn" data-index="4">Имплантация</button>
+        <button class="wp-tabs__btn" data-index="5">Правда или миф?</button>
+        <button class="wp-tabs__btn" data-index="5">Профилактика</button>
+      </div>
+      <div class="wp-tabs-body">
+        <div class="wp-tabs__panel active" data-index="1">
+
+          <h2 class="h2 h2--lg pb-3">
+            Все статьи
+          </h2>
+
+          <div class="archive-list">
+            @@include('article-card-1.html',{})
+            @@include('article-card-2.html',{})
+          </div>
+
+          <button class="button button--border-strong h-74 pr-16 pl-42 fz-16 w-100 justify-between">
+            Показать ещё Статьи
+            <div class="icon">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+              </svg>
+            </div>
+          </button>
+        </div>
+        <div class="wp-tabs__panel" data-index="2">
+          <div class="grid-12 mb-4">
+            <div class="col-lg-6">
+              @@include('article-card-2.html',{})
+            </div>
+            <div class="col-lg-6">
+              @@include('article-card-1.html',{})
+            </div>
+            <div class="col-lg-6">
+              @@include('article-card-2.html',{})
+            </div>
+            <div class="col-lg-6">
+              @@include('article-card-1.html',{})
+            </div>
+          </div>
+          <button class="button button--border-strong h-74 pr-16 pl-42 fz-16 w-100 justify-between">
+            Показать ещё Статьи
+            <div class="icon">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+              </svg>
+            </div>
+          </button>
+        </div>
+        <div class="wp-tabs__panel" data-index="3">
+          3
+        </div>
+        <div class="wp-tabs__panel" data-index="4">
+          4
+        </div>
+        <div class="wp-tabs__panel" data-index="5">
+          5
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

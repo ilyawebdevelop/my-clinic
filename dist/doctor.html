@@ -1,0 +1,2623 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Forum&family=Manrope:wght@200..800&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css">
+
+	<title>Доктор</title>
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<!-- Header -->
+<header class="header header-standart" id="header">
+  <div class="container">
+
+    <div class="headerW">
+      <a href="#" class="headerLogo logo--white">
+        <img src="img/admin/logo/logo.svg" alt="logo">
+      </a>
+      <a href="#" class="headerLogo logo--black">
+        <img src="img/admin/logo/logo-black.svg" alt="logo">
+      </a>
+      <button class="headerMenuBtn">
+        <svg class="headerMenuBtn__border" viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="46" />
+        </svg>
+        <svg>
+          <use xlink:href="img/icons/icons.svg#burger"></use>
+        </svg>
+      </button>
+      <nav class="headerNav">
+        <ul>
+          <li class="menu-item-has-children">
+            <a href="#">Услуги</a>
+            <ul class="sub-menu">
+              <li>
+                <a href="#">Усоуга 1</a>
+              </li>
+              <li>
+                <a href="#">Усоуга Усоуга 2</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Врачи</a>
+          </li>
+          <li>
+            <a href="#">Цены</a>
+          </li>
+          <li>
+            <a href="#">О клинике</a>
+          </li>
+          <li>
+            <a href="#">Акции</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="headerContacts">
+        <div class="d-flex flex-column align-end">
+          <div class="text--md">г. Краснодар, ул. 40 лет победы 178к1</div>
+          <div class="text-champagne text--md">Ежедневно с 09.00 до 20.00</div>
+        </div>
+        <div class="d-flex flex-column">
+          <a class="text--md" href="tel:+79615205405">+7 (961) 520-54-05</a>
+          <a class="text-champagne hover-blue text--md" href="#" data-fancybox data-src="#modalOrder">Перезвоните
+            мне</a>
+        </div>
+        <button class="button-bvi">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#eye"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+</header>
+<div class="headerMenu">
+  <div class="container">
+    <div class="d-flex flex-column h-100">
+      <div class="headerMenuGrid">
+        <nav class="headerMenuNav">
+
+          <div class="headerMenuNavTitle">
+            <span class="text-nowrap">Основное</span>
+          </div>
+          <ul>
+            <li>
+              <a href="#">Врачи</a>
+            </li>
+            <li>
+              <a href="#">Цены</a>
+            </li>
+            <li>
+              <a href="#">О клинике</a>
+            </li>
+            <li>
+              <a href="#">Акции</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="headerMenuContent">
+          <div class="headerMenuNavTitle">
+            <span class="text-nowrap">Направления стоматологии</span>
+          </div>
+          <div class="headerMenuTabs wp-tabs">
+
+            <div class="headerMenuTabsNav wp-tabs__nav">
+              <button class="wp-tabs__btn active" data-index="1">
+                <div>Лечение зубов</div>
+                <a class="arrow-btn" href="#">
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+                  </svg>
+                </a>
+              </button>
+              <button class="wp-tabs__btn" data-index="2">
+                <div>Имплантация</div>
+                <a class="arrow-btn" href="#">
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+                  </svg>
+                </a>
+              </button>
+              <button class="wp-tabs__btn" data-index="3">
+                <div>Протезирование</div>
+                <a class="arrow-btn" href="#">
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+                  </svg>
+                </a>
+              </button>
+              <button class="wp-tabs__btn" data-index="4">
+                <div>Исправление прикуса</div>
+                <a class="arrow-btn" href="#">
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+                  </svg>
+                </a>
+              </button>
+              <button class="wp-tabs__btn" data-index="5">
+                <div>Эстетика улыбки</div>
+                <a class="arrow-btn" href="#">
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+                  </svg>
+                </a>
+              </button>
+              <button class="wp-tabs__btn" data-index="6">
+                <div>Детская стоматология </div>
+                <a class="arrow-btn" href="#">
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+                  </svg>
+                </a>
+              </button>
+            </div>
+
+            <div class="headerMenuTabsBody">
+              <div class="wp-tabs__panel active" data-index="1">
+                <div class="headerMenuTabsLinks">
+                  <ul>
+                    <li>
+                      <a href="#">Виниры</a>
+                    </li>
+                    <li>
+                      <a href="#">Отбеливание</a>
+                    </li>
+                    <li>
+                      <a href="#">Реставрация</a>
+                    </li>
+                    <li>
+                      <a href="#">Профессиональная гигиена</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="wp-tabs__panel" data-index="2">
+                <div class="headerMenuTabsLinks">
+                  <ul>
+                    <li>
+                      <a href="#">Отбеливание</a>
+                    </li>
+                    <li>
+                      <a href="#">Реставрация</a>
+                    </li>
+                    <li>
+                      <a href="#">Профессиональная гигиена</a>
+                    </li>
+                    <li>
+                      <a href="#">Виниры</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="wp-tabs__panel" data-index="3">
+                <div class="headerMenuTabsLinks">
+                  <ul>
+                    <li>
+                      <a href="#">Отбеливание</a>
+                    </li>
+                    <li>
+                      <a href="#">Реставрация</a>
+                    </li>
+                    <li>
+                      <a href="#">Профессиональная гигиена</a>
+                    </li>
+                    <li>
+                      <a href="#">Виниры</a>
+                    </li>
+                    <li>
+                      <a href="#">Отбеливание</a>
+                    </li>
+                    <li>
+                      <a href="#">Реставрация</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="wp-tabs__panel" data-index="4">
+
+
+              </div>
+              <div class="wp-tabs__panel" data-index="5">
+
+
+              </div>
+              <div class="wp-tabs__panel" data-index="6">
+
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <img src="img/admin/menu/menu-face.png" alt="image" class="headerMenuImage">
+      </div>
+      <div class="headerMenuFooter">
+        <div class="d-flex gap-3 align-center justify-between">
+
+          <div class="d-flex gap-1 align-center">
+            <img class="headerMenuLogo" src="img/admin/logo/menu-logo.svg" alt="logo">
+            <span class="headerMenuLogoText text-brand-600">стоматология, которой даверяют</span>
+          </div>
+          <button class="main-btn button button--brand-700 border-hover-bottom pl-16" data-fancybox
+            data-src="#modalOrder">
+            <div class="icon">
+              <svg style="fill: var(--brand-200);">
+                <use xlink:href="img/icons/icons.svg#star"></use>
+              </svg>
+            </div>
+            <span>записаться на консультацию</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+		<main class="main">
+			<div class="breadcrumbs-sect">
+  <div class="container">
+    <ul class="aioseo-breadcrumbs">
+      <li>
+        <a href="#">
+          Главная
+        </a>
+      </li>
+      <li>
+        <span class="sep">
+          /
+        </span>
+      </li>
+      <li>
+        <span>
+          Услуги
+        </span>
+      </li>
+    </ul>
+  </div>
+</div>
+			<section class="intro-doctors sect pt-4 border-b-gray position-relative pb-0">
+  <div class="container position-relative">
+
+    <div class="intro-subtitle-sidebar"><span>специалисты клиники</span></div>
+
+    <div class="grid-12 gap-6">
+
+      <div class="col-lg-6">
+
+        <div class="intro-doctor-left">
+          <div class="intro-doctor-image-text">
+            <div class="text--lg text-uppercase text-brand-300" style="max-width: 111px;">
+              забота
+              о&nbsp;вашей
+              улыбки
+              в&nbsp;деталях
+            </div>
+            <span class="line"></span>
+            <div class="text--lg text-uppercase text-brand-300" style="max-width: 111px;">
+              my clinic
+            </div>
+          </div>
+          <div class="intro-doctor-image-wrap">
+            <img src="img/admin/doctors/doctor-2.png" alt="image" class="intro-doctor-image">
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="col-lg-6">
+        <div class="tag-linear fz-20 text-uppercase mb-4 text-brand-900">
+          Стоматолог-ортодонт
+        </div>
+        <h1 class="h2 mb-3">
+          <span>Исмаилова</span> Екатерина Сергеевна
+        </h1>
+        <div class="content text-secondary fz-20 lh-150 mb-5">
+          <p>
+            Екатерина Сергеевна — врач, который сочетает профессиональное мастерство, современный подход и внимательное
+            отношение к каждому пациенту. Его работа — это точность, эстетика и результат, которому можно доверять.
+          </p>
+        </div>
+
+        <div class="intro-doctor-adv mb-5">
+          <ul>
+            <li>
+              <div class="d-flex flex-column gap-3px">
+                <div class="h3 fz-32 text-action text-nowrap">
+                  10 лет
+                </div>
+                <div class="text-md text-secondary text-uppercase">
+                  стаж
+                </div>
+              </div>
+
+            </li>
+            <li>
+              <div class="d-flex flex-column gap-3px">
+                <div class="h3 fz-32 text-action">
+                  Протезирование
+                </div>
+                <div class="text-md text-secondary text-uppercase">
+                  специализация
+                </div>
+              </div>
+
+            </li>
+            <li>
+              <div class="d-flex flex-column gap-3px">
+                <div class="d-flex align-end gap-1">
+                  <div class="h3 fz-32 text-action">
+                    5,0
+                  </div>
+                  <div class="text-secondary">
+                    рейтинг
+                  </div>
+                </div>
+                <div class="text-md text-secondary text-uppercase">
+                  продокторов
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="d-flex gap-lg-4">
+
+          <button class="main-btn button button--brand-700 border-hover-bottom pl-16">
+            <div class="icon">
+              <svg style="fill: var(--brand-200);">
+                <use xlink:href="img/icons/icons.svg#star"></use>
+              </svg>
+            </div>
+            <span>записаться на консультацию</span>
+          </button>
+
+          <a href="#" class="button button--border-strong h-74 pr-16 pl-42 fz-16 text-center flex-1" data-fancybox>
+            Видео о враче
+            <div class="icon">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+              </svg>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <img src="img/admin/intro/intro-logo.svg" alt="logo" class="intro-logo-clinic">
+</section>
+			<section class="meet sect border-b-gray">
+  <div class="container">
+    <div class="grid-12">
+      <div class="col-lg-7 py-50 pr-50">
+        <h2 class="h2 mb-5">
+          <span>Познакомиться</span> с&nbsp;врачом
+        </h2>
+        <div class="fz-24 text-secondary">
+          Екатерина Сергеевна специализируется на имплантациии ортопедической реабилитации пациентов. В своей работе
+          сочетает современные технологии, точное планирование и индивидуальный подход, чтобы восстановить не только
+          здоровье зубов, но и качество жизни пациента.
+        </div>
+        <div class="quoteBlock mt-5">
+          Главный принцип — создавать надежный, функциональный и эстетичный результат, который сохранится на долгие
+          годы.
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <img src="img/admin/meet/image-1.jpg" alt="image" class="meetImage">
+      </div>
+    </div>
+  </div>
+</section>
+			<section class="spec sect border-b-gray">
+  <div class="container">
+
+    <div class="mb-5">
+      <h2 class="h2">
+        <span>Специализация</span> врача
+      </h2>
+    </div>
+
+    <div class="grid-12">
+      <div class="col-lg-5">
+        <img src="img/admin/spec/image-1.jpg" alt="image" class="specImage">
+      </div>
+      <div class="col-lg-7">
+        <div class="specGrid">
+
+          <a href="#" class="specItem">
+            <div class="specItemCount">01</div>
+            <div class="d-flex gap-2 justify-between align-end">
+              <h4>Имплантация зубов</h4>
+              <div class="round-btn w-46 border-strong pe-none">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+                </svg>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="specItem">
+            <div class="specItemCount">02</div>
+            <div class="d-flex gap-2 justify-between align-end">
+              <h4>
+                Полное восстановление зубного ряда
+              </h4>
+              <div class="round-btn w-46 border-strong pe-none">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+                </svg>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="specItem">
+            <div class="specItemCount">03</div>
+            <div class="d-flex gap-2 justify-between align-end">
+              <h4>
+                Протезирование на имплантах
+              </h4>
+              <div class="round-btn w-46 border-strong pe-none">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+                </svg>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="specItem">
+            <div class="specItemCount">04</div>
+            <div class="d-flex gap-2 justify-between align-end">
+              <h4>
+                Виниры
+              </h4>
+              <div class="round-btn w-46 border-strong pe-none">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+                </svg>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="specItem">
+            <div class="specItemCount">05</div>
+            <div class="d-flex gap-2 justify-between align-end">
+              <h4>
+                Коронки
+              </h4>
+              <div class="round-btn w-46 border-strong pe-none">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+                </svg>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="specItem">
+            <div class="specItemCount">06</div>
+            <div class="d-flex gap-2 justify-between align-end">
+              <h4>
+                Мостовидные протезы
+              </h4>
+              <div class="round-btn w-46 border-strong pe-none">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+                </svg>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="specItem">
+            <div class="specItemCount">07</div>
+            <div class="d-flex gap-2 justify-between align-end">
+              <h4>
+                Съемное протезирование
+              </h4>
+              <div class="round-btn w-46 border-strong pe-none">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+                </svg>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="specItem">
+            <div class="specItemCount">08</div>
+            <div class="d-flex gap-2 justify-between align-end">
+              <h4>
+                Несъемное протезирование
+              </h4>
+              <div class="round-btn w-46 border-strong pe-none">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+                </svg>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+			<section class="study sect">
+  <div class="container">
+    <div class="studyContent">
+      <div class="grid-12">
+        <div class="col-lg-8">
+
+          <div class="swiper studySlider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide studySlide" data-year="2019" data-label="Базовое образование">
+                <div class="studySlideCol">
+                  <div class="h3 fz-20 mb-3 text-action">
+                    профессиональный рост
+                  </div>
+                  <div class="text--lg text-secondary">
+                    Екатерина Сергеевна постоянно совершенствует свои знания и навыки, чтобы предлагать пациентам
+                    современные и эффективные методы лечения.
+                  </div>
+                </div>
+                <div class="studySlideCol">
+                  <h2 class="h2 h2--lg">
+                    Непрерывное <span>обучение</span>
+                  </h2>
+                  <div class="studySlideFooter d-flex gap-3">
+                    <div class="studySlideFooterNum">
+                      2019
+                    </div>
+                    <div class="d-flex flex-column gap-2">
+                      <div class="fz-20 text-uppercase">
+                        Повышение квалификации
+                      </div>
+                      <div class="text--lg text-secondary">
+                        «Протезирование на имплантах. Продвинутый курс»
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="studySlideYear">
+                  2019
+                </div>
+              </div>
+              <div class="swiper-slide studySlide" data-year="2020" data-label="Повышение квалификации">
+                <div class="studySlideCol">
+                  <div class="h3 fz-20 mb-3 text-action">
+                    профессиональный рост
+                  </div>
+                  <div class="text--lg text-secondary">
+                    Екатерина Сергеевна постоянно совершенствует свои знания и навыки
+                  </div>
+                </div>
+                <div class="studySlideCol">
+                  <h2 class="h2 h2--lg">
+                    Коронки
+                  </h2>
+                  <div class="studySlideFooter d-flex gap-3">
+                    <div class="studySlideFooterNum">
+                      2020
+                    </div>
+                    <div class="d-flex flex-column gap-2">
+                      <div class="fz-20 text-uppercase">
+                        Повышение квалификации
+                      </div>
+                      <div class="text--lg text-secondary">
+                        «Протезирование на имплантах. Продвинутый курс»
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="studySlideYear">
+                  2020
+                </div>
+              </div>
+            </div>
+            <div class="sliderNav d-flex">
+              <button type="button" class="navArrow w-76 navArrow--brand-100 navArrowPrev">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#arrow-prev"></use>
+                </svg>
+              </button>
+              <button type="button" class="navArrow w-76 navArrow--brand-100 navArrowNext">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#arrow-next"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-3">
+          <div class="studyAdv">
+            <ul>
+              <li>
+                <span>14+</span>
+                <span>Лет практики</span>
+              </li>
+              <li>
+                <span>30+</span>
+                <span>Дипломов и сертификатов </span>
+              </li>
+              <li>
+                <span>100</span>
+                <span>Часов ежегодного обучения</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="studyPagination">
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+			<section class="cert sect bg-white">
+  <div class="container">
+
+    <div class="mb-6">
+      <h2 class="h2">
+        Дипломы <span>и сертификаты</span>
+      </h2>
+    </div>
+
+    <div class="grid-12">
+      <div class="col-lg-7 pr-50">
+        <div class="swiper certSlider">
+          <div class="swiper-wrapper">
+
+            <a href="img/admin/cert/image-2.jpg" class="swiper-slide certSlide" data-fancybox="certificate">
+              <img src="img/admin/cert/image-2.jpg" alt="image">
+            </a>
+            <a href="img/admin/cert/image-2.jpg" class="swiper-slide certSlide" data-fancybox="certificate">
+              <img src="img/admin/cert/image-2.jpg" alt="image">
+            </a>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="swiper certSliderContent">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide certSliderContentSlide">
+              <div class="text--md text-action ls-12 text-uppercase mb-4">
+                ПОвышение квалификации
+              </div>
+              <div class="certSliderContentSlideTitle">
+                Имплантация и протезирование
+              </div>
+              <div class="fz-20 text-action lh-140 mb-4">
+                Сертификат о прохождении профессионального курса
+              </div>
+              <div class="h2">
+                2019
+              </div>
+            </div>
+
+            <div class="swiper-slide certSliderContentSlide">
+              <div class="text--md text-action ls-12 text-uppercase mb-4">
+                ПОвышение квалификации
+              </div>
+              <div class="certSliderContentSlideTitle">
+                Имплантация зубов
+              </div>
+              <div class="fz-20 text-action lh-140 mb-4">
+                Сертификат о прохождении профессионального курса
+              </div>
+              <div class="h2">
+                2022
+              </div>
+            </div>
+
+          </div>
+
+          <div class="sliderNav d-flex">
+            <button type="button" class="navArrow w-76 navArrow--brand-100 navArrowPrev">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#arrow-prev"></use>
+              </svg>
+            </button>
+            <button type="button" class="navArrow w-76 navArrow--brand-100 navArrowNext">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#arrow-next"></use>
+              </svg>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+			<section class="individ sect">
+  <div class="container">
+    <div class="grid-12 align-center gap-0">
+      <div class="col-lg-7">
+        <div class="individL">
+          <div class="individGal">
+            <div class="individImageMain">
+              <a href="img/admin/individ/image-1.jpg" class="individImage" data-fancybox="ind_1">
+                <img src="img/admin/individ/image-1.jpg" alt="image">
+              </a>
+            </div>
+            <div class="individImageSecond">
+              <a href="img/admin/individ/image-2.jpg" class="individImage" data-fancybox="ind_2">
+                <img src="img/admin/individ/image-2.jpg" alt="image">
+              </a>
+              <a href="img/admin/individ/image-3.jpg" class="individImage" data-fancybox="ind_3">
+                <img src="img/admin/individ/image-3.jpg" alt="image">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <h2 class="h2 h2--lg mb-4">
+          <span class="d-block">Подход</span> врача
+        </h2>
+        <div class="individQuote mb-4">
+          “Для меня важно не просто установить имплантат или изготовить протез. Главная цель — чтобы пациент вновь
+          улыбался без стеснения и чувствовал себя комфортно каждый день”
+        </div>
+        <div class="individDoctorName">
+          Исмаилова Екатерина Сергеевна
+        </div>
+        <div class="individDoctorSpec mt-2 text--md text-secondary">
+          врач стоматолог - ортодонт
+        </div>
+        <img src="img/admin/individ/podpis.png" alt="podpis" class="individPodpis mt-2">
+        <div class="d-flex align-center gap-5 mt-5">
+          <a href="#" class="button button--brand-700 h-74 pr-16 pl-42 fz-15">
+            <span class="text-nowrap">записаться на прием</span>
+            <div class="icon">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+              </svg>
+            </div>
+          </a>
+          <span class="text--md" style="max-width: 175px;">
+            Подберем удобное время для консультации
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+			<section class="result sect border-b-gray">
+  <div class="container position-relative grid-12 wp-tabs">
+    <div class="sect-name">
+      <span>результаты лечения</span>
+      <span class="sep"></span>
+      <span class="sect-name-count">05</span>
+    </div>
+
+    <div class="resultLeft col-lg-6">
+      <h2 class="h2 h2--lg mb-80">
+        История <span style="display: block;">одной улыбки</span>
+      </h2>
+      <div class="wp-tabs-body">
+        <div class="wp-tabs__panel active" data-index="1">
+          <div class="swiperW">
+            <div class="resultThumbSliderW">
+              <button type="button" class="navArrow w-76 navArrow--brand-050 navArrowPrev vertical">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#arrow-prev"></use>
+                </svg>
+              </button>
+              <div class="swiper resultThumbSlider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide resultThumbSlide">
+                    <img src="img/admin/result/image-1.jpg" alt="image">
+                  </div>
+                  <div class="swiper-slide resultThumbSlide">
+                    <img src="img/admin/result/image-2.jpg" alt="image">
+                  </div>
+                  <div class="swiper-slide resultThumbSlide">
+                    <img src="img/admin/result/image-3.jpg" alt="image">
+                  </div>
+                  <div class="swiper-slide resultThumbSlide">
+                    <img src="img/admin/result/image-1.jpg" alt="image">
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="navArrow w-76 navArrow--brand-050 navArrowNext vertical">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#arrow-next"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="resultSliderW">
+              <div class="swiper resultSlider">
+                <div class="swiper-wrapper">
+
+                  <div class="swiper-slide resultSlide">
+                    <div class="resultSlideBefore active">
+                      <img src="img/admin/result/image-1.jpg" alt="image">
+                      <span>До</span>
+                    </div>
+                    <div class="resultSlideAfter">
+                      <img src="img/admin/result/image-2.jpg" alt="image">
+                      <span>После</span>
+                    </div>
+                    <div class="resultSlideAction">
+                      <button class="resultSlideBtn resultSlideBeforeBtn active">
+                        <img src="img/admin/result/image-2.jpg" alt="image">
+                      </button>
+                      <button class="resultSlideBtn resultSlideAfterBtn">
+                        <img src="img/admin/result/image-1.jpg" alt="image">
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide resultSlide">
+                    <div class="resultSlideBefore active">
+                      <img src="img/admin/result/image-2.jpg" alt="image">
+                      <span>До</span>
+                    </div>
+                    <div class="resultSlideAfter">
+                      <img src="img/admin/result/image-1.jpg" alt="image">
+                      <span>После</span>
+                    </div>
+                    <div class="resultSlideAction">
+                      <button class="resultSlideBtn resultSlideBeforeBtn active">
+                        <img src="img/admin/result/image-1.jpg" alt="image">
+                      </button>
+                      <button class="resultSlideBtn resultSlideAfterBtn">
+                        <img src="img/admin/result/image-2.jpg" alt="image">
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide resultSlide">
+                    <div class="resultSlideBefore active">
+                      <img src="img/admin/result/image-1.jpg" alt="image">
+                      <span>До</span>
+                    </div>
+                    <div class="resultSlideAfter">
+                      <img src="img/admin/result/image-2.jpg" alt="image">
+                      <span>После</span>
+                    </div>
+                    <div class="resultSlideAction">
+                      <button class="resultSlideBtn resultSlideBeforeBtn active">
+                        <img src="img/admin/result/image-2.jpg" alt="image">
+                      </button>
+                      <button class="resultSlideBtn resultSlideAfterBtn">
+                        <img src="img/admin/result/image-1.jpg" alt="image">
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide resultSlide">
+                    <div class="resultSlideBefore active">
+                      <img src="img/admin/result/image-2.jpg" alt="image">
+                      <span>До</span>
+                    </div>
+                    <div class="resultSlideAfter">
+                      <img src="img/admin/result/image-1.jpg" alt="image">
+                      <span>После</span>
+                    </div>
+                    <div class="resultSlideAction">
+                      <button class="resultSlideBtn resultSlideBeforeBtn active">
+                        <img src="img/admin/result/image-1.jpg" alt="image">
+                      </button>
+                      <button class="resultSlideBtn resultSlideAfterBtn">
+                        <img src="img/admin/result/image-2.jpg" alt="image">
+                      </button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wp-tabs__panel" data-index="2">
+          <div class="swiperW">
+            <div class="resultThumbSliderW">
+              <button type="button" class="navArrow w-76 navArrow--brand-050 navArrowPrev vertical">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#arrow-prev"></use>
+                </svg>
+              </button>
+              <div class="swiper resultThumbSlider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide resultThumbSlide">
+                    <img src="img/admin/result/image-2.jpg" alt="image">
+                  </div>
+                  <div class="swiper-slide resultThumbSlide">
+                    <img src="img/admin/result/image-1.jpg" alt="image">
+                  </div>
+                  <div class="swiper-slide resultThumbSlide">
+                    <img src="img/admin/result/image-3.jpg" alt="image">
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="navArrow w-76 navArrow--brand-050 navArrowNext vertical">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#arrow-next"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="resultSliderW">
+              <div class="swiper resultSlider">
+                <div class="swiper-wrapper">
+
+                  <div class="swiper-slide resultSlide">
+                    <div class="resultSlideBefore active">
+                      <img src="img/admin/result/image-1.jpg" alt="image">
+                      <span>До</span>
+                    </div>
+                    <div class="resultSlideAfter">
+                      <img src="img/admin/result/image-2.jpg" alt="image">
+                      <span>После</span>
+                    </div>
+                    <div class="resultSlideAction">
+                      <button class="resultSlideBtn resultSlideBeforeBtn active">
+                        <img src="img/admin/result/image-2.jpg" alt="image">
+                      </button>
+                      <button class="resultSlideBtn resultSlideAfterBtn">
+                        <img src="img/admin/result/image-1.jpg" alt="image">
+                      </button>
+                    </div>
+                  </div>
+                  <div class="swiper-slide resultSlide">
+                    <div class="resultSlideBefore active">
+                      <img src="img/admin/result/image-2.jpg" alt="image">
+                      <span>До</span>
+                    </div>
+                    <div class="resultSlideAfter">
+                      <img src="img/admin/result/image-1.jpg" alt="image">
+                      <span>После</span>
+                    </div>
+                    <div class="resultSlideAction">
+                      <button class="resultSlideBtn resultSlideBeforeBtn active">
+                        <img src="img/admin/result/image-1.jpg" alt="image">
+                      </button>
+                      <button class="resultSlideBtn resultSlideAfterBtn">
+                        <img src="img/admin/result/image-2.jpg" alt="image">
+                      </button>
+                    </div>
+                  </div>
+                  <div class="swiper-slide resultSlide">
+                    <div class="resultSlideBefore active">
+                      <img src="img/admin/result/image-1.jpg" alt="image">
+                      <span>До</span>
+                    </div>
+                    <div class="resultSlideAfter">
+                      <img src="img/admin/result/image-2.jpg" alt="image">
+                      <span>После</span>
+                    </div>
+                    <div class="resultSlideAction">
+                      <button class="resultSlideBtn resultSlideBeforeBtn active">
+                        <img src="img/admin/result/image-2.jpg" alt="image">
+                      </button>
+                      <button class="resultSlideBtn resultSlideAfterBtn">
+                        <img src="img/admin/result/image-1.jpg" alt="image">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="resultRight col-lg-6">
+      <div class="mb-5">
+        <p class="text-secondary lh-175">
+          Показываем реальные клинические случаи: исходную ситуацию, поставленную задачу, этапы лечения и полученный
+          результат.
+        </p>
+      </div>
+      <div class="wp-tabs__nav mb-5">
+        <button class="wp-tabs__btn active" data-index="1">Все</button>
+        <button class="wp-tabs__btn" data-index="2">Имплантация</button>
+        <button class="wp-tabs__btn" data-index="3">Виниры</button>
+        <button class="wp-tabs__btn" data-index="4">Ортодонтия</button>
+        <button class="wp-tabs__btn" data-index="5">All on 4</button>
+        <button class="wp-tabs__btn" data-index="5">Кариес</button>
+      </div>
+
+      <div class="wp-tabs-body">
+        <div class="wp-tabs__panel active" data-index="1">
+          <div class="swiper resultContentSlider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide resultContentSlide">
+
+                <h3 class="mb-4 text-action">Полное восстановление улыбки</h3>
+                <div class="text-uppercase text-champagne font-family-second mb-2">Проведенная работа</div>
+                <div class="content pb-4">
+                  <p>
+                    В результате лечения удалось восстановить функцию зубов и эстетику улыбки.
+                  </p>
+                  <p>
+                    Пациент обратился из-за отсутствия нескольких зубов и дискомфорта при жевании.
+                  </p>
+                </div>
+                <div class="resultStat mb-5">
+
+                  <div class="resultStatItem">
+                    <div class="resultStatItemCount text-action">
+                      4
+                    </div>
+                    <div class="d-flex flex-column">
+                      <div class="text-action">
+                        месяца
+                      </div>
+                      <div class="text-primary text--sm">заняло лечение</div>
+                    </div>
+                  </div>
+
+                  <div class="resultStatItem">
+                    <div class="resultStatItemCount text-action">
+                      7
+                    </div>
+                    <div class="d-flex flex-column">
+                      <div class="text-action">
+                        посещений
+                      </div>
+                      <div class="text-primary text--sm">потребовалось</div>
+                    </div>
+                  </div>
+
+                  <div class="resultStatItem">
+                    <div class="resultStatItemCount text-action">
+                      2
+                    </div>
+                    <div class="d-flex flex-column">
+                      <div class="text-action">
+                        специалиста
+                      </div>
+                      <div class="text-primary text--sm">работали над результатом</div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="text-uppercase text-champagne font-family-second mb-2">Кто проводил лечение</div>
+                <div class="resultDoctorList mb-5">
+
+                  <div class="resultDoctorItem">
+                    <a href="#" class="resultDoctorItemImg">
+                      <img src="img/admin/doctors/doctor-1.png" alt="image">
+                    </a>
+                    <div class="d-flex flex-column">
+                      <a href="#" class="resultDoctorItemTitle lh-140">Варданян Варужан Артурович</a>
+                      <span class="text-secondary text--md">Врач стоматолог-ортопед</span>
+                    </div>
+                  </div>
+
+                  <div class="resultDoctorItem">
+                    <a href="#" class="resultDoctorItemImg">
+                      <img src="img/admin/doctors/doctor-2.png" alt="image">
+                    </a>
+                    <div class="d-flex flex-column">
+                      <a href="#" class="resultDoctorItemTitle lh-140">Исмаилова Екатерина Сергеевна</a>
+                      <span class="text-secondary text--md">Врач стоматолог-ортодонт</span>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="d-flex gap-lg-4">
+
+                  <a href="#" class="button button--brand-700 h-74 pr-16 pl-42 fz-16">
+                    хочу такую улыбку
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+                      </svg>
+                    </div>
+                  </a>
+
+                  <a href="#" class="button button--border-strong h-74 pr-16 pl-42 fz-16">
+                    все наши работы
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+                      </svg>
+                    </div>
+                  </a>
+
+                </div>
+              </div>
+              <div class="swiper-slide resultContentSlide">
+
+                <h3 class="mb-4 text-action">Полное восстановление улыбки</h3>
+                <div class="text-uppercase text-champagne font-family-second mb-2">Проведенная работа</div>
+                <div class="content pb-4">
+                  <p>
+                    Пациент обратился из-за отсутствия нескольких зубов и дискомфорта при жевании.
+                  </p>
+                  <p>
+                    В результате лечения удалось восстановить функцию зубов и эстетику улыбки.
+                  </p>
+                </div>
+                <div class="resultStat mb-5">
+
+                  <div class="resultStatItem">
+                    <div class="resultStatItemCount text-action">
+                      4
+                    </div>
+                    <div class="d-flex flex-column">
+                      <div class="text-action">
+                        месяца
+                      </div>
+                      <div class="text-primary text--sm">заняло лечение</div>
+                    </div>
+                  </div>
+
+                  <div class="resultStatItem">
+                    <div class="resultStatItemCount text-action">
+                      7
+                    </div>
+                    <div class="d-flex flex-column">
+                      <div class="text-action">
+                        посещений
+                      </div>
+                      <div class="text-primary text--sm">потребовалось</div>
+                    </div>
+                  </div>
+
+                  <div class="resultStatItem">
+                    <div class="resultStatItemCount text-action">
+                      2
+                    </div>
+                    <div class="d-flex flex-column">
+                      <div class="text-action">
+                        специалиста
+                      </div>
+                      <div class="text-primary text--sm">работали над результатом</div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="text-uppercase text-champagne font-family-second mb-2">Кто проводил лечение</div>
+                <div class="resultDoctorList mb-5">
+
+                  <div class="resultDoctorItem">
+                    <a href="#" class="resultDoctorItemImg">
+                      <img src="img/admin/doctors/doctor-1.png" alt="image">
+                    </a>
+                    <div class="d-flex flex-column">
+                      <a href="#" class="resultDoctorItemTitle lh-140">Варданян Варужан Артурович</a>
+                      <span class="text-secondary text--md">Врач стоматолог-ортопед</span>
+                    </div>
+                  </div>
+
+                  <div class="resultDoctorItem">
+                    <a href="#" class="resultDoctorItemImg">
+                      <img src="img/admin/doctors/doctor-2.png" alt="image">
+                    </a>
+                    <div class="d-flex flex-column">
+                      <a href="#" class="resultDoctorItemTitle lh-140">Исмаилова Екатерина Сергеевна</a>
+                      <span class="text-secondary text--md">Врач стоматолог-ортодонт</span>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="d-flex gap-lg-4">
+
+                  <a href="#" class="button button--brand-700 h-74 pr-16 pl-42 fz-16">
+                    хочу такую улыбку
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+                      </svg>
+                    </div>
+                  </a>
+
+                  <a href="#" class="button button--border-strong h-74 pr-16 pl-42 fz-16">
+                    все наши работы
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+                      </svg>
+                    </div>
+                  </a>
+
+                </div>
+              </div>
+              <div class="swiper-slide resultContentSlide">
+
+                <h3 class="mb-4 text-action">Полное восстановление улыбки</h3>
+                <div class="text-uppercase text-champagne font-family-second mb-2">Проведенная работа</div>
+                <div class="content pb-4">
+                  <p>
+                    В результате лечения удалось восстановить функцию зубов и эстетику улыбки.
+                  </p>
+                  <p>
+                    Пациент обратился из-за отсутствия нескольких зубов и дискомфорта при жевании.
+                  </p>
+                </div>
+                <div class="resultStat mb-5">
+
+                  <div class="resultStatItem">
+                    <div class="resultStatItemCount text-action">
+                      4
+                    </div>
+                    <div class="d-flex flex-column">
+                      <div class="text-action">
+                        месяца
+                      </div>
+                      <div class="text-primary text--sm">заняло лечение</div>
+                    </div>
+                  </div>
+
+                  <div class="resultStatItem">
+                    <div class="resultStatItemCount text-action">
+                      7
+                    </div>
+                    <div class="d-flex flex-column">
+                      <div class="text-action">
+                        посещений
+                      </div>
+                      <div class="text-primary text--sm">потребовалось</div>
+                    </div>
+                  </div>
+
+                  <div class="resultStatItem">
+                    <div class="resultStatItemCount text-action">
+                      2
+                    </div>
+                    <div class="d-flex flex-column">
+                      <div class="text-action">
+                        специалиста
+                      </div>
+                      <div class="text-primary text--sm">работали над результатом</div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="text-uppercase text-champagne font-family-second mb-2">Кто проводил лечение</div>
+                <div class="resultDoctorList mb-5">
+
+                  <div class="resultDoctorItem">
+                    <a href="#" class="resultDoctorItemImg">
+                      <img src="img/admin/doctors/doctor-1.png" alt="image">
+                    </a>
+                    <div class="d-flex flex-column">
+                      <a href="#" class="resultDoctorItemTitle lh-140">Варданян Варужан Артурович</a>
+                      <span class="text-secondary text--md">Врач стоматолог-ортопед</span>
+                    </div>
+                  </div>
+
+                  <div class="resultDoctorItem">
+                    <a href="#" class="resultDoctorItemImg">
+                      <img src="img/admin/doctors/doctor-2.png" alt="image">
+                    </a>
+                    <div class="d-flex flex-column">
+                      <a href="#" class="resultDoctorItemTitle lh-140">Исмаилова Екатерина Сергеевна</a>
+                      <span class="text-secondary text--md">Врач стоматолог-ортодонт</span>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="d-flex gap-lg-4">
+
+                  <a href="#" class="button button--brand-700 h-74 pr-16 pl-42 fz-16">
+                    хочу такую улыбку
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+                      </svg>
+                    </div>
+                  </a>
+
+                  <a href="#" class="button button--border-strong h-74 pr-16 pl-42 fz-16">
+                    все наши работы
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+                      </svg>
+                    </div>
+                  </a>
+
+                </div>
+              </div>
+              <div class="swiper-slide resultContentSlide">
+
+                <h3 class="mb-4 text-action">Полное восстановление улыбки</h3>
+                <div class="text-uppercase text-champagne font-family-second mb-2">Проведенная работа</div>
+                <div class="content pb-4">
+                  <p>
+                    Пациент обратился из-за отсутствия нескольких зубов и дискомфорта при жевании.
+                  </p>
+                  <p>
+                    В результате лечения удалось восстановить функцию зубов и эстетику улыбки.
+                  </p>
+                </div>
+                <div class="resultStat mb-5">
+
+                  <div class="resultStatItem">
+                    <div class="resultStatItemCount text-action">
+                      4
+                    </div>
+                    <div class="d-flex flex-column">
+                      <div class="text-action">
+                        месяца
+                      </div>
+                      <div class="text-primary text--sm">заняло лечение</div>
+                    </div>
+                  </div>
+
+                  <div class="resultStatItem">
+                    <div class="resultStatItemCount text-action">
+                      7
+                    </div>
+                    <div class="d-flex flex-column">
+                      <div class="text-action">
+                        посещений
+                      </div>
+                      <div class="text-primary text--sm">потребовалось</div>
+                    </div>
+                  </div>
+
+                  <div class="resultStatItem">
+                    <div class="resultStatItemCount text-action">
+                      2
+                    </div>
+                    <div class="d-flex flex-column">
+                      <div class="text-action">
+                        специалиста
+                      </div>
+                      <div class="text-primary text--sm">работали над результатом</div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="text-uppercase text-champagne font-family-second mb-2">Кто проводил лечение</div>
+                <div class="resultDoctorList mb-5">
+
+                  <div class="resultDoctorItem">
+                    <a href="#" class="resultDoctorItemImg">
+                      <img src="img/admin/doctors/doctor-1.png" alt="image">
+                    </a>
+                    <div class="d-flex flex-column">
+                      <a href="#" class="resultDoctorItemTitle lh-140">Варданян Варужан Артурович</a>
+                      <span class="text-secondary text--md">Врач стоматолог-ортопед</span>
+                    </div>
+                  </div>
+
+                  <div class="resultDoctorItem">
+                    <a href="#" class="resultDoctorItemImg">
+                      <img src="img/admin/doctors/doctor-2.png" alt="image">
+                    </a>
+                    <div class="d-flex flex-column">
+                      <a href="#" class="resultDoctorItemTitle lh-140">Исмаилова Екатерина Сергеевна</a>
+                      <span class="text-secondary text--md">Врач стоматолог-ортодонт</span>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="d-flex gap-lg-4">
+
+                  <a href="#" class="button button--brand-700 h-74 pr-16 pl-42 fz-16">
+                    хочу такую улыбку
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+                      </svg>
+                    </div>
+                  </a>
+
+                  <a href="#" class="button button--border-strong h-74 pr-16 pl-42 fz-16">
+                    все наши работы
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+                      </svg>
+                    </div>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wp-tabs__panel" data-index="2">
+
+          <div class="swiper resultContentSlider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide resultContentSlide">
+
+                <h3 class="mb-4 text-action">Частичное восстановление улыбки</h3>
+                <div class="text-uppercase text-champagne font-family-second mb-2">Проведенная работа</div>
+                <div class="content pb-4">
+                  <p>
+                    Пациент обратился из-за отсутствия нескольких зубов и дискомфорта при жевании.
+                  </p>
+                  <p>
+                    В результате лечения удалось восстановить функцию зубов и эстетику улыбки.
+                  </p>
+
+                </div>
+                <div class="resultStat mb-5">
+
+                  <div class="resultStatItem">
+                    <div class="resultStatItemCount text-action">
+                      4
+                    </div>
+                    <div class="d-flex flex-column">
+                      <div class="text-action">
+                        месяца
+                      </div>
+                      <div class="text-primary text--sm">заняло лечение</div>
+                    </div>
+                  </div>
+
+                  <div class="resultStatItem">
+                    <div class="resultStatItemCount text-action">
+                      7
+                    </div>
+                    <div class="d-flex flex-column">
+                      <div class="text-action">
+                        посещений
+                      </div>
+                      <div class="text-primary text--sm">потребовалось</div>
+                    </div>
+                  </div>
+
+                  <div class="resultStatItem">
+                    <div class="resultStatItemCount text-action">
+                      2
+                    </div>
+                    <div class="d-flex flex-column">
+                      <div class="text-action">
+                        специалиста
+                      </div>
+                      <div class="text-primary text--sm">работали над результатом</div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="text-uppercase text-champagne font-family-second mb-2">Кто проводил лечение</div>
+                <div class="resultDoctorList mb-5">
+
+                  <div class="resultDoctorItem">
+                    <a href="#" class="resultDoctorItemImg">
+                      <img src="img/admin/doctors/doctor-1.png" alt="image">
+                    </a>
+                    <div class="d-flex flex-column">
+                      <a href="#" class="resultDoctorItemTitle lh-140">Варданян Варужан Артурович</a>
+                      <span class="text-secondary text--md">Врач стоматолог-ортопед</span>
+                    </div>
+                  </div>
+
+                  <div class="resultDoctorItem">
+                    <a href="#" class="resultDoctorItemImg">
+                      <img src="img/admin/doctors/doctor-2.png" alt="image">
+                    </a>
+                    <div class="d-flex flex-column">
+                      <a href="#" class="resultDoctorItemTitle lh-140">Исмаилова Екатерина Сергеевна</a>
+                      <span class="text-secondary text--md">Врач стоматолог-ортодонт</span>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="d-flex gap-lg-4">
+
+                  <a href="#" class="button button--brand-700 h-74 pr-16 pl-42 fz-16">
+                    хочу такую улыбку
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+                      </svg>
+                    </div>
+                  </a>
+
+                  <a href="#" class="button button--border-strong h-74 pr-16 pl-42 fz-16">
+                    все наши работы
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+                      </svg>
+                    </div>
+                  </a>
+
+                </div>
+              </div>
+              <div class="swiper-slide resultContentSlide">
+
+                <h3 class="mb-4 text-action">Полное восстановление улыбки</h3>
+                <div class="text-uppercase text-champagne font-family-second mb-2">Проведенная работа</div>
+                <div class="content pb-4">
+                  <p>
+                    В результате лечения удалось восстановить функцию зубов и эстетику улыбки.
+                  </p>
+                  <p>
+                    Пациент обратился из-за отсутствия нескольких зубов и дискомфорта при жевании.
+                  </p>
+                </div>
+                <div class="resultStat mb-5">
+
+                  <div class="resultStatItem">
+                    <div class="resultStatItemCount text-action">
+                      4
+                    </div>
+                    <div class="d-flex flex-column">
+                      <div class="text-action">
+                        месяца
+                      </div>
+                      <div class="text-primary text--sm">заняло лечение</div>
+                    </div>
+                  </div>
+
+                  <div class="resultStatItem">
+                    <div class="resultStatItemCount text-action">
+                      7
+                    </div>
+                    <div class="d-flex flex-column">
+                      <div class="text-action">
+                        посещений
+                      </div>
+                      <div class="text-primary text--sm">потребовалось</div>
+                    </div>
+                  </div>
+
+                  <div class="resultStatItem">
+                    <div class="resultStatItemCount text-action">
+                      2
+                    </div>
+                    <div class="d-flex flex-column">
+                      <div class="text-action">
+                        специалиста
+                      </div>
+                      <div class="text-primary text--sm">работали над результатом</div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="text-uppercase text-champagne font-family-second mb-2">Кто проводил лечение</div>
+                <div class="resultDoctorList mb-5">
+
+                  <div class="resultDoctorItem">
+                    <a href="#" class="resultDoctorItemImg">
+                      <img src="img/admin/doctors/doctor-1.png" alt="image">
+                    </a>
+                    <div class="d-flex flex-column">
+                      <a href="#" class="resultDoctorItemTitle lh-140">Варданян Варужан Артурович</a>
+                      <span class="text-secondary text--md">Врач стоматолог-ортопед</span>
+                    </div>
+                  </div>
+
+                  <div class="resultDoctorItem">
+                    <a href="#" class="resultDoctorItemImg">
+                      <img src="img/admin/doctors/doctor-2.png" alt="image">
+                    </a>
+                    <div class="d-flex flex-column">
+                      <a href="#" class="resultDoctorItemTitle lh-140">Исмаилова Екатерина Сергеевна</a>
+                      <span class="text-secondary text--md">Врач стоматолог-ортодонт</span>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="d-flex gap-lg-4">
+
+                  <a href="#" class="button button--brand-700 h-74 pr-16 pl-42 fz-16">
+                    хочу такую улыбку
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+                      </svg>
+                    </div>
+                  </a>
+
+                  <a href="#" class="button button--border-strong h-74 pr-16 pl-42 fz-16">
+                    все наши работы
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+                      </svg>
+                    </div>
+                  </a>
+
+                </div>
+              </div>
+              <div class="swiper-slide resultContentSlide">
+
+                <h3 class="mb-4 text-action">Частичное восстановление улыбки</h3>
+                <div class="text-uppercase text-champagne font-family-second mb-2">Проведенная работа</div>
+                <div class="content pb-4">
+                  <p>
+                    Пациент обратился из-за отсутствия нескольких зубов и дискомфорта при жевании.
+                  </p>
+                  <p>
+                    В результате лечения удалось восстановить функцию зубов и эстетику улыбки.
+                  </p>
+
+                </div>
+                <div class="resultStat mb-5">
+
+                  <div class="resultStatItem">
+                    <div class="resultStatItemCount text-action">
+                      4
+                    </div>
+                    <div class="d-flex flex-column">
+                      <div class="text-action">
+                        месяца
+                      </div>
+                      <div class="text-primary text--sm">заняло лечение</div>
+                    </div>
+                  </div>
+
+                  <div class="resultStatItem">
+                    <div class="resultStatItemCount text-action">
+                      7
+                    </div>
+                    <div class="d-flex flex-column">
+                      <div class="text-action">
+                        посещений
+                      </div>
+                      <div class="text-primary text--sm">потребовалось</div>
+                    </div>
+                  </div>
+
+                  <div class="resultStatItem">
+                    <div class="resultStatItemCount text-action">
+                      2
+                    </div>
+                    <div class="d-flex flex-column">
+                      <div class="text-action">
+                        специалиста
+                      </div>
+                      <div class="text-primary text--sm">работали над результатом</div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="text-uppercase text-champagne font-family-second mb-2">Кто проводил лечение</div>
+                <div class="resultDoctorList mb-5">
+
+                  <div class="resultDoctorItem">
+                    <a href="#" class="resultDoctorItemImg">
+                      <img src="img/admin/doctors/doctor-1.png" alt="image">
+                    </a>
+                    <div class="d-flex flex-column">
+                      <a href="#" class="resultDoctorItemTitle lh-140">Варданян Варужан Артурович</a>
+                      <span class="text-secondary text--md">Врач стоматолог-ортопед</span>
+                    </div>
+                  </div>
+
+                  <div class="resultDoctorItem">
+                    <a href="#" class="resultDoctorItemImg">
+                      <img src="img/admin/doctors/doctor-2.png" alt="image">
+                    </a>
+                    <div class="d-flex flex-column">
+                      <a href="#" class="resultDoctorItemTitle lh-140">Исмаилова Екатерина Сергеевна</a>
+                      <span class="text-secondary text--md">Врач стоматолог-ортодонт</span>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="d-flex gap-lg-4">
+
+                  <a href="#" class="button button--brand-700 h-74 pr-16 pl-42 fz-16">
+                    хочу такую улыбку
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+                      </svg>
+                    </div>
+                  </a>
+
+                  <a href="#" class="button button--border-strong h-74 pr-16 pl-42 fz-16">
+                    все наши работы
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+                      </svg>
+                    </div>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+			<section class="reviews sect border-b-gray">
+  <div class="container position-relative">
+
+    <div class="sect-name">
+      <span>отзывы</span>
+      <span class="sep"></span>
+      <span class="sect-name-count">09</span>
+    </div>
+
+    <div class="reviewsHead">
+      <div class="grid-12">
+        <div class="col-lg-7">
+          <h2 class="h2 h2--lg">
+            <span>Истории улыбок</span> пациентов
+          </h2>
+        </div>
+        <div class="col-lg-5">
+          <p class="text-secondary lh-175">
+            Собрали впечатления пациентов о лечении, врачах и сервисе My Clinic. Полные версии отзывов можно
+            посмотретьна независимых площадках.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiperW">
+      <div class="sliderNav">
+        <button type="button" class="navArrow w-76 navArrow--brand-100 navArrowPrev">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#arrow-prev"></use>
+          </svg>
+        </button>
+        <button type="button" class="navArrow w-76 navArrow--brand-100 navArrowNext">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#arrow-next"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="swiper reviewsSlider">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide reviewsSlide">
+            <div class="reviewsCard bg-white cardText">
+  <div class="reviewsCardContent">
+
+    <div class="reviewsCardBorderR">
+      <div class="reviewsCardContentHead">
+        <div class="reviewsCardTitleW">
+          <div class="reviewsCardTitle text-secondary">Ольга Рябова</div>
+          <img src="img/admin/reviews/logo-1.svg" alt="logo" class="reviewsCardLogo">
+        </div>
+        <div class="reviewsCardDateW">
+          <div class="reviewsCardStars star_5">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#star-rev"></use>
+            </svg>
+            <svg>
+              <use xlink:href="img/icons/icons.svg#star-rev"></use>
+            </svg>
+            <svg>
+              <use xlink:href="img/icons/icons.svg#star-rev"></use>
+            </svg>
+            <svg>
+              <use xlink:href="img/icons/icons.svg#star-rev"></use>
+            </svg>
+            <svg>
+              <use xlink:href="img/icons/icons.svg#star-rev"></use>
+            </svg>
+          </div>
+          <div class="reviewsCardDate">
+            06.04.2025
+          </div>
+        </div>
+      </div>
+
+      <div class="reviewsCardContentText">
+        <div class="content content--hidden">
+          <p>
+            Наконец-то я встретила специалиста, который умеет слушать и понимает свою работу. Это врач, которому можно
+            полностью доверять. Она не оставила меня наедине с моими проблемами, даже когда ситуации выходят за рамки ее
+            профиля.
+          </p>
+          <p>
+            Мария Юрьевна активно искала решенияи давала рекомендации о том, к каким специалистам стоит
+            обратиться.Я благодарна ей за решенияи давала рекомендации о том
+          </p>
+          <p>
+            Мария Юрьевна активно искала решенияи давала рекомендации о том, к каким специалистам стоит
+            обратиться.Я благодарна ей за решенияи давала рекомендации о том
+          </p>
+          <p>
+            Мария Юрьевна активно искала решенияи давала рекомендации о том, к каким специалистам стоит
+            обратиться.Я благодарна ей за решенияи давала рекомендации о том
+          </p>
+        </div>
+        <button class="js-show-more" type="button">Читать весь отзыв</button>
+      </div>
+    </div>
+
+    <div class="reviewsCardPersonW mt-4">
+      <div class="reviewsCardPersonImg">
+        <img src="img/admin/dir/poster.jpg" alt="image">
+      </div>
+      <div class="d-flex flex-column w-100 reviewsCardPersonNameW">
+        <div class="reviewsCardPersonText text-primary">Отзыв о враче</div>
+        <div class="reviewsCardPersonName text-action">
+          Варданян Варужан Артурович        
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+          </div>
+          <div class="swiper-slide reviewsSlide">
+            <div class="reviewsCard">
+  <a href="img/admin/video-4.mp4" class="reviewsCardImageW" data-fancybox>
+    <img src="img/admin/reviews/image-1.jpg" alt="image" class="reviewsCardImage">
+
+    <div class="reviewsCardVideoContent">
+      <div class="reviewsCardTitle">Ольга Рябова</div>
+      <div class="reviewsCardDate">
+        06.04.2025
+      </div>
+      <div class="reviewsCardPersonW">
+        <div class="reviewsCardPersonImg">
+          <img src="img/admin/dir/poster.jpg" alt="image">
+        </div>
+        <div class="d-flex flex-column">
+          <div class="reviewsCardPersonText text-white">Отзыв о враче</div>
+          <div class="reviewsCardPersonName text-white">Варданян Варужан Артурович</div>
+        </div>
+      </div>
+    </div>
+
+    <button class="video-play">
+      <svg>
+        <use xlink:href="img/icons/icons.svg#play"></use>
+      </svg>
+    </button>
+  </a>
+</div>
+          </div>
+          <div class="swiper-slide reviewsSlide">
+            <div class="reviewsCard bg-white cardText">
+  <div class="reviewsCardContent">
+
+    <div class="reviewsCardBorderR">
+      <div class="reviewsCardContentHead">
+        <div class="reviewsCardTitleW">
+          <div class="reviewsCardTitle text-secondary">Ольга Рябова</div>
+          <img src="img/admin/reviews/logo-1.svg" alt="logo" class="reviewsCardLogo">
+        </div>
+        <div class="reviewsCardDateW">
+          <div class="reviewsCardStars star_3">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#star-rev"></use>
+            </svg>
+            <svg>
+              <use xlink:href="img/icons/icons.svg#star-rev"></use>
+            </svg>
+            <svg>
+              <use xlink:href="img/icons/icons.svg#star-rev"></use>
+            </svg>
+            <svg>
+              <use xlink:href="img/icons/icons.svg#star-rev"></use>
+            </svg>
+            <svg>
+              <use xlink:href="img/icons/icons.svg#star-rev"></use>
+            </svg>
+          </div>
+          <div class="reviewsCardDate">
+            06.04.2025
+          </div>
+        </div>
+      </div>
+
+      <div class="reviewsCardContentText">
+        <div class="content content--hidden">
+          <p>
+            Наконец-то я встретила специалиста, который умеет слушать и понимает свою работу. Это врач, которому можно
+            полностью доверять. Она не оставила меня наедине с моими проблемами, даже когда ситуации выходят за рамки ее
+            профиля.
+          </p>
+          <p>
+            Мария Юрьевна активно искала решенияи давала рекомендации о том, к каким специалистам стоит
+            обратиться.Я благодарна ей за решенияи давала рекомендации о том
+          </p>
+          <p>
+            Мария Юрьевна активно искала решенияи давала рекомендации о том, к каким специалистам стоит
+            обратиться.Я благодарна ей за решенияи давала рекомендации о том
+          </p>
+          <p>
+            Мария Юрьевна активно искала решенияи давала рекомендации о том, к каким специалистам стоит
+            обратиться.Я благодарна ей за решенияи давала рекомендации о том
+          </p>
+        </div>
+        <button class="js-show-more" type="button">Читать весь отзыв</button>
+      </div>
+    </div>
+
+    <div class="reviewsCardPersonW mt-4">
+      <div class="reviewsCardPersonImg">
+        <img src="img/admin/dir/poster.jpg" alt="image">
+      </div>
+      <div class="d-flex flex-column w-100 reviewsCardPersonNameW">
+        <div class="reviewsCardPersonText text-primary">Отзыв о враче</div>
+        <div class="reviewsCardPersonName text-action">
+          Варданян Варужан Артурович
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+          </div>
+          <div class="swiper-slide reviewsSlide">
+            <div class="reviewsCard">
+  <a href="img/admin/video-4.mp4" class="reviewsCardImageW" data-fancybox>
+    <img src="img/admin/reviews/image-1.jpg" alt="image" class="reviewsCardImage">
+
+    <div class="reviewsCardVideoContent">
+      <div class="reviewsCardTitle">Ольга Рябова</div>
+      <div class="reviewsCardDate">
+        06.04.2025
+      </div>
+      <div class="reviewsCardPersonW">
+        <div class="reviewsCardPersonImg">
+          <img src="img/admin/dir/poster.jpg" alt="image">
+        </div>
+        <div class="d-flex flex-column">
+          <div class="reviewsCardPersonText text-white">Отзыв о враче</div>
+          <div class="reviewsCardPersonName text-white">Варданян Варужан Артурович</div>
+        </div>
+      </div>
+    </div>
+
+    <button class="video-play">
+      <svg>
+        <use xlink:href="img/icons/icons.svg#play"></use>
+      </svg>
+    </button>
+  </a>
+</div>
+          </div>
+          <div class="swiper-slide reviewsSlide">
+            <div class="reviewsCard bg-white cardText">
+  <div class="reviewsCardContent">
+
+    <div class="reviewsCardBorderR">
+      <div class="reviewsCardContentHead">
+        <div class="reviewsCardTitleW">
+          <div class="reviewsCardTitle text-secondary">Ольга Рябова</div>
+          <img src="img/admin/reviews/logo-1.svg" alt="logo" class="reviewsCardLogo">
+        </div>
+        <div class="reviewsCardDateW">
+          <div class="reviewsCardStars star_5">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#star-rev"></use>
+            </svg>
+            <svg>
+              <use xlink:href="img/icons/icons.svg#star-rev"></use>
+            </svg>
+            <svg>
+              <use xlink:href="img/icons/icons.svg#star-rev"></use>
+            </svg>
+            <svg>
+              <use xlink:href="img/icons/icons.svg#star-rev"></use>
+            </svg>
+            <svg>
+              <use xlink:href="img/icons/icons.svg#star-rev"></use>
+            </svg>
+          </div>
+          <div class="reviewsCardDate">
+            06.04.2025
+          </div>
+        </div>
+      </div>
+
+      <div class="reviewsCardContentText">
+        <div class="content content--hidden">
+          <p>
+            Наконец-то я встретила специалиста, который умеет слушать и понимает свою работу. Это врач, которому можно
+            полностью доверять. Она не оставила меня наедине с моими проблемами, даже когда ситуации выходят за рамки ее
+            профиля.
+          </p>
+          <p>
+            Мария Юрьевна активно искала решенияи давала рекомендации о том, к каким специалистам стоит
+            обратиться.Я благодарна ей за решенияи давала рекомендации о том
+          </p>
+          <p>
+            Мария Юрьевна активно искала решенияи давала рекомендации о том, к каким специалистам стоит
+            обратиться.Я благодарна ей за решенияи давала рекомендации о том
+          </p>
+          <p>
+            Мария Юрьевна активно искала решенияи давала рекомендации о том, к каким специалистам стоит
+            обратиться.Я благодарна ей за решенияи давала рекомендации о том
+          </p>
+        </div>
+        <button class="js-show-more" type="button">Читать весь отзыв</button>
+      </div>
+    </div>
+
+    <div class="reviewsCardPersonW mt-4">
+      <div class="reviewsCardPersonImg">
+        <img src="img/admin/dir/poster.jpg" alt="image">
+      </div>
+      <div class="d-flex flex-column w-100 reviewsCardPersonNameW">
+        <div class="reviewsCardPersonText text-primary">Отзыв о враче</div>
+        <div class="reviewsCardPersonName text-action">
+          Варданян Варужан Артурович        
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+          </div>
+
+        </div>
+
+        <div class="slider-pagination-wrapper">
+          <div class="swiper-scrollbar"></div>
+          <!-- <div class="swiper-pagination swiper-pagination-punkt"></div> -->
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+</section>
+			<section class="rate sect border-b-gray pb-0">
+  <div class="container position-relative">
+
+    <div class="sect-name">
+      <span>рейтинг</span>
+      <span class="sep"></span>
+      <span class="sect-name-count">10</span>
+    </div>
+
+    <h2 class="h2 h2--lg">Посмотрите больше отзывов <span>о&nbsp;клинике и&nbsp;врачах My&nbsp;Clinic</span> на&nbsp;открытых
+      сервисах</h2>
+  </div>
+
+  <div class="rateContentSect">
+    <div class="container">
+      <div class="rateContentWrap">
+        <div class="rateContentInner">
+          <div class="rateNum">
+            <div class="rateNumTitle">
+              5,0
+            </div>
+            <div class="rateNumStars">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#star-rev"></use>
+              </svg>
+              <svg>
+                <use xlink:href="img/icons/icons.svg#star-rev"></use>
+              </svg>
+              <svg>
+                <use xlink:href="img/icons/icons.svg#star-rev"></use>
+              </svg>
+              <svg>
+                <use xlink:href="img/icons/icons.svg#star-rev"></use>
+              </svg>
+              <svg>
+                <use xlink:href="img/icons/icons.svg#star-rev"></use>
+              </svg>
+            </div>
+            <div class="rateNumAv">
+              Средняя оценка
+            </div>
+            <div class="rateNumDescr">
+              по данным открытых независимых площадок
+            </div>
+          </div>
+          <div class="rateList">
+
+            <div class="rateItem">
+              <a href="#" class="rateItemLogo" target="_blank">
+                <img src="img/admin/rate/logo-1.svg" alt="logo">
+              </a>
+              <div class="rateItemLinkW">
+                <div class="rateItemCount">
+                  5,0
+                </div>
+                <a href="#" class="rateItemLink" target="_blank">
+                  216 отзывов
+                </a>
+              </div>
+            </div>
+
+            <div class="rateItem">
+              <a href="#" class="rateItemLogo" target="_blank">
+                <img src="img/admin/rate/logo-2.svg" alt="logo">
+              </a>
+              <div class="rateItemLinkW">
+                <div class="rateItemCount">
+                  5,0
+                </div>
+                <a href="#" class="rateItemLink" target="_blank">
+                  14 отзывов
+                </a>
+              </div>
+            </div>
+
+            <div class="rateItem">
+              <a href="#" class="rateItemLogo" target="_blank">
+                <img src="img/admin/rate/logo-3.svg" alt="logo">
+              </a>
+              <div class="rateItemLinkW">
+                <div class="rateItemCount">
+                  5,0
+                </div>
+                <a href="#" class="rateItemLink" target="_blank">
+                  14 отзывов
+                </a>
+              </div>
+            </div>
+
+            <div class="rateItem">
+              <a href="#" class="rateItemLogo" target="_blank">
+                <img src="img/admin/rate/logo-4.svg" alt="logo">
+              </a>
+              <div class="rateItemLinkW">
+                <div class="rateItemCount">
+                  5,0
+                </div>
+                <a href="#" class="rateItemLink" target="_blank">
+                  14 отзывов
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="rateContentImageWrap">
+          <img src="img/admin/rate/image-1.jpg" alt="image" class="rateContentImage">
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+			<section class="consult sect border-b-gray">
+  <div class="container position-relative">
+
+    <div class="sect-name">
+      <span>консультация</span>
+      <span class="sep"></span>
+      <span class="sect-name-count">12</span>
+    </div>
+
+    <div class="grid-12 align-center">
+      <div class="col-lg-5">
+
+        <div class="sectHead">
+          <h2 class="h2 h2--lg">
+            Начните <span style="display: block;">с консультации</span>
+          </h2>
+        </div>
+
+        <div class="sectDescr mb-5">
+          Расскажите, что вас беспокоит. Администратор свяжется с вами, уточнит детали и предложит удобное время для
+          визита.
+        </div>
+
+        <div class="consultForm">
+          <div class="grid-12">
+            <div class="col-lg-6">
+              <div class="inputW">
+                <input type="text" class="formInput" placeholder="Ваше имя">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="inputW">
+                <input type="tel" class="formInput" placeholder="Номер телефона">
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="d-flex gap-4">
+                <div class="inputW w-100">
+                  <textarea name="consultText" id="consultText" class="formText" style="height: 115px;"
+                    placeholder="Что Вас беспокоит:"></textarea>
+                </div>
+                <button class="round-btn w-104 bg-brand-700">
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#submit-icon"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="agreement">
+                <input type="checkbox" id="consultAgree" hidden>
+                <label for="consultAgree">
+                  <div class="rect"></div>
+                  <div class="agreementText">
+                    Отправляя данную форму, вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-1">
+
+      </div>
+      <div class="col-lg-6">
+        <div class="consultImageW">
+          <img src="img/admin/consult/image-1.jpg" alt="image">
+          <img class="consultImageAbstr" src="img/consult/abstract.svg" alt="abstract">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+			<section class="contacts sect pb-0">
+  <div class="container">
+
+    <div class="sectHead">
+      <h2 class="h2 h2--lg">
+        Как нас <span>найти</span>
+      </h2>
+    </div>
+
+    <div class="grid-12">
+      <div class="col-lg-7 contactsLeft">
+        <div class="contactsMapW">
+
+          <div class="contactsMapCont">
+            <div class="map contacts__map" data-center="[44.054931074607396,42.909915999999974]" data-zoom="16"
+              id="map">
+            </div>
+          </div>
+
+          <img src="img/logo/logo-cont.svg" alt="logo" class="contactsLogo">
+
+          <div class="mapInfo">
+            <ul>
+              <li>
+                Парковка у входа
+              </li>
+              <li>
+                <span>остановка</span>
+                <div class="sep"></div>
+                <span>3 минуты</span>
+              </li>
+              <li>
+                <span>Ежедневно </span>
+                <div class="sep"></div>
+                <span>09:00 - 20:00</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-lg-1"></div>
+      <div class="col-lg-4">
+        <div class="mb-5">
+          <div class="font-family-third text-uppercase text-champagne mb-1 ls-12">
+            Приезжайте к нам
+          </div>
+          <div class="fz-24 text-uppercase lh-140">
+            г. Краснодар,<br> ул. 40 лет победы, 178к1.
+          </div>
+        </div>
+        <div class="mb-5">
+          <div class="font-family-third text-uppercase text-champagne mb-1 ls-12">
+            Позвоните нам
+          </div>
+          <a href="tel:+7 (961) 520-54-05" class="hover-champagne d-flex h3 mb-0 text-uppercase">
+            +7 (961) 520-54-05
+          </a>
+          <a href="tel:+7 (961) 520-54-05" class="hover-champagne d-flex h3 text-uppercase">
+            +7 (961) 525-54-45
+          </a>
+        </div>
+        <div class="mb-5">
+          <div class="font-family-third text-uppercase text-champagne mb-1 ls-12">
+            Написать нам
+          </div>
+          <a href="mailto:myclinicstomatologia@gmail.com" class="hover-champagne d-flex fz-20">
+            myclinicstomatologia@gmail.com
+          </a>
+
+        </div>
+
+        <div class="sep contacts-sep"></div>
+
+        <div class="contactsDescr">
+          Ответим на вопросы, подскажем маршрут и подберем удобное время визита
+        </div>
+
+        <a href="#" class="button button--brand-700 h-74 pr-16 pl-42 fz-15" target="_blank">
+          построить маршрут
+          <div class="icon">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+            </svg>
+          </div>
+        </a>
+
+        <div class="socials">
+          <ul>
+            <li>
+              <a href="#" target="_blank" rel="nofollow">
+                Max
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="nofollow">
+                telegram
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="nofollow">
+                whatsapp
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+		</main>
+		<!-- Footer -->
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="footerT">
+      <div class="grid-12">
+        <div class="col-lg-9">
+          <h2 class="h2 h2--lg title--white">
+            Красивая улыбка начинается
+            <span>с&nbsp;первой консультации</span>
+          </h2>
+        </div>
+        <div class="col-lg-3">
+          <a href="#" class="button button--brand-900 h-74 pr-16 pl-42 fz-16 mb-3" data-fancybox data-src="#modalOrder">
+            Нужна консультация
+            <div class="icon">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+              </svg>
+            </div>
+          </a>
+          <span class="fz-13 text-white">Ответим и поможем выбрать удобное время</span>
+        </div>
+      </div>
+    </div>
+    <div class="footerC">
+      <div class="col">
+        <a href="#" class="footerLogo">
+          <img src="img/admin/logo/logo.svg" alt="logo">
+        </a>
+        <div class="text--md text-white">
+          Современная стоматология с вниманием к вашему комфорту, здоровью и естественной красоте улыбки.
+        </div>
+      </div>
+      <div class="col">
+        <nav class="footerNav">
+          <div class="footerNavTitle text-brand-300">Услуги</div>
+          <ul>
+            <li>
+              <a href="#">Лечение зубов</a>
+            </li>
+            <li>
+              <a href="#">Имплантация</a>
+            </li>
+            <li>
+              <a href="#">Виниры</a>
+            </li>
+            <li>
+              <a href="#">Ортодонтия</a>
+            </li>
+            <li>
+              <a href="#">Детская стоматология</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col">
+        <nav class="footerNav">
+          <div class="footerNavTitle text-brand-300">О клинике</div>
+          <ul>
+            <li>
+              <a href="#">О нас</a>
+            </li>
+            <li>
+              <a href="#">Врачи</a>
+            </li>
+            <li>
+              <a href="#">Отзывы</a>
+            </li>
+            <li>
+              <a href="#">Акции</a>
+            </li>
+            <li>
+              <a href="#">Лицензии</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col">
+        <div class="footerContacts">
+          <div class="footerContactsName text-brand-300">
+            Приезжайте к нам
+          </div>
+          <span class="text-white mb-3 d-block footerContactsText">г. Краснодар,<br> ул. 40 лет победы, 178к1.</span>
+          <div class="footerContactsName text-brand-300">
+            Как мы работаем
+          </div>
+          <span class="text-white mb-3 d-block footerContactsText">Ежедневно: с 09:00 до 20:00</span>
+          <div class="footerContactsName text-brand-300">
+            Позвоните нам
+          </div>
+          <a href="tel:+79615205405" class="text-white d-block">+7 (961) 520-54-05</a>
+          <a href="tel:+79615255445" class="text-white d-block">+7 (961) 525-54-45</a>
+        </div>
+      </div>
+    </div>
+    <div class="footerB">
+      <div class="col">
+        <div class="text--sm text-white">
+          © 2026 My Clinic. Все права защищены
+        </div>
+      </div>
+      <div class="col">
+        <a href="#" class="text--sm text-white">Политика конфиденциальности</a>
+      </div>
+      <div class="col">
+        <a href="#" class="text--sm text-white">Версия для слабовидящих</a>
+      </div>
+      <div class="col">
+        <a href="#" class="develop text-white d-flex align-center gap-3 text--sm">
+          <span>Разработка и продвижение</span>
+          <img src="img/logo/develop.svg" alt="logo">
+        </a>
+      </div>
+      <img class="footerBLogo" src="img/footer/bg.svg" alt="logo">
+    </div>
+  </div>
+</footer>
+
+<button class="fix-order-btn">
+  <div class="icon">
+    <svg>
+      <use xlink:href="img/icons/icons.svg#calendar"></use>
+    </svg>
+  </div>
+  <span>записаться на прием</span>
+  <div class="border-line"></div>
+  <div class="fix-order-btn-bg"></div>
+</button>
+
+<script src="https://api-maps.yandex.ru/2.1/?apikey=d9a25d85-7d2c-4cef-9199-b938afb5e90b&lang=ru_RU&_v=20250128200343"
+  type="text/javascript"></script>
+		<!-- modal -->
+<!-- order -->
+<div class="modal" id="modalOrder">
+
+  <div class="modalHead">
+    <h2 class="h2">Оставьте заявку</h2>
+    <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24" tabindex="-1">
+        <path d="M20 20L4 4m16 0L4 20"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div class="modalContent">
+    <p class="modalDescr">
+      Оставьте заявку на бесплатную консультацию и наши специалисты ответят на все Ваши вопросы
+    </p>
+    <div class="modalForm">
+      <div class="inputW">
+        <input type="text" class="formInput" placeholder="Как вас зовут?">
+      </div>
+      <div class="inputW">
+        <input type="tel" class="formInput" placeholder="+7 (___) ___-__-__" inputmode="text">
+      </div>
+      <button class="button button--blue formBtn">
+        Отправить заявку
+      </button>
+      <div class="agreement">
+        <p>
+          Нажимая кнопку выше, вы даёте согласие на обработку своих персональных данных.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- quiz -->
+<div class="modal" id="modalQuiz">
+
+  <div class="modalHead">
+    <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24" tabindex="-1">
+        <path d="M20 20L4 4m16 0L4 20"></path>
+      </svg>
+    </button>
+
+    <h2 class="h2 fz-40 mb-3">
+      <span>Рассчитайте стоимость</span> лечения «под ключ»
+    </h2>
+
+  </div>
+
+  <div class="modalContent">
+    <div class="grid-12">
+      <div class="col-lg-6">
+        <div class="fz-20 text-uppercase text-action mb-5 modalQuiz-subtitle">
+          Заявка принята
+        </div>
+        <div class="h2 fz-40 text-no-uppercase text-brand-700 mb-4">
+          Спасибо за ответы!
+        </div>
+        <div class="fz-20 text-secondary lh-140 mb-4">
+          Ваш предварительный план сохранен. Администратор клини свяжется с вами в ближайшее время.
+        </div>
+        <a href="#" class="button button--brand-700 pr-16">
+          <span class="text-btn d-block ml-auto fz-15">посмотреть услуги</span>
+          <div class="icon ml-auto">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#arrow-link"></use>
+            </svg>
+          </div>
+        </a>
+        <div class="modalQuizGift d-flex align-center gap-3">
+          <img src="img/admin/quiz/gift.jpg" alt="image" class="quiz__gift-image">
+          <div class="d-flex flex-column">
+            <div class="fz-18 text-uppercase font-family-second">
+              Ваш подарок ждет вас
+            </div>
+            <div class="text-neutral-600 text--md">
+              Консультация хирурга-имплантолога / Индивидуальный план лечения / КТ
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <img src="img/admin/quiz/image-1.jpg" alt="image" class="modalQuizImg">
+
+
+      </div>
+    </div>
+  </div>
+</div>
+	</div>
+
+	<script src="js/app.min.js"></script>
+
+
+
+</body>
+
+</html>
